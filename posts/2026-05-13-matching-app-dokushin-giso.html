@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年5月13日更新】「実は妻子持ちでした」──マッチングアプリの"独身偽装"、東京地裁が150万円の賠償命令。Z世代が知るべき見抜き方と法的対処法</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* Tag chip */
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.06em;
+      margin-bottom: 18px;
+    }
+
+    /* Title */
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: bold;
+      color: #f0e0ff;
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+
+    /* Meta */
+    .meta {
+      font-size: 0.82rem;
+      color: #9090b0;
+      margin-bottom: 32px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .meta span { display: flex; align-items: center; gap: 4px; }
+
+    /* Hero banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #1a0030 0%, #2d0a4e 40%, #1a1040 100%);
+      border-radius: 16px;
+      padding: 52px 24px;
+      text-align: center;
+      margin-bottom: 36px;
+      font-size: 4.5rem;
+      border: 1px solid #7c3aed44;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 60% 40%, #db277722 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-banner p {
+      font-size: 1.1rem;
+      color: #c4b5fd;
+      margin-top: 14px;
+      letter-spacing: 0.04em;
+    }
+
+    /* Lead */
+    .lead {
+      font-size: 1.08rem;
+      color: #d0d0f0;
+      border-left: 4px solid #db2777;
+      padding-left: 18px;
+      margin-bottom: 40px;
+      line-height: 1.85;
+    }
+
+    /* Headings */
+    h2 {
+      font-size: 1.28rem;
+      font-weight: bold;
+      color: #e9d5ff;
+      margin: 44px 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #7c3aed55;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      margin: 28px 0 12px;
+    }
+
+    /* Body paragraphs */
+    p {
+      margin-bottom: 16px;
+      color: #d8d8f0;
+    }
+
+    a {
+      color: #c4b5fd;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover { color: #f9a8d4; }
+
+    /* Stat grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 24px 0 36px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1e0a3a, #0a1a2e);
+      border: 1px solid #7c3aed55;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      display: block;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: #a090c0;
+      line-height: 1.4;
+    }
+
+    /* Warning box */
+    .warning-box {
+      background: linear-gradient(135deg, #2d0a1a, #1a0a2d);
+      border: 1px solid #db277777;
+      border-left: 4px solid #db2777;
+      border-radius: 10px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .warning-box h3 {
+      color: #fca5a5;
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+
+    /* Case list */
+    .case-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .case-list li {
+      background: #1a1030;
+      border: 1px solid #7c3aed33;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+      font-size: 0.92rem;
+      color: #d0d0f0;
+      padding-left: 44px;
+      position: relative;
+    }
+    .case-list li::before {
+      content: '⚠️';
+      position: absolute;
+      left: 14px;
+      top: 15px;
+      font-size: 1.1rem;
+    }
+
+    /* Action list / checklist */
+    .action-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+    }
+    .action-list li {
+      padding: 10px 14px 10px 44px;
+      position: relative;
+      border-bottom: 1px solid #ffffff11;
+      font-size: 0.94rem;
+      color: #d0d0f0;
+    }
+    .action-list li::before {
+      content: '✅';
+      position: absolute;
+      left: 12px;
+      top: 10px;
+    }
+    .action-list li:last-child { border-bottom: none; }
+
+    /* Hotline box */
+    .hotline-box {
+      background: linear-gradient(135deg, #0a2a1a, #0a1a2a);
+      border: 1px solid #4ade8066;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 36px 0;
+    }
+    .hotline-box h3 {
+      color: #4ade80;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    .hotline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 0.92rem;
+    }
+    .hotline-number {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #86efac;
+      white-space: nowrap;
+    }
+    .hotline-desc {
+      color: #b0c0b0;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    /* Summary box */
+    .summary-box {
+      background: linear-gradient(135deg, #1a0a30, #0a0a2a);
+      border: 2px solid #7c3aed;
+      border-radius: 14px;
+      padding: 28px;
+      margin: 40px 0;
+    }
+    .summary-box h2 {
+      border-bottom-color: #7c3aed88;
+      margin-top: 0;
+    }
+    .summary-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .summary-box ul li {
+      padding: 8px 0 8px 28px;
+      position: relative;
+      border-bottom: 1px solid #ffffff11;
+      font-size: 0.93rem;
+      color: #d0d0f0;
+    }
+    .summary-box ul li::before {
+      content: '💜';
+      position: absolute;
+      left: 0;
+      top: 8px;
+    }
+    .summary-box ul li:last-child { border-bottom: none; }
+
+    /* Court card */
+    .court-card {
+      background: #16102a;
+      border: 1px solid #7c3aed55;
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+    }
+    .court-card .verdict {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      margin-bottom: 8px;
+    }
+    .court-card .court-detail {
+      font-size: 0.85rem;
+      color: #9090b0;
+    }
+
+    /* Article footer */
+    .article-footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #ffffff22;
+      font-size: 0.8rem;
+      color: #7070a0;
+    }
+    .article-footer h4 {
+      color: #9090b0;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+    }
+    .article-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-footer ul li {
+      margin-bottom: 6px;
+    }
+    .article-footer a {
+      color: #7070a0;
+      font-size: 0.8rem;
+    }
+    .article-footer a:hover { color: #c4b5fd; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <span class="tag">マッチングアプリ / 恋愛詐欺</span>
+
+    <h1>【2026年5月13日更新】「実は妻子持ちでした」──マッチングアプリの"独身偽装"、東京地裁が150万円の賠償命令。Z世代が知るべき見抜き方と法的対処法</h1>
+
+    <div class="meta">
+      <span>📅 2026年5月13日</span>
+      <span>🏷️ マッチングアプリ・恋愛トラブル</span>
+      <span>⏱️ 読了目安：約7分</span>
+    </div>
+
+    <div class="hero-banner">
+      💍💔📱
+      <p>「既婚者・彼女持ちお断り」と書いてたのに……</p>
+    </div>
+
+    <p class="lead">
+      マッチングアプリで出会い、数か月〜数年交際した相手が"妻子持ち"だった──そんな「独身偽装」被害が社会問題化し、2025年12月に東京地裁が約<strong>150万円</strong>の損害賠償を命じる画期的判決を下した。2026年に入っても関連訴訟が相次ぐ中、Z世代が「見抜く目」と「法的手段」を持つことが急務だ。
+    </p>
+
+    <h2>📊 これだけ知っておけ！独身偽装の実態数字</h2>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <span class="stat-number">150万</span>
+        <span class="stat-label">東京地裁2025年12月判決の賠償額（円）</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">5人に1人</span>
+        <span class="stat-label">マッチングアプリ利用者で詐欺ターゲットにされた割合（ノートン調査）</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">1,094億円</span>
+        <span class="stat-label">国内マッチングアプリ市場規模（2026年白書）</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">85%</span>
+        <span class="stat-label">ターゲットにされた人のうち実際に被害を受けた割合</span>
+      </div>
+    </div>
+
+    <h2>📰 何が起きた？2025〜2026年の判決ラッシュ</h2>
+
+    <p>
+      2025年末から2026年にかけて、マッチングアプリでの「独身偽装」を巡る民事訴訟が相次いで注目を集めている。これまで「恋愛の失敗」として泣き寝入りしてきた被害者たちが声を上げ始め、裁判所も<strong>「貞操権（ていそうけん）の侵害」</strong>として損害賠償を認める判決を続けている。
+    </p>
+
+    <div class="court-card">
+      <div class="verdict">🏛️ 東京地裁 2025年12月8日判決 ── 約150万円の賠償命令</div>
+      <p style="font-size:0.9rem; color:#c0c0e0; margin:8px 0;">
+        独身者限定のマッチングアプリで出会った男性が、既婚者であることを隠して4か月間交際。一方的にブロックされた女性が提訴し、裁判所は「故意の不法行為」と認定。弁護士費用を含む約150万円の支払いを命じた（<a href="https://news.yahoo.co.jp/articles/2fa7ea12506fef99caba2ad41d02923eef28f438" target="_blank" rel="noopener">弁護士ドットコム</a>）。
+      </p>
+    </div>
+
+    <div class="court-card">
+      <div class="verdict">🏛️ 東京地裁 別件判決 ── 110万円の賠償命令</div>
+      <p style="font-size:0.9rem; color:#c0c0e0; margin:8px 0;">
+        5年間交際し、妊娠を告げたところ初めて既婚者だと判明したケース。女性は流産も経験し、精神的損害として110万円の賠償が認められた（<a href="https://www.tokyo-np.co.jp/article/486397" target="_blank" rel="noopener">東京新聞</a>）。
+      </p>
+    </div>
+
+    <p>
+      NHKも「<a href="https://news.web.nhk/newsweb/na/na-k10014997571000" target="_blank" rel="noopener">マッチングアプリで独身偽装 男性に賠償命令</a>」と報道し、広く社会的注目を集めた。集英社オンラインには被害者が「避妊せず200回以上……人生を壊された」と告白した記事が掲載され、大きな反響を呼んでいる（<a href="https://shueisha.online/articles/-/256185" target="_blank" rel="noopener">集英社オンライン</a>）。
+    </p>
+
+    <h2>🕵️‍♀️ 独身偽装の典型的な手口</h2>
+
+    <p>
+      なぜ被害者は騙されてしまうのか。既婚者が独身を装い続けるための手口には、ある共通したパターンがある。
+    </p>
+
+    <ul class="case-list">
+      <li>プロフィールに「独身」「真剣交際希望」と明記し、証明書提出を求められても巧みに回避する</li>
+      <li>平日昼間のデートは断り、「仕事が忙しい」と理由をつけて会う曜日・時間を限定する</li>
+      <li>相手の家に絶対に呼ばず、ホテルや外出先のみで会う。自宅の話題になるとはぐらかす</li>
+      <li>電話に出られない時間帯（夜22時以降・週末の昼）が不自然に多い</li>
+      <li>SNSのフォロワーや友人関係を公開せず、「SNSは見せられない」「別アカウントがある」などと言う</li>
+      <li>交際が深まっても「まだ結婚の話は早い」と先送りし続け、関係を宙ぶらりんにする</li>
+      <li>妊娠・同棲の話題が出た途端に連絡が途絶え、ブロック・削除して消える</li>
+    </ul>
+
+    <h2>⚖️ 「貞操権」って何？法律的にどうなるの？</h2>
+
+    <p>
+      独身偽装が問題になるとき、必ず登場するのが<strong>「貞操権」</strong>という法的概念だ。これは「誰と性的関係を持つかを自分で決める権利」のこと。騙されて性的関係を結んだ場合、その自己決定権が侵害されたとして、民法上の不法行為（損害賠償）の対象になる。
+    </p>
+
+    <div class="warning-box">
+      <h3>⚠️ 独身偽装が法的に問題になる要件（弁護士解説より）</h3>
+      <ul class="action-list">
+        <li>相手が<strong>既婚者であることを意図的に隠した</strong>こと（故意）</li>
+        <li>その偽りにより<strong>性的関係・交際関係が成立</strong>したこと</li>
+        <li>被害者が「既婚者と知っていれば交際しなかった」と立証できること</li>
+        <li>精神的損害・経済的損害（通院費、弁護士費用）が発生していること</li>
+      </ul>
+    </div>
+
+    <p>
+      重要なのは、<strong>刑事的には現行法で直接罰する規定がほぼない</strong>点だ。「独身偽装罪」は存在しない。ただし民事（損害賠償請求）では複数の判決が認容されており、被害者団体が厳罰化立法を求める活動を本格化させている（<a href="https://www.nagasaki-np.co.jp/kijis/?kijiid=e7e111da1acc43ec85cd0e286b25ba59" target="_blank" rel="noopener">長崎新聞 2025年12月</a>）。
+    </p>
+
+    <h2>🔍 Z世代向け！独身偽装の見抜き方チェックリスト</h2>
+
+    <p>
+      マッチングアプリで出会った相手が本当に独身かどうかを確認する方法は複数ある。「感情が先走って確認できなかった」という後悔をしないために、初期段階から習慣にしておこう。
+    </p>
+
+    <ul class="action-list">
+      <li><strong>独身証明書の提示を求める</strong>──有料オプションだが「マリッジチェッカー」などの第三者証明サービスが存在する</li>
+      <li><strong>SNSのリアルアカウントを早めに見せてもらう</strong>──本物のアカウントなら友人・家族の投稿がある。投稿がスカスカな「作りたてアカ」は要警戒</li>
+      <li><strong>週末夜・祝日の予定を確認する</strong>──既婚者は家族との時間が最も取れない。「毎回断られる日時」のパターンに気づくこと</li>
+      <li><strong>電話・ビデオ通話をさりげなく提案する</strong>──通話できない時間帯・場所が多い場合は家庭がある可能性</li>
+      <li><strong>自宅近くのカフェでのデートを提案する</strong>──自宅周辺で会いたがらない場合は要注意</li>
+      <li><strong>「ご家族は？」とさらりと聞く</strong>──既婚者は家族の話を意図的に避けたり、話が一貫しないことが多い</li>
+      <li><strong>逆画像検索で写真の出どころを調べる</strong>──プロフィール写真がストックフォトや他人のSNS画像を流用している場合も</li>
+    </ul>
+
+    <h2>💬 被害を受けたら今すぐやること</h2>
+
+    <p>
+      「まさか自分が……」と気づいたとき、感情的に動く前にやるべきことがある。証拠の保全が最優先だ。
+    </p>
+
+    <ul class="action-list">
+      <li><strong>スクリーンショットを即座に保存</strong>──マッチングアプリのプロフィール・「独身」と明記したメッセージ・デートの記録など、消える前に保全する</li>
+      <li><strong>LINEやDMのやり取りをバックアップ</strong>──「真剣交際希望」「一人暮らし」などの発言は証拠になる</li>
+      <li><strong>支出記録を整理する</strong>──デート費用・贈り物・プレゼントなど、経済的損害の立証に必要</li>
+      <li><strong>弁護士に相談する</strong>──「貞操権侵害」を専門とする弁護士が増えており、初回無料相談も多い。示談交渉も依頼可能</li>
+      <li><strong>住所・氏名の特定を依頼する</strong>──弁護士を通じた「発信者情報開示」や探偵への調査依頼で身元を特定し、裁判に備える</li>
+    </ul>
+
+    <div class="hotline-box">
+      <h3>📞 相談窓口まとめ</h3>
+      <div class="hotline-item">
+        <span class="hotline-number">♯9110</span>
+        <div class="hotline-desc">
+          <strong>警察安全相談電話</strong><br>
+          性被害・ストーキング・詐欺被害など。24時間受付。
+        </div>
+      </div>
+      <div class="hotline-item">
+        <span class="hotline-number">0120-8994-15</span>
+        <div class="hotline-desc">
+          <strong>配偶者暴力相談支援センター（DV・交際トラブル全般）</strong><br>
+          独身偽装による精神的DV被害も相談可。
+        </div>
+      </div>
+      <div class="hotline-item">
+        <span class="hotline-number">0570-064-556</span>
+        <div class="hotline-desc">
+          <strong>法テラス（法律トラブル全般）</strong><br>
+          弁護士費用の立替制度あり。収入が低い方も利用可能。
+        </div>
+      </div>
+      <div class="hotline-item">
+        <span class="hotline-number">警察庁 SOS47</span>
+        <div class="hotline-desc">
+          <a href="https://www.npa.go.jp/bureau/safetylife/sos47/" target="_blank" rel="noopener" style="color:#4ade80;">https://www.npa.go.jp/bureau/safetylife/sos47/</a><br>
+          SNS型犯罪相談窓口。24時間オンライン受付。
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <h2>💜 まとめ</h2>
+      <ul>
+        <li>マッチングアプリの「独身偽装」は東京地裁が<strong>150万円超の賠償</strong>を認めた正式な不法行為。泣き寝入りしなくていい</li>
+        <li>「貞操権侵害」は民事で訴えられる。証拠（スクショ・LINE・支出記録）を残すことが最重要</li>
+        <li>見抜く鉄則は「週末夜に会えない」「自宅エリアに来たがらない」「SNSの本アカを見せない」の3つ</li>
+        <li>独身証明書・第三者サービス（マリッジチェッカー等）の活用を早期に検討する</li>
+        <li>被害後は弁護士・法テラス・♯9110に迷わず相談。感情より証拠保全を優先する</li>
+      </ul>
+    </div>
+
+    <!-- PR SECTION -->
+    <div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+      <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+      <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+        <div style="flex: 1; min-width: 200px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+            <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+          </div>
+          <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+          <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+            17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+            <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+            <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+            <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+            <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+            <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+            <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+            <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+              style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+              くわしくはこちら →
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+            メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+          </p>
+        </div>
+        <div style="flex-shrink: 0; width: 200px;">
+          <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+            alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+    <!-- /PR SECTION -->
+
+    <footer class="article-footer">
+      <h4>📚 参考情報源</h4>
+      <ul>
+        <li><a href="https://news.yahoo.co.jp/articles/2fa7ea12506fef99caba2ad41d02923eef28f438" target="_blank" rel="noopener">弁護士ドットコム「マチアプで『独身偽装』、150万円賠償命令 話題の判決を弁護士が徹底解説」</a></li>
+        <li><a href="https://news.yahoo.co.jp/articles/3cc59976a41f3b2b314654d2ba25e1eeec540dcf" target="_blank" rel="noopener">毎日新聞「人気のマチアプ、トラブル発展も 『独身偽装』で賠償命令」</a></li>
+        <li><a href="https://www.tokyo-np.co.jp/article/486397" target="_blank" rel="noopener">東京新聞「独身偽装に110万円の賠償命令 アプリで知り合い交際5年、妊娠告げたら既婚者だと」</a></li>
+        <li><a href="https://news.web.nhk/newsweb/na/na-k10014997571000" target="_blank" rel="noopener">NHKニュース「マッチングアプリで"独身偽装" 男性に賠償命令 東京地裁」</a></li>
+        <li><a href="https://shueisha.online/articles/-/256185" target="_blank" rel="noopener">集英社オンライン「結婚を匂わせ、避妊せず200回以上も……既婚男性の"独身偽装"で人生を壊された女性が明かす今も続く地獄」</a></li>
+        <li><a href="https://www.nagasaki-np.co.jp/kijis/?kijiid=e7e111da1acc43ec85cd0e286b25ba59" target="_blank" rel="noopener">長崎新聞「声を上げ始めた『独身偽装』の被害者たち……厳罰化へ活動」（2025年12月）</a></li>
+        <li><a href="https://mypage.atpress.ne.jp/smart/news/7819994" target="_blank" rel="noopener">NEWSCAST「マッチングアプリ白書2026 市場規模1,094億円に拡大」</a></li>
+        <li><a href="https://prtimes.jp/main/html/rd/p/000000034.000069936.html" target="_blank" rel="noopener">ノートン「マッチングアプリによる被害実態調査」</a></li>
+      </ul>
+    </footer>
+
+  </div>
+</body>
+</html>
