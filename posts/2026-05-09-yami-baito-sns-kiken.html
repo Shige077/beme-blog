@@ -509,5 +509,20 @@
     </footer>
 
   </div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
 </body>
 </html>
