@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年4月29日更新】「見てた、でも助けられなかった」── 高校トイレの暴行動画がSNSで炎上、止まらない拡散の構造 | beMEブログ</title>
+  <meta name="description" content="2026年初頭、高校生の暴行動画がXやTikTokで相次いで拡散し、政府が緊急会議を開催。なぜ動画は拡散されるのか、なぜ学校は止められないのか。Z世代に向けてわかりやすく解説。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      line-height: 1.8;
+      padding: 24px 16px 60px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    /* Tag chip */
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #7c3aed, #db2777);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    /* Title */
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2.1rem);
+      color: #f0e6ff;
+      line-height: 1.4;
+      margin-bottom: 14px;
+      font-weight: bold;
+    }
+
+    /* Meta */
+    .meta {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .meta span { display: flex; align-items: center; gap: 4px; }
+
+    /* Hero banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #1a0a2e 0%, #0a0f2e 40%, #1a0a1a 100%);
+      border-radius: 16px;
+      border: 1px solid #7c3aed44;
+      padding: 48px 24px;
+      text-align: center;
+      margin-bottom: 36px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(124,58,237,0.18) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 50%, rgba(219,39,119,0.12) 0%, transparent 60%);
+    }
+    .hero-emoji {
+      font-size: 4.5rem;
+      display: block;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: #c4b5fd;
+      position: relative;
+      z-index: 1;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* Lead paragraph */
+    .lead {
+      background: #15102a;
+      border-left: 4px solid #db2777;
+      border-radius: 0 10px 10px 0;
+      padding: 20px 22px;
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+      color: #e8d5f0;
+      line-height: 1.9;
+    }
+
+    /* Headings */
+    h2 {
+      font-size: 1.3rem;
+      color: #e9d5ff;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #7c3aed44;
+    }
+    h3 {
+      font-size: 1.05rem;
+      color: #c4b5fd;
+      margin: 22px 0 10px;
+    }
+
+    /* Body text */
+    p {
+      margin-bottom: 16px;
+      color: #d8d0f0;
+      line-height: 1.9;
+    }
+
+    /* Stat grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      margin: 20px 0 30px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1a0f2e, #0f1a2e);
+      border: 1px solid #7c3aed44;
+      border-radius: 12px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #db2777;
+      display: block;
+      line-height: 1.2;
+    }
+    .stat-card .label {
+      font-size: 0.78rem;
+      color: #a08ac0;
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    /* Warning box */
+    .warning-box {
+      background: linear-gradient(135deg, #2a0a1a, #1a0a20);
+      border: 1px solid #db277766;
+      border-radius: 12px;
+      padding: 22px 22px 18px;
+      margin: 28px 0;
+    }
+    .warning-box .warning-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .warning-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .warning-box ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #db277722;
+      color: #e0c0d8;
+      font-size: 0.95rem;
+      padding-left: 20px;
+      position: relative;
+    }
+    .warning-box ul li::before {
+      content: '⚠️';
+      position: absolute;
+      left: 0;
+      font-size: 0.85rem;
+    }
+    .warning-box ul li:last-child { border-bottom: none; }
+
+    /* Case list */
+    .case-list {
+      background: #0f1525;
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin: 20px 0;
+      border: 1px solid #7c3aed33;
+    }
+    .case-item {
+      padding: 14px 0;
+      border-bottom: 1px solid #7c3aed22;
+    }
+    .case-item:last-child { border-bottom: none; }
+    .case-label {
+      font-size: 0.72rem;
+      background: #7c3aed;
+      color: #fff;
+      padding: 2px 10px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+    .case-text {
+      font-size: 0.92rem;
+      color: #d0c0e8;
+      line-height: 1.7;
+    }
+
+    /* Action list */
+    .action-list {
+      background: linear-gradient(135deg, #0a1a14, #0f1a20);
+      border: 1px solid #4ade8044;
+      border-radius: 12px;
+      padding: 22px 22px 18px;
+      margin: 28px 0;
+    }
+    .action-list h3 {
+      color: #4ade80;
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+    .action-list ul {
+      list-style: none;
+      padding: 0;
+    }
+    .action-list ul li {
+      padding: 9px 0;
+      border-bottom: 1px solid #4ade8022;
+      color: #c0e0d0;
+      font-size: 0.95rem;
+      padding-left: 26px;
+      position: relative;
+    }
+    .action-list ul li::before {
+      content: '✅';
+      position: absolute;
+      left: 0;
+      font-size: 0.9rem;
+    }
+    .action-list ul li:last-child { border-bottom: none; }
+
+    /* Hotline box */
+    .hotline-box {
+      background: linear-gradient(135deg, #0a1020, #0f0a1a);
+      border: 2px solid #7c3aed66;
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin: 32px 0;
+    }
+    .hotline-box .hotline-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #c4b5fd;
+      margin-bottom: 14px;
+    }
+    .hotline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .hotline-item {
+      background: #ffffff0a;
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .hotline-item .name {
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: #e9d5ff;
+      margin-bottom: 4px;
+    }
+    .hotline-item .number {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #db2777;
+    }
+    .hotline-item .desc {
+      font-size: 0.75rem;
+      color: #a090c0;
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    /* Summary box */
+    .summary-box {
+      background: linear-gradient(135deg, #1e0a2e, #0a1a2e);
+      border-radius: 14px;
+      padding: 24px 24px 20px;
+      margin: 32px 0;
+      border: 1px solid #7c3aed55;
+    }
+    .summary-box h3 {
+      color: #f0e0ff;
+      font-size: 1.05rem;
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+    .summary-box p {
+      color: #c8b8e8;
+      font-size: 0.95rem;
+    }
+
+    /* Source link */
+    a {
+      color: #a78bfa;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #db2777;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .article-footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #7c3aed33;
+      font-size: 0.8rem;
+      color: #666;
+    }
+    .article-footer h4 {
+      font-size: 0.82rem;
+      color: #888;
+      margin-bottom: 10px;
+    }
+    .article-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-footer ul li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <span class="tag">SNSいじめ・暴力動画</span>
+
+  <h1>【2026年4月29日更新】「見てた、でも助けられなかった」── 高校トイレの暴行動画がSNSで炎上、止まらない拡散の構造</h1>
+
+  <div class="meta">
+    <span>📅 2026年4月29日</span>
+    <span>🏷 SNSいじめ・学校・プライバシー</span>
+    <span>⏱ 読了約5分</span>
+  </div>
+
+  <!-- Hero banner -->
+  <div class="hero-banner">
+    <span class="hero-emoji">📱🔴</span>
+    <p class="hero-subtitle">
+      2026年年明けから、学校内の暴行動画がXやTikTokで相次いで拡散。<br>
+      政府は緊急会議を開いたが、問題の根はもっと深い。
+    </p>
+  </div>
+
+  <!-- Lead -->
+  <div class="lead">
+    2026年1月、栃木県立高校のトイレで撮影された9秒の動画がXで拡散した。無抵抗の生徒が拳で顔面を殴られ、後頭部を蹴られる映像は瞬く間に数十万回再生され、文部科学省・警察庁・こども家庭庁の緊急会議を招いた。だが問題はその動画1本にとどまらない。「いじめを告発したい」という"歪んだ正義感"から広がる拡散文化、加害者への個人情報さらし、そして学校側の「うちは処罰機関ではない」という姿勢。このトラブルは、Z世代が生きるSNS社会の構造そのものを映し出している。
+  </div>
+
+  <!-- Stats section -->
+  <h2>📊 数字で見る「暴行動画拡散」の深刻度</h2>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <span class="num">9秒</span>
+      <div class="label">拡散のきっかけとなった栃木県立校動画の長さ<br>（2025年12月撮影・2026年1月拡散）</div>
+    </div>
+    <div class="stat-card">
+      <span class="num">数十万回</span>
+      <div class="label">Xで拡散された回数<br>（視聴者が1月4日に県警へ通報）</div>
+    </div>
+    <div class="stat-card">
+      <span class="num">3省庁</span>
+      <div class="label">緊急会議を開催<br>（文科省・こども家庭庁・警察庁）</div>
+    </div>
+    <div class="stat-card">
+      <span class="num">26%</span>
+      <div class="label">20代以下のSNS利用者が<br>何らかのトラブルを経験した割合<br>（総務省調査）</div>
+    </div>
+  </div>
+
+  <!-- Section 1 -->
+  <h2>📹 何が起きた？── 年明けから続く「暴行動画ラッシュ」</h2>
+
+  <p>
+    2026年の年明けとともに、日本のSNSは高校生たちの暴行動画で溢れた。最初に注目を集めたのは栃木県内の県立高校。トイレ内で一人の男子生徒が無抵抗の別の生徒に2度殴り、後頭部を蹴る様子が映った動画だ。動画は2025年12月に撮影されたが、年明けにXへ投稿されると数十万回の視聴を記録。視聴者からの通報を受けた県警が捜査に乗り出した。
+  </p>
+
+  <p>
+    その後も神奈川県立高校の事例など類似動画が相次いで表面化。NHK、東洋経済、日本経済新聞など主要メディアが一斉に報道し、1月16日には文部科学省が緊急オンライン会議を開催。都道府県・政令市の教育長を集め、対応策の確認を行った。警察庁も公式Xアカウントに「一般論で申し上げれば犯罪です」と異例の投稿を行い、拡散への警告を発した。
+  </p>
+
+  <div class="case-list">
+    <div class="case-item">
+      <span class="case-label">栃木県立校ケース</span>
+      <p class="case-text">2025年12月撮影→2026年1月SNS拡散。加害生徒はのちに「本当に申し訳なかった」とコメント。動画には周囲で"はやし立てる"生徒たちも映り込んでいた。</p>
+    </div>
+    <div class="case-item">
+      <span class="case-label">神奈川県立生田東高校ケース</span>
+      <p class="case-text">動画拡散後、学校が「いじめ非該当」と判断したことで再炎上。"いじめ非該当"に怒った視聴者が警察庁チラシ（相談窓口）をSNS投稿し広めるという異例の展開に。</p>
+    </div>
+    <div class="case-item">
+      <span class="case-label">「私刑（リンチ）」問題</span>
+      <p class="case-text">動画拡散後、ネット上では加害生徒と思われる人物の顔写真・氏名・住所が拡散。弁護士は「被害者救済のために個人情報をさらすことは法的に正当化されない」と警鐘を鳴らす。</p>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <h2>🧠 なぜ拡散するのか？「歪んだ正義感」と無力感</h2>
+
+  <p>
+    専門家たちが指摘するのは、動画を拡散する生徒・大人たちの心理だ。東京新聞の取材によると、拡散の背景には「学校は動いてくれない」という被害者・周囲の強い不満がある。担任に相談しても動かない、スクールカウンセラーに訴えても解決しない、そういった経験が積み重なるにつれ、「SNSで晒すしかない」という歪んだ告発文化が生まれているという。
+  </p>
+
+  <p>
+    関西テレビの特集では、教師側の苦悩も語られた。「学校は処罰する機関ではない」という建前のもと、加害生徒を転校させたり退学処分にする権限が学校にはほとんどない。橋下徹氏が「加害者を転校させるべき」と発言して注目を集めたのも、この行き詰まり感を象徴している。coki（公器）の分析では、「撮影行為そのものがいじめの一形態」であり、観衆がスマホを向けることで暴力が"見世物化"されると論じている。
+  </p>
+
+  <!-- Warning box -->
+  <div class="warning-box">
+    <div class="warning-title">⚠️ 動画を「見るだけ」でも知っておくべき法的リスク</div>
+    <ul>
+      <li>暴行動画の撮影・投稿→「暴行罪」「名誉毀損罪」「個人情報保護法違反」の可能性</li>
+      <li>動画を転送・リポスト→「名誉毀損」の"拡散者"として責任を問われるケースも</li>
+      <li>個人情報（氏名・顔写真・学校名）を特定してSNSに投稿→「プライバシー権侵害」「侮辱罪」</li>
+      <li>"いじめ告発"目的でも、事実確認なしに拡散すると「名誉毀損」になりうる</li>
+      <li>未成年であっても、悪質な場合は逮捕・少年鑑別所送致の事例あり</li>
+    </ul>
+  </div>
+
+  <!-- Section 3 -->
+  <h2>💬 Z世代に問う── 「観客」でいることも加担になる？</h2>
+
+  <p>
+    今回の一連の問題で見えてきたのは、暴力そのものと同等に危険な「観衆の存在」だ。トイレで暴力が起きているのを知りながら撮影する、XでRTする、グループLINEで回す。そのひとつひとつが、暴力の被害者をさらに追い詰め、事態を悪化させる。
+  </p>
+
+  <p>
+    一方で、「SNSへの告発がなければ、あの暴力は隠蔽されていた」という見方もある。実際に神奈川の事例では、学校が「いじめ非該当」と判断した後、ネットの抗議が県の再調査を促した側面もある。だからこそ、問題は単純ではない。大切なのは「拡散すれば解決する」という思い込みを手放し、適切な相談先を使うことだ。
+  </p>
+
+  <!-- Action list -->
+  <div class="action-list">
+    <h3>🛡️ あなたが今すぐできる4つのこと</h3>
+    <ul>
+      <li>暴行動画を見ても「リポスト・転送・いいね」はしない。閲覧だけでも動画の拡散アルゴリズムを助けてしまう</li>
+      <li>暴力の現場を見たら「撮影→拡散」でなく、まず大人・専門機関への相談を選ぶ</li>
+      <li>「加害者の個人情報」が回ってきても転送しない。あなたも法的責任を問われうる</li>
+      <li>自分がいじめ・暴力を受けているなら、親・担任・スクールカウンセラー・24時間相談窓口を使う。SNS告発は最後の手段、かつ専門家と相談してから</li>
+    </ul>
+  </div>
+
+  <!-- Hotline box -->
+  <div class="hotline-box">
+    <div class="hotline-title">📞 ひとりで抱え込まないで。相談窓口</div>
+    <div class="hotline-grid">
+      <div class="hotline-item">
+        <div class="name">子どもの人権110番</div>
+        <div class="number">0120-007-110</div>
+        <div class="desc">無料・全国対応<br>平日8:30〜17:15</div>
+      </div>
+      <div class="hotline-item">
+        <div class="name">警察相談専用電話</div>
+        <div class="number">#9110</div>
+        <div class="desc">24時間対応<br>いじめ・ネットトラブル全般</div>
+      </div>
+      <div class="hotline-item">
+        <div class="name">警察庁 SOS47</div>
+        <div class="number">sos47.npa.go.jp</div>
+        <div class="desc">特殊詐欺・SNSトラブル<br>オンライン相談可</div>
+      </div>
+      <div class="hotline-item">
+        <div class="name">24時間子どもSOSダイヤル</div>
+        <div class="number">0120-0-78310</div>
+        <div class="desc">文部科学省・無料<br>いじめに関する相談</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary box -->
+  <div class="summary-box">
+    <h3>📝 まとめ</h3>
+    <p>
+      高校生の暴行動画がSNSで拡散する事件は、2026年の年明けから社会問題化した。学校への不信感・無力感から生まれた"告発文化"と、歪んだ正義感による個人情報さらしが問題を二重に悪化させている。動画を拡散する行為は「被害者支援」にならないどころか、法的リスクを生み出す。大切なのは「拡散より相談」。もし暴力やいじめを目撃したり、自分が被害を受けていると感じたりしたなら、まず信頼できる大人や相談窓口に声をあげることが、最も確実な一歩だ。
+    </p>
+  </div>
+
+  <!-- PR SECTION -->
+  <div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+    <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+    <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+      <div style="flex: 1; min-width: 200px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+          <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+          <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+        </div>
+        <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+        <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+          17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+          <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+        </p>
+        <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+          <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+          <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+          <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+          <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+          <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+          <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+            style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+            くわしくはこちら →
+          </a>
+        </div>
+        <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+          メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+        </p>
+      </div>
+      <div style="flex-shrink: 0; width: 200px;">
+        <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+          alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+  <!-- /PR SECTION -->
+
+  <footer class="article-footer">
+    <h4>📚 参考情報源</h4>
+    <ul>
+      <li><a href="https://www.ktv.jp/news/feature/260114-ijime/" target="_blank" rel="noopener">関西テレビ カンテレ「なぜ学校は暴行動画を止められないのか？」（2026年1月）</a></li>
+      <li><a href="https://news.web.nhk/newsweb/na/na-k10015028611000" target="_blank" rel="noopener">NHKニュース「暴行動画のSNS投稿 速やかな削除を要請へ 関係省庁が緊急会議」</a></li>
+      <li><a href="https://www.jiji.com/jc/article?k=2026022100416&g=soc" target="_blank" rel="noopener">時事ドットコム「暴行動画の拡散、なぜ？ 救済されぬいじめへの不満背景か」</a></li>
+      <li><a href="https://www.tokyo-np.co.jp/article/461791" target="_blank" rel="noopener">東京新聞「相次ぐ『暴行動画』拡散のウラに『ゆがんだ正義感』」</a></li>
+      <li><a href="https://toyokeizai.net/articles/-/928097" target="_blank" rel="noopener">東洋経済オンライン「栃木・県立高校で暴行事案発生、動画がここまで拡散した納得の理由」</a></li>
+      <li><a href="https://www.mext.go.jp/a_menu/shotou/seitoshidou/1414737_00028.htm" target="_blank" rel="noopener">文部科学省「SNS上における暴力行為等の動画の投稿・拡散を受けた緊急の対応等について」（令和8年1月30日）</a></li>
+      <li><a href="https://coki.jp/article/column/66006/" target="_blank" rel="noopener">coki（公器）「高校トイレ内で拡散した暴行動画 集団心理が生んだ『見世物化する暴力』」</a></li>
+    </ul>
+  </footer>
+
+</div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
