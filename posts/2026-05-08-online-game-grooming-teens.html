@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年5月8日更新】「ノリが合う人みつけた♪」──オンラインゲームのチャットから性被害、8人に1人が経験済みの衝撃実態</title>
+  <meta name="description" content="オンラインゲームのチャット機能を悪用した性的グルーミング被害が急増。未成年の13%（8人に1人）が被害経験あり。手口・見分け方・対策をZ世代向けに徹底解説。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* Tag */
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #7c3aed, #db2777);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: bold;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    /* Title */
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2.1rem);
+      font-weight: bold;
+      color: #f0e0ff;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+
+    /* Meta */
+    .meta {
+      font-size: 0.82rem;
+      color: #888;
+      margin-bottom: 28px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .meta span { display: flex; align-items: center; gap: 4px; }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #1a0a2e 0%, #0a0a2a 40%, #1a0518 100%);
+      border: 1px solid #7c3aed44;
+      border-radius: 16px;
+      padding: 48px 32px;
+      text-align: center;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, #7c3aed22 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-emoji {
+      font-size: 4rem;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .hero-banner p {
+      font-size: 1.1rem;
+      color: #c4b5fd;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+    }
+
+    /* Lead */
+    .lead {
+      background: #161628;
+      border-left: 4px solid #db2777;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+      color: #e8d8f8;
+      line-height: 1.9;
+    }
+
+    /* Headings */
+    h2 {
+      font-size: 1.35rem;
+      color: #f0d0ff;
+      margin: 44px 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #7c3aed44;
+    }
+    h3 {
+      font-size: 1.1rem;
+      color: #db2777;
+      margin: 24px 0 12px;
+    }
+
+    p { margin-bottom: 18px; }
+
+    /* Stat Grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 24px 0 32px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1e1040, #280a1e);
+      border: 1px solid #7c3aed55;
+      border-radius: 14px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #db2777;
+      display: block;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 0.82rem;
+      color: #c4b5fd;
+      line-height: 1.5;
+    }
+
+    /* Warning Box */
+    .warning-box {
+      background: linear-gradient(135deg, #2a0a14, #1a0a28);
+      border: 1px solid #db277766;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 28px 0;
+    }
+    .warning-box h3 {
+      color: #f9a8d4;
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+
+    /* Case List */
+    .case-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+    .case-list li {
+      background: #181830;
+      border-left: 3px solid #db2777;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.95rem;
+      color: #d0c0f0;
+    }
+    .case-list li strong { color: #f9a8d4; }
+
+    /* Action List */
+    .action-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+    .action-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: #141428;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+    .action-list li .icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Checklist */
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+    .checklist li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ffffff11;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 0.95rem;
+      color: #d8d8f0;
+    }
+    .checklist li::before { content: '✅'; flex-shrink: 0; }
+
+    /* Hotline Box */
+    .hotline-box {
+      background: linear-gradient(135deg, #0a1a2a, #1a0a2e);
+      border: 1px solid #7c3aed88;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+    .hotline-box h3 {
+      color: #c4b5fd;
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1.05rem;
+    }
+    .hotline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid #ffffff11;
+    }
+    .hotline-item:last-child { border-bottom: none; }
+    .hotline-num {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #db2777;
+      flex-shrink: 0;
+    }
+    .hotline-desc { font-size: 0.88rem; color: #c0c0e0; }
+
+    /* Summary Box */
+    .summary-box {
+      background: linear-gradient(135deg, #1a0530, #0a1a10);
+      border: 1px solid #7c3aed55;
+      border-radius: 14px;
+      padding: 28px;
+      margin: 40px 0;
+    }
+    .summary-box h2 {
+      margin-top: 0;
+      border: none;
+      padding: 0;
+      margin-bottom: 16px;
+      font-size: 1.2rem;
+    }
+    .summary-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .summary-box ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ffffff0d;
+      font-size: 0.95rem;
+      color: #d8d8f0;
+    }
+    .summary-box ul li:last-child { border-bottom: none; }
+    .summary-box ul li::before { content: '💜 '; }
+
+    /* Footer */
+    .article-footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #ffffff15;
+    }
+    .article-footer h3 {
+      color: #888;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+    .article-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-footer ul li {
+      margin-bottom: 8px;
+    }
+    .article-footer ul li a {
+      color: #7c7ccc;
+      font-size: 0.85rem;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .article-footer ul li a:hover { color: #db2777; }
+
+    a { color: #c084fc; }
+    a:hover { color: #f9a8d4; }
+
+    /* Highlight */
+    .highlight { color: #db2777; font-weight: bold; }
+    .highlight-purple { color: #c084fc; font-weight: bold; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <span class="tag">🎮 オンライン安全</span>
+
+  <h1>【2026年5月8日更新】「ノリが合う人みつけた♪」──オンラインゲームのチャットから性被害、8人に1人が経験済みの衝撃実態</h1>
+
+  <div class="meta">
+    <span>📅 2026年5月8日</span>
+    <span>🏷 オンラインゲーム・グルーミング・性被害</span>
+    <span>⏱ 読了約7分</span>
+  </div>
+
+  <!-- Hero Banner -->
+  <div class="hero-banner">
+    <span class="hero-emoji">🎮💬⚠️</span>
+    <p>ゲームで知り合った"優しい人"は、本当に友達？<br>それとも──</p>
+  </div>
+
+  <!-- Lead -->
+  <div class="lead">
+    「ゲームで仲良くなって、DMしてたら会うことになった」──Z世代には日常的な話に聞こえるかもしれない。でも実は、オンラインゲームのチャット機能を入口にした<span class="highlight">「グルーミング（性的手なづけ）」</span>の被害が急増している。未成年の<span class="highlight">8人に1人（13%）</span>がすでに被害を経験しており、警察庁も2025年に緊急注意喚起を発令。恋愛感情と混同しやすい巧妙な手口と、自分を守るリテラシーを解説する。
+  </div>
+
+  <!-- Stats -->
+  <h2>📊 数字で見る衝撃の実態</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <span class="num">13%</span>
+      <span class="label">未成年の8人に1人がオンラインゲームでグルーミング被害を経験（チャイルド・ファンド・ジャパン 2025年調査）</span>
+    </div>
+    <div class="stat-card">
+      <span class="num">42%</span>
+      <span class="label">ゲーム内で見知らぬ人からチャットを受け取ったことがある未成年の割合</span>
+    </div>
+    <div class="stat-card">
+      <span class="num">1,486人</span>
+      <span class="label">2024年にSNS・ゲーム経由で犯罪被害を受けた18歳未満（前年比増、警察庁）</span>
+    </div>
+    <div class="stat-card">
+      <span class="num">167人</span>
+      <span class="label">SNS経由の性犯罪被害を受けた小学生の数（2024年・過去10年で最多）</span>
+    </div>
+  </div>
+
+  <p style="font-size:0.85rem; color:#888; margin-top:-16px;">出典：チャイルド・ファンド・ジャパン 2025年3月調査（対象：13〜25歳1,600名）、警察庁令和6年度まとめ</p>
+
+  <!-- Section 1 -->
+  <h2>🎮 グルーミングとは何か？恋愛と紙一重の「罠」</h2>
+
+  <p>グルーミング（Grooming）とは、加害者が子どもや若者の信頼を段階的に獲得し、最終的に性的な搾取へと誘導する行為のことだ。ゲームや SNS のチャット機能を入口にするのが最近の主流で、「ゲームうまいね！」「気が合うな、もっと話したい」といった他愛のない会話から始まる。</p>
+
+  <p>加害者は次の5段階で関係を築く：</p>
+
+  <ul class="case-list">
+    <li><strong>①ターゲット選定</strong>：プロフィールや発言から孤独・不安を抱えていそうな若者を選ぶ</li>
+    <li><strong>②孤立化</strong>：「あの子たちより俺/私の方が分かってあげられる」と親や友人との関係を引き離す</li>
+    <li><strong>③信頼構築</strong>：ゲームアイテム・ポイント・プレゼントを与え、「特別な存在」と感じさせる</li>
+    <li><strong>④性的接触の正常化</strong>：性的な会話や画像の共有を"普通のこと"と思わせる</li>
+    <li><strong>⑤維持・口止め</strong>：「秘密にして」「あの写真を拡散するぞ」と脅して継続させる</li>
+  </ul>
+
+  <p>2023年7月の刑法改正で「<span class="highlight">グルーミング罪（16歳未満の者に対する面会要求等の罪）</span>」が新設され、法整備は進んだ。しかし、被害件数は増加が止まらない。</p>
+
+  <!-- Section 2 -->
+  <h2>💬 なぜゲームのチャットが危ないのか？</h2>
+
+  <p>オンラインゲームは「出会い系サイト」という意識がないため、警戒心が下がりやすい。特に次の状況が危険信号だ。</p>
+
+  <div class="warning-box">
+    <h3>⚠️ こんな相手・状況には要注意</h3>
+    <ul class="case-list">
+      <li><strong>年齢を聞かずに急速に親密になろうとする</strong>：「何歳かとか関係なくね？」</li>
+      <li><strong>ゲーム外（LINE・Discord・Snapchat）への誘導が早い</strong>：「ここより向こうの方が話せる」</li>
+      <li><strong>プレゼント攻勢</strong>：レアアイテム・ポイント・ギフトカードを惜しみなく贈ってくる</li>
+      <li><strong>秘密の共有を求めてくる</strong>：「親に言わないで」「俺らだけの秘密にしよ」</li>
+      <li><strong>写真・顔出し通話への誘導</strong>：「顔見てみたい」「ビデオ通話しない？」</li>
+      <li><strong>断ると急に冷たくなる・脅す</strong>：「もう友達やめる」「あの写真〇〇に送るぞ」</li>
+    </ul>
+  </div>
+
+  <p>警察庁の<a href="https://www.npa.go.jp/newlyarrived/2025/20250219001.html" target="_blank" rel="noopener">2025年2月の注意喚起資料</a>によれば、被害にあった子どもの最多は<span class="highlight">11歳（71人）、次いで12歳（57人）</span>。だが、チャット内での巧みな「ノリ」や「共感」が、10代後半・20代前半のZ世代にも通用してしまうのが現実だ。</p>
+
+  <!-- Section 3 -->
+  <h2>📱 こんなケースに気をつけろ</h2>
+
+  <p>実際に報告されている被害パターンを紹介する。</p>
+
+  <ul class="case-list">
+    <li><strong>【ケース①：ゲーム仲間から始まる面会要求】</strong><br>人気ゲームでフレンドになり、数週間のやり取りの後「一緒にゲームセンター行こう」と誘われた。会ってみると年齢がかなり上の成人男性だった。</li>
+    <li><strong>【ケース②：プレゼント→画像要求の流れ】</strong><br>ゲームアプリでガチャチケットをもらい続けた後、「俺にも何かくれていいんじゃない？」と自撮り画像を要求された。</li>
+    <li><strong>【ケース③：Discord→性的会話の段階的エスカレート】</strong><br>ゲームサーバーで知り合い、DMが始まったと思ったら徐々に性的な話題が増え、「こっちも送るから向こうも送って」と性的画像の交換を求められた。</li>
+    <li><strong>【ケース④：別れた後のリベンジ脅迫（グルーミング→セクストーション化）】</strong><br>数カ月仲良くしていた相手に送った親密な写真を使って「もっと送らないとバラす」と脅迫に発展した。</li>
+  </ul>
+
+  <!-- Self-protection -->
+  <h2>🛡️ 自分を守るための実践チェックリスト</h2>
+
+  <ul class="checklist">
+    <li>ゲーム内で知り合った人にはリアル情報（学校名・住所・顔写真）を絶対に教えない</li>
+    <li>ゲーム外SNS（LINE・Discord・Snapchat）への誘導は即ブロックの合図と認識する</li>
+    <li>無料プレゼント・ギフト提供には「なぜ？」と疑う。タダのものには裏がある</li>
+    <li>通話・ビデオ通話は断っていい。「普通の友達は顔を見せろとは言わない」</li>
+    <li>「ふたりだけの秘密」は危険フラグ。信頼できる大人や友人に必ず話す</li>
+    <li>送った画像・動画は削除できないと認識する。送る前に「スクリーンショットが流れたら？」を想像する</li>
+    <li>親のペアレンタルコントロール設定やゲーム内のフレンド制限機能を活用する</li>
+    <li>「怖い」「変だと思う」と感じたら即座にブロック・通報し、証拠は消さずに保存する</li>
+  </ul>
+
+  <!-- Actions -->
+  <h2>📣 もし被害にあったら──迷わずここへ</h2>
+
+  <ul class="action-list">
+    <li>
+      <span class="icon">🚔</span>
+      <span><strong>最寄りの警察署、または#9110（警察相談ダイヤル）</strong><br>グルーミング罪は刑事事件。証拠（スクリーンショット、チャット履歴）を保存してから相談しよう。</span>
+    </li>
+    <li>
+      <span class="icon">👮</span>
+      <span><strong>警察庁SOS47</strong>（<a href="https://www.npa.go.jp/bureau/safetylife/sos47/" target="_blank" rel="noopener">npa.go.jp/SOS47</a>）<br>各都道府県警のオンライン相談窓口に直接つながれる。</span>
+    </li>
+    <li>
+      <span class="icon">💬</span>
+      <span><strong>チャイルドライン 0120-99-7777</strong>（18歳以下・毎日16〜21時）<br>性的被害を含むあらゆる悩みに子ども専門スタッフが対応。</span>
+    </li>
+    <li>
+      <span class="icon">🌐</span>
+      <span><strong>インターネット・ホットラインセンター</strong>（<a href="https://www.internethotline.jp/" target="_blank" rel="noopener">internethotline.jp</a>）<br>ゲーム・SNS上の違法コンテンツの通報・相談窓口。</span>
+    </li>
+  </ul>
+
+  <!-- Hotline Box -->
+  <div class="hotline-box">
+    <h3>📞 緊急相談窓口まとめ</h3>
+    <div class="hotline-item">
+      <span class="hotline-num">#9110</span>
+      <div class="hotline-desc">
+        <strong>警察相談ダイヤル</strong><br>
+        24時間・全国対応。性的被害・脅迫・ストーキングなどに対応。
+      </div>
+    </div>
+    <div class="hotline-item">
+      <span class="hotline-num">#8103</span>
+      <div class="hotline-desc">
+        <strong>ヤングテレホン（東京都・各県）</strong><br>
+        10代向け悩み相談。月〜金9〜17時（都道府県によって異なる）。
+      </div>
+    </div>
+    <div class="hotline-item">
+      <span class="hotline-num">0120-99-7777</span>
+      <div class="hotline-desc">
+        <strong>チャイルドライン</strong>（18歳以下）<br>
+        毎日16〜21時。完全無料・匿名OK。
+      </div>
+    </div>
+    <div class="hotline-item">
+      <span class="hotline-num">0570-064-556</span>
+      <div class="hotline-desc">
+        <strong>性犯罪・性暴力被害者のためのワンストップ支援センター（性暴力救援センター）</strong><br>
+        24時間対応の都道府県窓口につながる。
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-box">
+    <h2>💜 まとめ</h2>
+    <ul>
+      <li>オンラインゲームのチャットは「出会い系」ではないという油断が被害を生む</li>
+      <li>未成年の13%（8人に1人）がすでにオンラインゲームでグルーミングを経験済み</li>
+      <li>手口は段階的──プレゼント→信頼構築→性的接触→脅迫、というプロセスを知ることが防衛の第一歩</li>
+      <li>2023年のグルーミング罪新設で犯罪として告訴できるようになった。証拠を消さずに保存して通報を</li>
+      <li>「自分は大丈夫」という思い込みを捨て、気づいたときにすぐ動くことが大切</li>
+    </ul>
+  </div>
+
+  <!-- PR SECTION -->
+  <div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+    <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+    <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+      <div style="flex: 1; min-width: 200px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+          <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+          <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+        </div>
+        <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+        <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+          17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+          <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+        </p>
+        <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+          <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+          <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+          <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+          <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+          <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+          <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+            style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+            くわしくはこちら →
+          </a>
+        </div>
+        <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+          メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+        </p>
+      </div>
+      <div style="flex-shrink: 0; width: 200px;">
+        <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+          alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+  <!-- /PR SECTION -->
+
+  <!-- Footer -->
+  <footer class="article-footer">
+    <h3>📚 参考情報源</h3>
+    <ul>
+      <li><a href="https://www.childfund.or.jp/blog/250314survey" target="_blank" rel="noopener">チャイルド・ファンド・ジャパン「ユース世代1,600名に調査：オンラインゲームで性的手なづけ被害」（2025年3月）</a></li>
+      <li><a href="https://prtimes.jp/main/html/rd/p/000000091.000008076.html" target="_blank" rel="noopener">PRTimes「約8人に1人が経験、オンラインゲームで性的手なづけ被害」</a></li>
+      <li><a href="https://www.npa.go.jp/newlyarrived/2025/20250219001.html" target="_blank" rel="noopener">警察庁「子供が犯罪に巻き込まれるきっかけとなるオンラインゲームに関する注意喚起」（2025年2月）</a></li>
+      <li><a href="https://internet.watch.impress.co.jp/docs/news/2028408.html" target="_blank" rel="noopener">INTERNET Watch「オンラインゲーム上で子どもを狙う犯罪を知り、家族で話し合いを！ 警察庁が呼び掛け」</a></li>
+      <li><a href="https://anshin-game.jp/promise/report/251106.html" target="_blank" rel="noopener">ガンホー・オンライン・エンターテイメント「性被害から子どもを守れ！オンラインゲーム・SNSに潜むグルーミングの手口」</a></li>
+      <li><a href="https://bunshun.jp/articles/-/86523" target="_blank" rel="noopener">文春オンライン「SNSによる小学生の性犯罪被害、過去10年で最多の167人」（2026年）</a></li>
+      <li><a href="https://www.kyobun.co.jp/article/2025032107" target="_blank" rel="noopener">教育新聞「グルーミング『オンラインゲームで経験』 未成年13%」</a></li>
+    </ul>
+  </footer>
+
+</div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
