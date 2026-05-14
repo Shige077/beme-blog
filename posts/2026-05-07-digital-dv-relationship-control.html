@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年5月7日更新】「スマホ見せて」「常に位置情報共有して」──Z世代カップルに広がる"デジタルDV"、交際経験者の5人に1人が被害 | ZenG Blog</title>
+  <meta name="description" content="恋人のスマホを無断でチェック、SNSのパスワード強要、24時間の位置情報監視……これ全部「デジタルDV」です。内閣府調査で交際経験者の18%が被害経験あり。Z世代に多い手口と対策を徹底解説。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    /* タグ */
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: bold;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    /* タイトル */
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 900;
+      line-height: 1.4;
+      color: #f0e6ff;
+      margin-bottom: 16px;
+    }
+
+    /* メタ情報 */
+    .meta {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 32px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .meta span { display: flex; align-items: center; gap: 4px; }
+
+    /* ヒーローバナー */
+    .hero {
+      background: linear-gradient(135deg, #1a0a2e 0%, #2d0f3d 40%, #0a0a2a 100%);
+      border: 1px solid #7c3aed44;
+      border-radius: 16px;
+      padding: 48px 32px;
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, #db277733 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-emoji { font-size: 4rem; display: block; margin-bottom: 12px; }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: #c4b5fd;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+
+    /* リード文 */
+    .lead {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #d0d0ee;
+      border-left: 4px solid #db2777;
+      padding-left: 20px;
+      margin-bottom: 40px;
+      background: #1a0a2e66;
+      padding: 20px 20px 20px 24px;
+      border-radius: 0 10px 10px 0;
+    }
+
+    /* 見出し */
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #f9a8d4;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #db277755;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #c4b5fd;
+      margin: 24px 0 12px;
+    }
+
+    p { margin-bottom: 16px; }
+    a { color: #a78bfa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* 統計カード */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 24px 0 32px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1e0a3a, #0f0f2a);
+      border: 1px solid #7c3aed55;
+      border-radius: 14px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: #a0a0c0;
+      line-height: 1.4;
+    }
+
+    /* 警告ボックス */
+    .warning-box {
+      background: linear-gradient(135deg, #2a0a0a, #1a0a0a);
+      border: 1px solid #ef444455;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .warning-box h3 {
+      color: #fca5a5;
+      margin-top: 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .warning-list {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0 0;
+    }
+    .warning-list li {
+      padding: 8px 0 8px 28px;
+      border-bottom: 1px solid #ef444422;
+      font-size: 0.93rem;
+      color: #f0c8c8;
+      position: relative;
+    }
+    .warning-list li:last-child { border-bottom: none; }
+    .warning-list li::before {
+      content: '⚠️';
+      position: absolute;
+      left: 0;
+      font-size: 0.85rem;
+    }
+
+    /* ケースリスト */
+    .case-list {
+      margin: 20px 0;
+    }
+    .case-item {
+      background: #15102a;
+      border: 1px solid #7c3aed33;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+    .case-label {
+      font-size: 0.72rem;
+      font-weight: bold;
+      color: #db2777;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .case-item p {
+      font-size: 0.92rem;
+      color: #d0c0f0;
+      margin: 0;
+    }
+
+    /* アクションリスト */
+    .action-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+    .action-list li {
+      padding: 10px 0 10px 32px;
+      border-bottom: 1px solid #7c3aed22;
+      font-size: 0.95rem;
+      position: relative;
+    }
+    .action-list li:last-child { border-bottom: none; }
+    .action-list li::before {
+      content: '✅';
+      position: absolute;
+      left: 0;
+    }
+
+    /* 相談窓口 */
+    .hotline-box {
+      background: linear-gradient(135deg, #0a1a2e, #0a0a1e);
+      border: 2px solid #7c3aed;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+    .hotline-box h3 {
+      color: #c4b5fd;
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+    .hotline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid #7c3aed22;
+    }
+    .hotline-item:last-child { border-bottom: none; }
+    .hotline-num {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: #db2777;
+      white-space: nowrap;
+      min-width: 90px;
+    }
+    .hotline-desc {
+      font-size: 0.85rem;
+      color: #c0c0e0;
+      line-height: 1.5;
+    }
+
+    /* まとめボックス */
+    .summary-box {
+      background: linear-gradient(135deg, #1a0f2e, #0f1a2e);
+      border: 1px solid #db277755;
+      border-radius: 14px;
+      padding: 28px;
+      margin: 32px 0;
+    }
+    .summary-box h2 {
+      margin-top: 0;
+      border-bottom-color: #db277755;
+    }
+    .summary-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .summary-box ul li {
+      padding: 8px 0 8px 28px;
+      border-bottom: 1px solid #db277722;
+      position: relative;
+      font-size: 0.95rem;
+    }
+    .summary-box ul li:last-child { border-bottom: none; }
+    .summary-box ul li::before {
+      content: '💜';
+      position: absolute;
+      left: 0;
+    }
+
+    /* フッター */
+    .article-footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #2a2a4a;
+    }
+    .article-footer h3 {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 12px;
+      letter-spacing: 0.05em;
+    }
+    .article-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-footer ul li {
+      padding: 4px 0;
+      font-size: 0.8rem;
+    }
+    .article-footer a { color: #7c3aed; }
+
+    /* レスポンシブ */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.4rem; }
+      .hero { padding: 32px 20px; }
+      .hero-emoji { font-size: 3rem; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .hotline-item { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <span class="tag">💔 デートDV・デジタル暴力</span>
+
+    <h1>【2026年5月7日更新】「スマホ見せて」「常に位置情報共有して」──Z世代カップルに広がる"デジタルDV"、交際経験者の5人に1人が被害</h1>
+
+    <div class="meta">
+      <span>📅 2026年5月7日</span>
+      <span>🏷️ デートDV・デジタル暴力</span>
+      <span>⏱️ 読了目安：6分</span>
+    </div>
+
+    <!-- ヒーローバナー -->
+    <div class="hero">
+      <span class="hero-emoji">📱💢</span>
+      <div class="hero-sub">「これって普通のカップルじゃないの？」<br>──その感覚が一番危ない</div>
+    </div>
+
+    <!-- リード文 -->
+    <div class="lead">
+      恋人から「スマホ見せて」と言われる。LINEの返信が遅いと責められる。自分以外の異性をSNSでブロックさせられる。位置情報共有アプリを24時間入れさせられる。──これらは「愛情深い」行動ではなく、<strong>デジタルDV（テクノロジーを使ったドメスティック・バイオレンス）</strong>です。内閣府の最新調査では交際経験者の約18%、つまり<strong>5人に1人</strong>が交際相手から何らかの被害を受けたと回答。しかし多くのZ世代はそれを「普通のカップルのこと」と思い込んでいます。
+    </div>
+
+    <!-- 統計セクション -->
+    <h2>📊 知っておきたい数字と実態</h2>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <span class="stat-number">18%</span>
+        <div class="stat-label">交際経験者のうち<br>被害経験「あり」<br>（内閣府調査）</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">22.7%</span>
+        <div class="stat-label">女性の被害率<br>（男性は12.0%）<br>女性が2倍近い</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">88%</span>
+        <div class="stat-label">「これって普通？」と<br>認識できていない<br>被害者の割合（推計）</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">1,732</span>
+        <div class="stat-label">SNSに起因する<br>犯罪被害児童数<br>（警察庁・令和6年）</div>
+      </div>
+    </div>
+
+    <!-- 本文セクション1 -->
+    <h2>🤳 「デジタルDV」って何？ 恋愛の延長線上にある支配</h2>
+
+    <p>デジタルDV（テクノロジーを使ったDV）とは、スマートフォン・SNS・GPSアプリなどのデジタルツールを使って交際相手を監視・支配・脅す行為のことです。身体的な暴力と違い、傷が外に出ないため「見えないDV」とも呼ばれます。</p>
+
+    <p>特にZ世代はSNSやスマホが生活の一部であるため、「彼氏・彼女と位置情報共有するのは当たり前」「既読スルーしたら怒るのは仕方ない」と感覚が麻痺してしまいがちです。</p>
+
+    <p>しかし、専門家はこう指摘します。「相談室に来る学生たちの多くは、自分がデジタルDVの被害者だという認識がなく、単なるカップルのトラブルと捉えている」──(<a href="https://www.moneypost.jp/1139721" target="_blank" rel="noopener">マネーポストWEB</a>）。気づかないまま関係が続くと、精神的ダメージが蓄積し、自尊心の低下・うつ・PTSD等を引き起こすことも明らかになっています。</p>
+
+    <!-- 手口リスト -->
+    <div class="warning-box">
+      <h3>🚨 デジタルDVの典型的な手口リスト</h3>
+      <ul class="warning-list">
+        <li>「パスワード教えて。隠すってことは浮気してるってことだよね」と迫る</li>
+        <li>LINEやDMを勝手にチェックし、異性との会話に激怒する</li>
+        <li>SNSのフォロー・フォロワーに干渉し、異性をブロックさせる</li>
+        <li>位置情報共有アプリ（whooなど）の常時入れさせ、移動先を監視する</li>
+        <li>「なんでオフにしてたの？」と機内モードにしただけで問い詰める</li>
+        <li>性的な画像や動画を「愛の証明として」送るよう要求する</li>
+        <li>投稿に「いいね」した相手や、ストーリーズの閲覧者を一人ずつ確認する</li>
+        <li>「浮気しているなら証拠を見せろ」と逆に証明を要求してくる</li>
+      </ul>
+    </div>
+
+    <!-- 本文セクション2 -->
+    <h2>💬 リアルな被害ケース：「これってDVだったの？」</h2>
+
+    <div class="case-list">
+      <div class="case-item">
+        <div class="case-label">CASE 01 ／ 大学2年・女性</div>
+        <p>「彼氏にwhooを入れさせられ、アルバイト中もどこにいるかチェックされてた。カフェで友達と会ったら『なんであの場所にいたの』と1時間問い詰められた。別れたいけど、このままどこにいるかバレてるのが怖い」</p>
+      </div>
+      <div class="case-item">
+        <div class="case-label">CASE 02 ／ 高校3年・男性</div>
+        <p>「彼女が俺のInstagramを毎日チェックして、知らない女のアカウントから『いいね』が来てたら怒り出す。もう新しい投稿するのが怖くてアカウント放置してる。友達からは『監視されすぎ』って言われて初めて変だと気づいた」</p>
+      </div>
+      <div class="case-item">
+        <div class="case-label">CASE 03 ／ 専門学校・女性</div>
+        <p>「交際2か月で『LINEのパスワードを共有してほしい』と言われた。断ったら『隠し事があるってことだよね』と責められ続けた結果、教えてしまった。その後は毎晩LINEをチェックされるようになり、友達への愚痴も全部バレた」</p>
+      </div>
+    </div>
+
+    <!-- 本文セクション3 -->
+    <h2>🔍 なぜ気づきにくい？"愛情" に見せかける3つの罠</h2>
+
+    <p>デジタルDVが発覚しにくい理由の一つは、<strong>「愛されているから監視される」という誤った信念</strong>が植え付けられるからです。支配的なパートナーは次のような言葉で行動を正当化します。</p>
+
+    <h3>罠①「心配だから」という大義名分</h3>
+    <p>「位置情報を共有してほしいのは、君のことが心配だから」──最初はそう聞こえます。しかし、これは相手をコントロールするための口実です。本当の心配は、位置情報の「常時監視」ではなく、信頼のある対話で解決できます。</p>
+
+    <h3>罠②「普通のカップルはこうする」という同調圧力</h3>
+    <p>「付き合ってるんだからパスワードを教えるのは当然」「カップルで位置情報共有するのは常識」──SNSや友人の話を通じて、こうした価値観が"普通"のように広まっています。しかし、どんな親密な関係でもプライバシーは守られる権利があります。</p>
+
+    <h3>罠③エスカレートが緩やかで気づかない</h3>
+    <p>最初は「既読ついたら返信して」という程度だったものが、徐々に「30分以上遅いのは浮気の証拠」「スマホを見えるところに置いておいて」と要求がエスカレートしていきます。一段ずつ上がる「温めのカエル」現象です。</p>
+
+    <!-- 自分を守る実践リスト -->
+    <h2>🛡️ 自分を守るための行動チェックリスト</h2>
+
+    <ul class="action-list">
+      <li><strong>境界線を言語化する：</strong>「スマホは自分のプライベート空間」と、交際を始める前に自分の中でルールを決めておく</li>
+      <li><strong>「これって普通？」と第三者に相談する：</strong>信頼できる友人や相談窓口に話すだけで、客観的に状況を見られる</li>
+      <li><strong>位置情報アプリは「相互同意」が大前提：</strong>どちらか一方だけが強制されているなら、それはコントロールのサイン</li>
+      <li><strong>SNS・LINEのパスワードは絶対に教えない：</strong>愛情の証明は、パスワードではなく誠実な対話でできる</li>
+      <li><strong>「嫌だ」と言えない関係を見直す：</strong>断ったときに激怒したり泣いて責めるなら、それは愛ではなく支配</li>
+      <li><strong>スクリーンショットで証拠保存：</strong>脅迫的なメッセージや要求のやりとりは削除せず保存しておく</li>
+      <li><strong>一人で抱え込まない：</strong>「大げさかも」と思っても、相談窓口への電話・チャットは匿名でOK</li>
+    </ul>
+
+    <!-- 相談窓口 -->
+    <div class="hotline-box">
+      <h3>📞 困ったときの相談窓口</h3>
+      <div class="hotline-item">
+        <div class="hotline-num">#8891</div>
+        <div class="hotline-desc"><strong>DV相談ナビ（配偶者暴力相談支援センター案内）</strong><br>最寄りの相談窓口につないでくれる。無料・匿名OK。</div>
+      </div>
+      <div class="hotline-item">
+        <div class="hotline-num">#9110</div>
+        <div class="hotline-desc"><strong>警察相談専用電話</strong><br>性的な画像の強要・脅迫など、犯罪性が疑われるケースは警察へ。24時間対応。</div>
+      </div>
+      <div class="hotline-item">
+        <div class="hotline-num">SOS47</div>
+        <div class="hotline-desc"><strong>警察庁 SOS47（<a href="https://www.npa.go.jp/bureau/safetylife/sos47/" target="_blank" rel="noopener">公式サイト</a>）</strong><br>SNS詐欺・特殊詐欺・性的被害など幅広いネットトラブルに対応。</div>
+      </div>
+      <div class="hotline-item">
+        <div class="hotline-num">内閣府</div>
+        <div class="hotline-desc"><strong>男女共同参画局 DV相談（<a href="https://www.gender.go.jp/policy/no_violence/dv_portal.html" target="_blank" rel="noopener">公式サイト</a>）</strong><br>オンラインチャット相談あり。10代〜20代の相談も多数受付。</div>
+      </div>
+      <div class="hotline-item">
+        <div class="hotline-num">LINE相談</div>
+        <div class="hotline-desc"><strong>よりそいホットライン（<a href="https://www.since2011.net/yorisoi/" target="_blank" rel="noopener">公式サイト</a>）</strong><br>LINEで相談可能。DV・ハラスメント・性的被害など対応。匿名OK。</div>
+      </div>
+    </div>
+
+    <!-- まとめ -->
+    <div class="summary-box">
+      <h2>📝 まとめ</h2>
+      <ul>
+        <li>「スマホ見せて」「パスワード教えて」「位置情報ずっと共有して」──これらはデジタルDVの典型的な手口</li>
+        <li>内閣府調査で交際経験者の18%（女性は22.7%）が被害経験あり。決して珍しいことではない</li>
+        <li>被害者の多くは「普通のカップルのこと」と思い込んでいる。第三者の目線が大切</li>
+        <li>プライバシーを守ることは不誠実ではない。「嫌だ」と言える関係こそが健全</li>
+        <li>一人で悩まず、相談窓口（#8891・#9110・よりそいホットライン）に連絡を</li>
+      </ul>
+    </div>
+
+    <!-- PR SECTION -->
+    <div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+      <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+      <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+        <div style="flex: 1; min-width: 200px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+            <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+          </div>
+          <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+          <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+            17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+            <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+            <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+            <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+            <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+            <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+            <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+            <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+              style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+              くわしくはこちら →
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+            メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+          </p>
+        </div>
+        <div style="flex-shrink: 0; width: 200px;">
+          <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+            alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+    <!-- /PR SECTION -->
+
+    <!-- フッター -->
+    <footer class="article-footer">
+      <h3>参考情報源</h3>
+      <ul>
+        <li><a href="https://www.moneypost.jp/1139721" target="_blank" rel="noopener">マネーポストWEB「交際相手からの『デートDV』に苦しめられる若者たち」</a></li>
+        <li><a href="https://www.gender.go.jp/policy/no_violence/dv_portal.html" target="_blank" rel="noopener">内閣府男女共同参画局 配偶者暴力（DV）相談窓口</a></li>
+        <li><a href="https://mirai-medical.clinic/date-dv/" target="_blank" rel="noopener">これってデートDV？気づきにくい兆候や具体例、相談先まで（みらい医療クリニック）</a></li>
+        <li><a href="https://japansecuritysummit.org/2026/04/14200/" target="_blank" rel="noopener">総務省「インターネットトラブル事例集」2026年版（JAPANSecuritySummit）</a></li>
+        <li><a href="https://www.npa.go.jp/bureau/safetylife/sos47/" target="_blank" rel="noopener">警察庁 SOS47特殊詐欺・ネットトラブル対策ページ</a></li>
+        <li><a href="https://www.moneypost.jp/894764" target="_blank" rel="noopener">マネーポストWEB「GPSアプリで相互監視…若い世代に浸透する"常時接続SNS"に潜むリスク」</a></li>
+        <li><a href="https://toyokeizai.net/articles/-/229821" target="_blank" rel="noopener">東洋経済オンライン「恋人や伴侶『デジタル監視』のおぞましい実態」</a></li>
+      </ul>
+    </footer>
+
+  </div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
