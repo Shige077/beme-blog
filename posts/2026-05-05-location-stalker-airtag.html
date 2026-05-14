@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年5月5日更新】「好きな人の位置情報、こっそり見てない？」──AirTag・SNS追跡ストーカーが急増、2026年3月に改正法が施行された今こそ知るべきこと</title>
+  <meta name="description" content="AirTagを元カレにカバンに仕込まれた、Instagramの投稿から住所を特定された――SNS位置情報を悪用したストーカー被害が急増。2026年3月施行のストーカー規制法改正で何が変わったか、Z世代が今すぐやるべき対策を解説。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    /* タグチップ */
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: bold;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 1.65rem;
+      font-weight: bold;
+      color: #f3e8ff;
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: #8888aa;
+      margin-bottom: 28px;
+    }
+    .meta span { margin-right: 16px; }
+
+    /* ヒーローバナー */
+    .hero {
+      background: linear-gradient(135deg, #1a0a2e 0%, #0d0d1f 40%, #1f0a2e 100%);
+      border: 1px solid #7c3aed44;
+      border-radius: 16px;
+      padding: 48px 24px;
+      text-align: center;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, #db277733, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-emoji {
+      font-size: 3.5rem;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: #c4b5fd;
+      font-weight: bold;
+    }
+
+    /* リード文 */
+    .lead {
+      background: linear-gradient(135deg, #1a0826 0%, #0f0f1a 100%);
+      border-left: 4px solid #db2777;
+      border-radius: 0 10px 10px 0;
+      padding: 20px 22px;
+      margin-bottom: 36px;
+      font-size: 1.05rem;
+      color: #ddd0f8;
+      line-height: 1.9;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: #f9a8d4;
+      font-weight: bold;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #7c3aed33;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      color: #c4b5fd;
+      font-weight: bold;
+      margin: 24px 0 10px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #d8d8f0;
+    }
+
+    a {
+      color: #f472b6;
+      text-decoration: underline;
+    }
+    a:hover { color: #db2777; }
+
+    /* 統計グリッド */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 20px 0 32px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1e0b30, #0d1a2e);
+      border: 1px solid #7c3aed55;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      display: block;
+      line-height: 1.2;
+    }
+    .stat-unit {
+      font-size: 0.8rem;
+      color: #c4b5fd;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: #aaa0cc;
+    }
+
+    /* 警告ボックス */
+    .warning-box {
+      background: linear-gradient(135deg, #2a0a0a, #1a0820);
+      border: 1px solid #db277766;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .warning-box .warning-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fca5a5;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .case-list {
+      list-style: none;
+      padding: 0;
+    }
+    .case-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #ffffff11;
+      color: #d0c8e8;
+      padding-left: 4px;
+      font-size: 0.95rem;
+    }
+    .case-list li:last-child { border-bottom: none; }
+    .case-list li strong { color: #f9a8d4; }
+
+    /* アクションリスト */
+    .action-list {
+      background: linear-gradient(135deg, #0a1a0e, #0f0f1a);
+      border: 1px solid #4ade8066;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin: 28px 0;
+    }
+    .action-list .action-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #86efac;
+      margin-bottom: 14px;
+    }
+    .checklist {
+      list-style: none;
+      padding: 0;
+    }
+    .checklist li {
+      padding: 8px 0;
+      color: #d0f0d8;
+      font-size: 0.93rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .checklist li::before {
+      content: '✅';
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* 相談窓口 */
+    .hotline-box {
+      background: linear-gradient(135deg, #0a0a2a, #1a0838);
+      border: 2px solid #7c3aed;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 36px 0;
+    }
+    .hotline-box h3 {
+      color: #c4b5fd;
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+    .hotline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #7c3aed33;
+    }
+    .hotline-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .hotline-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .hotline-name { font-weight: bold; color: #e9d5ff; font-size: 0.95rem; }
+    .hotline-desc { font-size: 0.83rem; color: #aaa0cc; margin-top: 2px; }
+    .hotline-number { font-size: 1.1rem; font-weight: bold; color: #f9a8d4; margin-top: 4px; }
+
+    /* まとめ */
+    .summary-box {
+      background: linear-gradient(135deg, #0d0b20, #1a0a28);
+      border: 1px solid #db277744;
+      border-radius: 14px;
+      padding: 26px 24px;
+      margin: 36px 0;
+    }
+    .summary-box h3 {
+      color: #f9a8d4;
+      margin-top: 0;
+      font-size: 1.05rem;
+    }
+    .summary-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .summary-box ul li {
+      padding: 7px 0;
+      color: #d8d0f0;
+      font-size: 0.93rem;
+      border-bottom: 1px solid #ffffff0d;
+    }
+    .summary-box ul li:last-child { border-bottom: none; }
+    .summary-box ul li::before { content: '▶ '; color: #db2777; }
+
+    /* フッター */
+    .article-footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #ffffff11;
+      font-size: 0.78rem;
+      color: #666688;
+    }
+    .article-footer h4 {
+      color: #8888aa;
+      margin-bottom: 10px;
+      font-size: 0.8rem;
+    }
+    .article-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-footer ul li {
+      margin-bottom: 5px;
+    }
+
+    .highlight { color: #fbbf24; font-weight: bold; }
+    .accent { color: #db2777; font-weight: bold; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.35rem; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <span class="tag">🔍 SNS・ストーカー</span>
+
+  <h1>【2026年5月5日更新】「好きな人の位置情報、こっそり見てない？」──AirTag・SNS追跡ストーカーが急増、2026年3月に改正法が施行された今こそ知るべきこと</h1>
+
+  <div class="meta">
+    <span>📅 2026年5月5日</span>
+    <span>🏷 ストーカー・位置情報・SNSトラブル</span>
+  </div>
+
+  <!-- ヒーローバナー -->
+  <div class="hero">
+    <span class="hero-emoji">📍🚨</span>
+    <div class="hero-sub">カバンの中に小さなタグ1枚。<br>元彼はあなたの「今いる場所」を全部知っていた——</div>
+  </div>
+
+  <!-- リード文 -->
+  <div class="lead">
+    「別れたのに毎日行き先がバレてた」「Instagramの写真から自宅マンションを特定された」。SNSと小型GPSタグが組み合わさって生まれた<span class="accent">新世代のストーキング</span>が、Z世代の恋愛シーンに静かに忍び込んでいる。AirTagなどの紛失防止タグを悪用した相談件数は2022年から2024年で<span class="highlight">約3倍</span>に急増。2026年3月10日にはストーカー規制法の改正が全面施行され、ようやく法律が現実に追いついた——でも、あなた自身の行動を変えなければ守れない。
+  </div>
+
+  <!-- 統計セクション -->
+  <h2>📊 これが「令和ストーキング」のリアルな数字</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <span class="stat-number">3倍</span>
+      <span class="stat-unit">2022年→2024年</span>
+      <span class="stat-label">AirTag悪用の相談件数増加率<br>（113件→370件）</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">1,751件</span>
+      <span class="stat-unit">年間相談数</span>
+      <span class="stat-label">ストーカー相談件数<br>前年比＋20.3%増加</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">65%</span>
+      <span class="stat-unit">被害者の年代</span>
+      <span class="stat-label">20〜30代が全体の<br>約6.5割を占める</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">2026/3/10</span>
+      <span class="stat-unit">法改正施行日</span>
+      <span class="stat-label">ストーカー規制法<br>改正法が全面施行</span>
+    </div>
+  </div>
+
+  <!-- 本文セクション1 -->
+  <h2>🔋 「AirTag1個」でここまでできてしまう</h2>
+
+  <p>Apple社のAirTagは本来、財布や鍵などの紛失を防ぐためのデバイスだ。縦横2.8cm・わずか11gのコイン型タグで、Bluetoothと<strong>世界中10億台超のiPhoneが参加する匿名ネットワーク（Find My）</strong>を介して、持ち物の位置を数メートル精度で追跡できる。便利な反面、悪用も容易だ。バッグのポケット、車のホイールアーチ、コートの裏地——気づかない場所に仕込めば、相手はリアルタイムの「ストーカーマップ」を手に入れることができる。</p>
+
+  <p>実際にSNSには「元カノのバッグにAirTagを入れた」「追いかけられている気がしてコンビニで確認したら本当に出てきた」といった投稿が後を絶たない。警察庁によると、<span class="accent">紛失防止タグ悪用の相談件数は2025年9月時点ですでに前年（370件）を上回るペース</span>で増加している。</p>
+
+  <h3>SNS投稿の「背景」から住所が割れる</h3>
+  <p>位置情報の流出はAirTagだけではない。<strong>Instagram・TikTokに投稿した写真や動画の「映り込み情報」</strong>から現在地が特定されるケースも急増している。窓の外の景色、ポストに書かれた番地、電柱の住所表記、店のレシート……。特定屋と呼ばれるアカウントがSNSで依頼を受け、数時間以内に住所を割り出す事例も複数報告されている。</p>
+
+  <p>さらに、スマートフォンの写真には撮影時の<strong>GPS座標（EXIFデータ）</strong>が埋め込まれている場合がある。設定を変えずに写真を共有・投稿すると、そのファイルを受け取った側が無料ツールで座標を読み取れる。元交際相手へのメッセージに添付した「ふつうの写真」が、行動パターンの特定に使われることもある。</p>
+
+  <!-- 本文セクション2 -->
+  <h2>⚖️ 2026年3月に改正されたストーカー規制法、何が変わったか</h2>
+
+  <p>2026年3月10日、ストーカー規制法の改正法が<span class="highlight">全面施行</span>された。これまで「紛失防止タグを使った追跡」は規制の"グレーゾーン"に置かれていたが、今回の改正で明確に規制対象となった。</p>
+
+  <p>主な改正ポイントは以下の通り。</p>
+
+  <ul style="padding-left: 20px; margin-bottom: 16px; color: #d0c8e8;">
+    <li style="margin-bottom: 8px; color: #d0c8e8;">📌 <strong style="color: #f9a8d4;">紛失防止タグ（AirTag等）を無断で取り付け・追跡する行為が明文で違法化</strong></li>
+    <li style="margin-bottom: 8px; color: #d0c8e8;">📌 <strong style="color: #f9a8d4;">被害者のSNSアカウント・住所・勤務先などを加害者に提供することを禁止</strong>（警察が「情報提供しないよう要請」できる仕組みも新設）</li>
+    <li style="margin-bottom: 8px; color: #d0c8e8;">📌 職場・学校による被害者支援（勤務時間の変更など）が<strong style="color: #f9a8d4;">努力義務</strong>に</li>
+    <li style="margin-bottom: 8px; color: #d0c8e8;">📌 ストーカー行為の被害者情報をホームページや社内に<strong style="color: #f9a8d4;">公表しないよう配慮</strong>することも義務化</li>
+  </ul>
+
+  <p>法律は整った。しかし、<span class="accent">「やられてから警察に相談」では手遅れになることもある</span>。被害を受ける前に自分の設定と行動を見直すことが何より大切だ。</p>
+
+  <!-- 手口・注意点 -->
+  <h2>⚠️ こんな手口に要注意「令和ストーキング」あるあるパターン</h2>
+
+  <div class="warning-box">
+    <div class="warning-title">⚠️ よくある5つの手口</div>
+    <ul class="case-list">
+      <li><strong>①「タグ仕込み型」</strong>──別れ際に荷物・車・傘にAirTag/スマートタグを仕込み、その後の行動を追跡。相手が何日も気づかないケースも多い。</li>
+      <li><strong>②「特定屋依頼型」</strong>──SNSの特定屋アカウントに数百〜数千円を払い、投稿写真・動画から住所や勤務先を割り出してもらう。匿名で依頼できるため被害届が出にくい。</li>
+      <li><strong>③「EXIF読み取り型」</strong>──送ってもらった写真のEXIFデータからGPS座標を読み取る。無料アプリで即座に確認できる。</li>
+      <li><strong>④「SNS監視＆逆探知型」</strong>──InstagramのストーリーやX（旧Twitter）のリアルタイム投稿を監視し、背景・地名・交通機関から居場所を特定。駅や店で待ち伏せ。</li>
+      <li><strong>⑤「生活リズム分析型」</strong>──SNSの投稿時刻・登校/退勤のパターン・「〇〇に来た」系の投稿をまとめ、週単位の行動スケジュールを把握する。</li>
+    </ul>
+  </div>
+
+  <!-- 自分を守るリスト -->
+  <h2>🛡️ 今すぐできる「位置情報ストーキング」対策リスト</h2>
+
+  <div class="action-list">
+    <div class="action-title">📋 自分を守る10のアクション</div>
+    <ul class="checklist">
+      <li>iPhoneの「探す」アプリで近くに知らないAirTagがないか定期的に確認する（Androidは「Tracker Detect」アプリを使用）</li>
+      <li>Instagramの投稿設定で「位置情報を追加」をデフォルトオフにする</li>
+      <li>写真の設定（iPhone：設定→プライバシー→位置情報サービス→カメラ→「しない」）でEXIFにGPSが埋め込まれないようにする</li>
+      <li>SNSのアカウントを「非公開」にし、フォロワーを定期的に見直す</li>
+      <li>「今〇〇駅」「今日は〇〇にいます」などリアルタイムの位置情報を匂わせる投稿を控える</li>
+      <li>自撮り・店のレシート・窓の外・電柱など住所が特定できる要素を映り込ませない</li>
+      <li>別れた相手への写真共有は即座に停止し、共有アルバムも解除する</li>
+      <li>LINEの「現在地を送信」やInstagramの「Live Location」機能を元交際相手と共有したまま放置しない</li>
+      <li>不審に思ったらすぐに持ち物・バッグ・車を点検し、知らないタグがないか確認する</li>
+      <li>もし被害を受けたら証拠（スクリーンショット・写真）を保存し、早めに警察・相談窓口へ</li>
+    </ul>
+  </div>
+
+  <!-- 本文セクション3 -->
+  <h2>💬 Z世代の「位置情報シェア文化」が招くリスク</h2>
+
+  <p>Z世代の間では、好きな人や友達と<strong>Google マップの「位置情報共有」やSnapchatの「Snap Map」</strong>を使って互いの居場所を常時シェアする文化が定着している。付き合っている間は"つながっている感"として心地よく感じられる一方で、<span class="accent">別れた後も設定を解除し忘れてそのままにしている</span>ケースが後を絶たない。</p>
+
+  <p>「別れてから半年、彼が『今日はあの店にいるね』と連絡してきてゾッとした」という体験談は決して他人事ではない。恋愛が終わったら、<strong>まず位置情報の共有設定を全て確認してリセットする</strong>ことが鉄則だ。</p>
+
+  <!-- 相談窓口 -->
+  <div class="hotline-box">
+    <h3>📞 ひとりで抱え込まないで――相談窓口一覧</h3>
+
+    <div class="hotline-item">
+      <div class="hotline-icon">🚔</div>
+      <div>
+        <div class="hotline-name">警察相談専用電話（#9110）</div>
+        <div class="hotline-desc">ストーカー被害・位置情報の追跡被害など、まずここへ。24時間ではないが全国対応。緊急時は110番。</div>
+        <div class="hotline-number">#9110</div>
+      </div>
+    </div>
+
+    <div class="hotline-item">
+      <div class="hotline-icon">💻</div>
+      <div>
+        <div class="hotline-name">警察庁 SOS47（SNS型被害総合相談）</div>
+        <div class="hotline-desc">SNSを使った犯罪被害の相談窓口。24時間受付のオンライン相談も可能。</div>
+        <div class="hotline-number"><a href="https://www.npa.go.jp/bureau/safetylife/sos47/" target="_blank" rel="noopener">npa.go.jp/bureau/safetylife/sos47</a></div>
+      </div>
+    </div>
+
+    <div class="hotline-item">
+      <div class="hotline-icon">🆘</div>
+      <div>
+        <div class="hotline-name">配偶者暴力相談支援センター</div>
+        <div class="hotline-desc">DV・元交際相手からのストーキングも対応。各都道府県に設置。</div>
+        <div class="hotline-number"><a href="https://www.gender.go.jp/policy/no_violence/e-vaw/soudankikan/01.html" target="_blank" rel="noopener">内閣府DVサポートナビ</a></div>
+      </div>
+    </div>
+
+    <div class="hotline-item">
+      <div class="hotline-icon">📱</div>
+      <div>
+        <div class="hotline-name">よりそいホットライン</div>
+        <div class="hotline-desc">24時間・無料。孤立・恋愛トラブルなど幅広く相談可能。</div>
+        <div class="hotline-number">0120-279-338</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- まとめ -->
+  <div class="summary-box">
+    <h3>📝 この記事のまとめ</h3>
+    <ul>
+      <li>AirTagなど紛失防止タグの悪用相談が2022年比で約3倍（370件超、2024年）に急増</li>
+      <li>SNS投稿の映り込み・EXIFデータ・リアルタイム位置情報など「情報の組み合わせ」で住所を特定される</li>
+      <li>2026年3月10日施行のストーカー規制法改正でタグ追跡・被害者情報の提供が明文で違法に</li>
+      <li>Z世代に多い「位置情報シェア」は別れた後も設定が残りやすい——まず解除の確認を</li>
+      <li>少しでも不安を感じたら#9110・SOS47へ。証拠を保存して早めの相談が大切</li>
+    </ul>
+  </div>
+
+  <!-- PR SECTION -->
+  <div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+    <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+    <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+      <div style="flex: 1; min-width: 200px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+          <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+          <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+        </div>
+        <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+        <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+          17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+          <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+        </p>
+        <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+          <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+          <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+          <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+          <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+          <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+          <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+            style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+            くわしくはこちら →
+          </a>
+        </div>
+        <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+          メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+        </p>
+      </div>
+      <div style="flex-shrink: 0; width: 200px;">
+        <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+          alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+  <!-- /PR SECTION -->
+
+  <footer class="article-footer">
+    <h4>📚 参考情報源</h4>
+    <ul>
+      <li><a href="https://granlaw.jp/antistalkingact-amdt-gps/" target="_blank" rel="noopener">ストーカー規制法の改正とは？AirTagやGPSは違法？2026年3月全面施行後の注意点（グラン法律事務所）</a></li>
+      <li><a href="https://granlaw.jp/antistalkingact-amdt-sns/" target="_blank" rel="noopener">ストーカー規制法とSNSの関係は？2026年3月全面施行で強化された被害者保護を解説（グラン法律事務所）</a></li>
+      <li><a href="https://www.npa.go.jp/bureau/safetylife/stalker/kaisei/index.html" target="_blank" rel="noopener">ストーカー規制法が改正されました！（警察庁）</a></li>
+      <li><a href="https://www.gov-online.go.jp/article/202603/entry-11158.html" target="_blank" rel="noopener">ストーカー行為は犯罪です！迷わず警察に相談を（政府広報オンライン）</a></li>
+      <li><a href="https://news.yahoo.co.jp/articles/727af3af8e6efe3ee50a059df33cdd5a69f489d2" target="_blank" rel="noopener">ついに「AirTag悪用」が法規制へ これまでストーカー規制の対象外だったワケ（CNET Japan / Yahoo!ニュース）</a></li>
+      <li><a href="https://www.keishicho.metro.tokyo.lg.jp/about_mpd/jokyo_tokei/kakushu/stalker.html" target="_blank" rel="noopener">ストーカー事案の概況（警視庁）</a></li>
+      <li><a href="https://www.soumu.go.jp/main_sosiki/cybersecurity/kokumin/case/end_user/02/" target="_blank" rel="noopener">ネットストーカーに注意（総務省 国民のためのサイバーセキュリティサイト）</a></li>
+    </ul>
+    <p style="margin-top: 16px;">※本記事は公開情報をもとに作成しています。被害を受けた場合は必ず専門機関にご相談ください。</p>
+  </footer>
+
+</div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
