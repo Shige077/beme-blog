@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年5月3日更新】マッチングアプリの「運命の出会い」が罠だった――ロマンス詐欺被害が過去最悪、Z世代も標的に | ZenG Blog</title>
+  <meta name="description" content="マッチングアプリやSNSを介したロマンス詐欺の被害が急増。2025年の被害総額は1,370億円超。Z世代が知っておくべき手口・見分け方・対策を徹底解説。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      line-height: 1.8;
+      padding: 0 16px 60px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+
+    /* Tag chip */
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: bold;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: bold;
+      color: #f0e6ff;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+
+    /* Meta */
+    .meta {
+      font-size: 0.8rem;
+      color: #9090b0;
+      margin-bottom: 28px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* Hero banner */
+    .hero-banner {
+      width: 100%;
+      height: 220px;
+      background: linear-gradient(135deg, #1a0530 0%, #3b0764 40%, #831843 100%);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      margin-bottom: 32px;
+      gap: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(219,39,119,0.3) 0%, transparent 60%),
+                  radial-gradient(circle at 70% 50%, rgba(124,58,237,0.3) 0%, transparent 60%);
+    }
+    .hero-banner .hero-text {
+      font-size: 1rem;
+      color: #f9a8d4;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-banner .hero-emoji {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Lead */
+    .lead {
+      font-size: 1.05rem;
+      color: #c8bfe0;
+      border-left: 3px solid #db2777;
+      padding-left: 16px;
+      margin-bottom: 36px;
+      line-height: 1.9;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #f0d8ff;
+      margin: 36px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #2a1a4a;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #e0c8ff;
+      margin: 24px 0 10px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #d0d0ec;
+    }
+
+    a {
+      color: #c084fc;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    /* Stat grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 20px 0 32px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1a0a2e, #0d1a2e);
+      border: 1px solid #7c3aed44;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-card .stat-num {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .stat-card .stat-label {
+      font-size: 0.78rem;
+      color: #9090b0;
+      line-height: 1.4;
+    }
+
+    /* Warning box */
+    .warning-box {
+      background: linear-gradient(135deg, #2d0a0a, #1a0a1e);
+      border: 1px solid #ef4444aa;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .warning-box .warning-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fca5a5;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Case list */
+    .case-list {
+      list-style: none;
+      margin: 12px 0 24px;
+      padding: 0;
+    }
+    .case-list li {
+      background: #1a1030;
+      border-left: 3px solid #7c3aed;
+      padding: 12px 16px;
+      margin-bottom: 10px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.93rem;
+      color: #d0c8f0;
+    }
+    .case-list li strong {
+      color: #f9a8d4;
+    }
+
+    /* Action list / Checklist */
+    .action-list {
+      list-style: none;
+      margin: 12px 0 24px;
+      padding: 0;
+    }
+    .action-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #2a1a4a;
+      font-size: 0.93rem;
+      color: #d0d0ec;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .action-list li:last-child { border-bottom: none; }
+    .action-list li .check-icon {
+      color: #4ade80;
+      font-weight: bold;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Hotline box */
+    .hotline-box {
+      background: linear-gradient(135deg, #0a1a2d, #0d0a2d);
+      border: 1px solid #3b82f6aa;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .hotline-box .hotline-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #93c5fd;
+      margin-bottom: 12px;
+    }
+    .hotline-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #1a2a4a;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .hotline-item:last-child { border-bottom: none; }
+    .hotline-name { font-size: 0.9rem; color: #c0d8f0; }
+    .hotline-num {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #60a5fa;
+    }
+    .hotline-desc { font-size: 0.75rem; color: #8090a0; width: 100%; }
+
+    /* Summary box */
+    .summary-box {
+      background: linear-gradient(135deg, #0a1a0a, #1a0a2e);
+      border: 1px solid #4ade8066;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+    .summary-box h3 {
+      color: #86efac;
+      margin-top: 0;
+    }
+    .summary-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .summary-box ul li {
+      padding: 6px 0;
+      color: #c8d8c8;
+      font-size: 0.93rem;
+    }
+    .summary-box ul li::before {
+      content: '→ ';
+      color: #4ade80;
+    }
+
+    /* Article footer */
+    .article-footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #2a1a4a;
+      font-size: 0.8rem;
+      color: #6060a0;
+    }
+    .article-footer h4 {
+      color: #8080c0;
+      margin-bottom: 10px;
+      font-size: 0.85rem;
+    }
+    .article-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-footer ul li {
+      margin-bottom: 6px;
+    }
+    .article-footer ul li a {
+      color: #6070a0;
+      font-size: 0.78rem;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 1. Tag chip -->
+    <span class="tag">⚠️ SNS恋愛トラブル</span>
+
+    <!-- 2. H1 Title -->
+    <h1>【2026年5月3日更新】マッチングアプリの「運命の出会い」が罠だった――ロマンス詐欺被害が過去最悪、Z世代も標的に</h1>
+
+    <!-- 3. Meta -->
+    <div class="meta">
+      <span>📅 2026年5月3日</span>
+      <span>🏷 ロマンス詐欺 / マッチングアプリ / SNS被害</span>
+      <span>⏱ 読了目安 5分</span>
+    </div>
+
+    <!-- 4. Hero banner -->
+    <div class="hero-banner">
+      <div class="hero-emoji">💔📱💸</div>
+      <div class="hero-text">「好き」の裏に潜む詐欺の罠</div>
+    </div>
+
+    <!-- 5. Lead -->
+    <p class="lead">
+      マッチングアプリで出会った「理想の相手」が実は詐欺師だった――。
+      警察庁の最新データによると、SNS型投資・ロマンス詐欺の被害総額は<strong>2025年10月末時点で1,370億円超</strong>に達し、過去最悪を更新し続けている。
+      10代・20代のZ世代も例外ではない。恋愛感情を巧みに利用した手口を知ることが、自分を守る第一歩だ。
+    </p>
+
+    <!-- 6. Stats -->
+    <h2>📊 数字で見る被害の深刻さ</h2>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <span class="stat-num">1,370億+</span>
+        <span class="stat-label">SNS型投資・ロマンス詐欺<br>2025年10月末の被害総額</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">552億円</span>
+        <span class="stat-label">ロマンス詐欺単体の被害額<br>前年比<b>37.8%増</b></span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">11,749件</span>
+        <span class="stat-label">SNS型投資・ロマンス詐欺<br>認知件数（2025年10月末）</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">3割超</span>
+        <span class="stat-label">ロマンス詐欺の接触経路に<br>マッチングアプリが占める割合</span>
+      </div>
+    </div>
+    <p>警察庁の発表では、ロマンス詐欺の認知件数は令和6年6月〜令和7年5月の1年間で2,010件にのぼり、前年同期比で800件以上も増加。被害は年々エスカレートしている。</p>
+
+    <!-- 7. Body sections -->
+    <h2>💘 「ロマンス詐欺」ってどういうもの？</h2>
+    <p>
+      ロマンス詐欺とは、マッチングアプリやSNSで出会った相手が恋愛感情を育て、最終的に金銭を騙し取る詐欺の総称だ。
+      「投資で儲かる方法がある」「海外で急に仕事が入った、渡航費を貸してほしい」など、
+      さまざまな名目で送金を求めてくる。
+    </p>
+    <p>
+      近年は<strong>AI技術を悪用した手口</strong>も急増。顔写真や声をAIで生成した"実在しないイケメン・美女"のプロフィールを作り、
+      ビデオ通話もディープフェイク映像で本物らしく演じるケースが報告されている。
+      また犯罪組織は海外に拠点を置き、複数のオペレーターが分業で「彼氏・彼女役」を演じる。
+      数週間〜数ヵ月かけて信頼関係を築いてから金銭を要求するため、被害者は気づきにくい。
+      <a href="https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/sns-romance/romance/" target="_blank" rel="noopener">（警察庁 SOS47）</a>
+    </p>
+
+    <h2>🎭 よくある手口パターン3選</h2>
+    <ul class="case-list">
+      <li>
+        <strong>【パターン①：投資話に誘導】</strong><br>
+        マッチングアプリで出会い、数週間のやり取りの後「仮想通貨の投資で稼いでいる。一緒にやろう」と誘う。
+        偽の投資サイトに誘導し、最初は小額で利益が出たように見せかけ、大金を入金させてから消える。
+        <a href="https://www.jiji.com/jc/article?k=2026021200462&g=soc" target="_blank" rel="noopener">（時事ドットコム 2026年2月）</a>
+      </li>
+      <li>
+        <strong>【パターン②：遠距離恋愛の演出】</strong><br>
+        「海外の医師・技術者・軍人」を名乗り、遠距離恋愛の関係を演出。
+        「会いに行きたいが渡航費がない」「荷物を送るが関税が払えない」等の口実でお金を要求。
+        渡金後に連絡が途絶える。
+      </li>
+      <li>
+        <strong>【パターン③：SNSダイレクトメッセージ誤送信作戦】</strong><br>
+        InstagramやLINEに「間違えて送った」ようなDMを送り付け、会話を始める「当たり屋型」。
+        親密になった後に投資・ロマンス詐欺へ誘導するパターンが急増中。
+        <a href="https://app-liv.jp/articles/154275/" target="_blank" rel="noopener">（アプリブ）</a>
+      </li>
+    </ul>
+
+    <h2>🚨 これが出たら要注意！詐欺のサインチェックリスト</h2>
+    <div class="warning-box">
+      <div class="warning-title">⚠️ こんな相手には気をつけて</div>
+      <ul class="action-list">
+        <li><span class="check-icon">🔴</span> プロフィール写真が完璧すぎる（外国人、医師、軍人、起業家などを名乗る）</li>
+        <li><span class="check-icon">🔴</span> 出会ってすぐに「愛してる」「結婚したい」など関係を急かしてくる</li>
+        <li><span class="check-icon">🔴</span> 理由をつけてビデオ通話を拒否する（または映像がぼやけている）</li>
+        <li><span class="check-icon">🔴</span> 「投資で稼いでいる」「一緒に儲けよう」と誘ってくる</li>
+        <li><span class="check-icon">🔴</span> 送金・電子マネー購入・仮想通貨転送を求めてくる</li>
+        <li><span class="check-icon">🔴</span> SNSのフォロワーが少ない・投稿が最近のものしかない</li>
+        <li><span class="check-icon">🔴</span> 「誰にも言わないで」と秘密にするよう求める</li>
+      </ul>
+    </div>
+
+    <!-- 9. Action list -->
+    <h2>🛡️ 自分を守るための7つの行動</h2>
+    <ul class="action-list">
+      <li><span class="check-icon">✅</span> <span>プロフィール写真をGoogleの画像逆検索にかける。別サイトに同じ写真があれば詐欺の可能性が高い。</span></li>
+      <li><span class="check-icon">✅</span> <span>ビデオ通話を早い段階で求める。断られたり、カメラが映らない理由をつけたりする場合は危険信号。</span></li>
+      <li><span class="check-icon">✅</span> <span>「投資の話」が出た瞬間に話を終わらせる。どんな名目でも、出会い系・マッチングアプリで投資を勧めてくる相手は詐欺師だと思って間違いない。</span></li>
+      <li><span class="check-icon">✅</span> <span>お金は絶対に送らない。「好きな人」でも、「一時的に」でも、「すぐに返す」と言われても。</span></li>
+      <li><span class="check-icon">✅</span> <span>信頼できる友人や家族に相談する。詐欺師は「秘密にして」と言う。周囲に話すことで冷静な判断ができる。</span></li>
+      <li><span class="check-icon">✅</span> <span>マッチングアプリ内の通報機能を使う。怪しいと感じたらすぐに通報・ブロックを。</span></li>
+      <li><span class="check-icon">✅</span> <span>被害に遭ったら警察（#9110）や消費者ホットライン（188）に相談。早ければ早いほど被害回復の可能性が上がる。</span></li>
+    </ul>
+
+    <!-- 10. Hotline box -->
+    <div class="hotline-box">
+      <div class="hotline-title">📞 相談窓口一覧</div>
+      <div class="hotline-item">
+        <span class="hotline-name">警察相談専用電話</span>
+        <span class="hotline-num">#9110</span>
+        <span class="hotline-desc">詐欺被害の相談・通報。24時間受付（都道府県により異なる）</span>
+      </div>
+      <div class="hotline-item">
+        <span class="hotline-name">消費者ホットライン</span>
+        <span class="hotline-num">188（いやや）</span>
+        <span class="hotline-desc">消費者被害・お金の詐欺の相談。最寄りの消費生活センターに繋がる</span>
+      </div>
+      <div class="hotline-item">
+        <span class="hotline-name">警察庁 SOS47</span>
+        <span class="hotline-num">Webから通報</span>
+        <span class="hotline-desc">https://www.npa.go.jp/bureau/safetylife/sos47/ SNS型詐欺の最新情報・相談</span>
+      </div>
+      <div class="hotline-item">
+        <span class="hotline-name">法テラス（法律相談）</span>
+        <span class="hotline-num">0570-078374</span>
+        <span class="hotline-desc">弁護士による法律相談。被害回復の方法を相談できる</span>
+      </div>
+    </div>
+
+    <!-- 11. Summary box -->
+    <div class="summary-box">
+      <h3>📝 まとめ</h3>
+      <ul>
+        <li>SNS型ロマンス詐欺の被害は2025年に過去最悪を更新。被害総額は1,370億円超。</li>
+        <li>マッチングアプリ経由の被害が全体の3割以上を占め、Z世代も無縁ではない。</li>
+        <li>AIによる偽プロフィール・ディープフェイク通話など、手口はますます巧妙化。</li>
+        <li>「投資の話が出たら詐欺」「お金は絶対送らない」を鉄則として覚えておこう。</li>
+        <li>被害に遭ったら一人で抱え込まず、#9110や188に相談することが大切。</li>
+      </ul>
+    </div>
+
+    <!-- 12. PR Section (beME Premium) -->
+    <!-- PR SECTION -->
+    <div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+      <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+      <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+        <div style="flex: 1; min-width: 200px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+            <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+          </div>
+          <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+          <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+            17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+            <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+            <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+            <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+            <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+            <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+            <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+            <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+              style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+              くわしくはこちら →
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+            メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+          </p>
+        </div>
+        <div style="flex-shrink: 0; width: 200px;">
+          <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+            alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+    <!-- /PR SECTION -->
+
+    <!-- 13. Footer -->
+    <footer class="article-footer">
+      <h4>📚 参考情報源</h4>
+      <ul>
+        <li><a href="https://www.jiji.com/jc/article?k=2026021200462&g=soc" target="_blank" rel="noopener">時事ドットコム「SNS型投資、ロマンス詐欺被害が過去最悪」(2026年2月)</a></li>
+        <li><a href="https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/sns-romance/romance/" target="_blank" rel="noopener">警察庁 SOS47 – SNS型ロマンス詐欺</a></li>
+        <li><a href="https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/251202/01.html" target="_blank" rel="noopener">警察庁 – 令和7年10月末における特殊詐欺等の情勢（暫定値）</a></li>
+        <li><a href="https://app-liv.jp/articles/154275/" target="_blank" rel="noopener">アプリブ「ロマンス詐欺被害が2倍に！なぜマッチングアプリで騙されてしまうのか」</a></li>
+        <li><a href="https://www.npa.go.jp/bureau/criminal/souni/tokusyusagi/hurikomesagi_toukei2024.pdf" target="_blank" rel="noopener">警察庁 – 令和6年における特殊詐欺及びSNS型投資・ロマンス詐欺の認知・検挙状況（PDF）</a></li>
+      </ul>
+      <p style="margin-top: 16px; font-size: 0.75rem; color: #404060;">
+        ※本記事は公開情報・報道をもとに作成した情報提供記事です。被害に遭われた場合は速やかに警察・公的機関へご相談ください。
+      </p>
+    </footer>
+
+  </div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
