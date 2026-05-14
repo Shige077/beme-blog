@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年5月12日更新】「この人、実在しなかった」──マッチングアプリ・SNSのキャットフィッシング被害急増、AI偽プロフィールに恋して傷つくZ世代のリアル</title>
+  <meta name="description" content="SNSやマッチングアプリで出会った"運命の相手"が実は架空の人物だった──キャットフィッシング被害がZ世代で急増。AI生成写真・盗用プロフィールの見抜き方と自衛策を徹底解説。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      padding: 20px 16px 60px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    /* Tag */
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: bold;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    /* Title */
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2.1rem);
+      font-weight: 900;
+      line-height: 1.35;
+      color: #f0e6ff;
+      margin-bottom: 14px;
+    }
+    h1 span.accent { color: #db2777; }
+    /* Meta */
+    .meta {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 32px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .meta span { display: flex; align-items: center; gap: 4px; }
+    /* Hero */
+    .hero {
+      width: 100%;
+      border-radius: 16px;
+      padding: 60px 24px;
+      background: linear-gradient(135deg, #2d0040 0%, #0a1a2e 50%, #1a0030 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      margin-bottom: 36px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(219,39,119,0.2), transparent 60%),
+                  radial-gradient(circle at 70% 50%, rgba(124,58,237,0.2), transparent 60%);
+    }
+    .hero-emoji { position: relative; z-index: 1; }
+    .hero-sub {
+      position: relative;
+      z-index: 1;
+      font-size: 1rem;
+      color: #f9a8d4;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    /* Lead */
+    .lead {
+      background: rgba(219,39,119,0.08);
+      border-left: 4px solid #db2777;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #f0d6ea;
+      margin-bottom: 40px;
+    }
+    /* Section headings */
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #e9d5ff;
+      margin: 40px 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #7c3aed44;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #f9a8d4;
+      margin: 24px 0 10px;
+    }
+    p { margin-bottom: 16px; color: #d0d0e8; }
+    a { color: #c084fc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    /* Stat grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 20px 0 36px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1a0a2e, #0d1a30);
+      border: 1px solid #7c3aed44;
+      border-radius: 14px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #db2777;
+      display: block;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .stat-card .label {
+      font-size: 0.78rem;
+      color: #b0b0d0;
+      line-height: 1.5;
+    }
+    /* Warning box */
+    .warning-box {
+      background: rgba(219,39,119,0.1);
+      border: 1px solid #db277755;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    .warning-box h3 {
+      color: #fda4af;
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+    /* Case list */
+    .case-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .case-list li {
+      background: rgba(124,58,237,0.1);
+      border: 1px solid #7c3aed33;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      color: #d0d0f0;
+      line-height: 1.7;
+    }
+    .case-list li::before {
+      content: '📍 ';
+    }
+    /* Action list */
+    .action-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    .action-list li {
+      padding: 10px 0 10px 36px;
+      position: relative;
+      border-bottom: 1px solid #ffffff0d;
+      font-size: 0.95rem;
+      color: #d0d0f0;
+      line-height: 1.7;
+    }
+    .action-list li::before {
+      content: '✅';
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+    .action-list li:last-child { border-bottom: none; }
+    /* Hotline box */
+    .hotline-box {
+      background: linear-gradient(135deg, #0a1a30, #1a0a20);
+      border: 1px solid #7c3aed66;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin: 36px 0;
+    }
+    .hotline-box h3 {
+      color: #c4b5fd;
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+    .hotline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 0.93rem;
+      color: #c0c0e0;
+    }
+    .hotline-item .icon { font-size: 1.4rem; flex-shrink: 0; }
+    .hotline-num {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #f9a8d4;
+    }
+    /* Summary box */
+    .summary-box {
+      background: linear-gradient(135deg, #1a0a2e 0%, #0f1a2e 100%);
+      border: 1px solid #7c3aed55;
+      border-radius: 16px;
+      padding: 28px 28px 24px;
+      margin: 36px 0;
+    }
+    .summary-box h2 {
+      border-bottom: none;
+      margin-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 16px;
+      font-size: 1.2rem;
+    }
+    .summary-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .summary-box ul li {
+      padding: 6px 0 6px 28px;
+      position: relative;
+      font-size: 0.93rem;
+      color: #d0d0f0;
+      line-height: 1.7;
+      border-bottom: 1px solid #ffffff08;
+    }
+    .summary-box ul li:last-child { border-bottom: none; }
+    .summary-box ul li::before {
+      content: '💜';
+      position: absolute;
+      left: 0;
+    }
+    /* Article footer */
+    .article-footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #333355;
+      font-size: 0.8rem;
+      color: #666;
+    }
+    .article-footer h4 {
+      color: #888;
+      font-size: 0.82rem;
+      margin-bottom: 10px;
+    }
+    .article-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-footer ul li { margin-bottom: 6px; }
+    .article-footer ul li a { color: #7c6aad; font-size: 0.78rem; }
+    .highlight { color: #fbbf24; font-weight: bold; }
+    .pink { color: #f9a8d4; font-weight: bold; }
+    .green { color: #4ade80; font-weight: bold; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <span class="tag">SNS恋愛トラブル</span>
+
+  <h1>【2026年5月12日更新】「この人、実在しなかった」──<span class="accent">キャットフィッシング</span>被害急増、AI偽プロフィールに恋して傷つくZ世代のリアル</h1>
+
+  <div class="meta">
+    <span>📅 2026年5月12日</span>
+    <span>🏷️ SNS恋愛トラブル / なりすまし詐欺</span>
+    <span>⏱️ 読了約6分</span>
+  </div>
+
+  <div class="hero">
+    <div class="hero-emoji">🎣🐱💔</div>
+    <div class="hero-sub">会ったことのない"運命の人"は、最初から存在しなかった──</div>
+  </div>
+
+  <div class="lead">
+    マッチングアプリやSNSで出会った「理想の人」が、実は架空の存在だったとしたら？　これが<strong>キャットフィッシング（Catfishing）</strong>──他人の写真・情報を盗用したり、AIで作られた偽人物として恋愛関係を築き、相手を感情的・金銭的に傷つける行為だ。ロマンス詐欺と混同されがちだが、<span class="pink">キャットフィッシングの本質は「金銭を奪う」より先に「心を操る」こと</span>。日本では認知度がまだ低い一方、マッチングアプリ利用者数が2,000万人を超えた2025年以降、被害報告が急増している。
+  </div>
+
+  <h2>📊 これが数字で見るキャットフィッシングの現実</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <span class="num">9.6倍</span>
+      <div class="label">SNSなりすまし相談件数<br>2022年→2023年増加率<br>（国民生活センター）</div>
+    </div>
+    <div class="stat-card">
+      <span class="num">1,629件</span>
+      <div class="label">2023年度のSNSなりすまし<br>相談件数（前年170件）<br>（国民生活センター）</div>
+    </div>
+    <div class="stat-card">
+      <span class="num">約40%</span>
+      <div class="label">ロマンス詐欺被害者のうち<br>SNS・マッチングアプリ<br>起点の割合（警察庁）</div>
+    </div>
+    <div class="stat-card">
+      <span class="num">3〜4秒</span>
+      <div class="label">AI音声クローンに必要な<br>元音声データの長さ<br>（一致率85%以上）</div>
+    </div>
+    <div class="stat-card">
+      <span class="num">171万件</span>
+      <div class="label">2024年国内フィッシング<br>報告件数（過去最多・<br>前年比1.4倍）</div>
+    </div>
+    <div class="stat-card">
+      <span class="num">2,000万人</span>
+      <div class="label">日本のマッチングアプリ<br>利用者数（2025年推計）<br>偽アカ流入リスク拡大中</div>
+    </div>
+  </div>
+
+  <h2>🎭 キャットフィッシングって何？ロマンス詐欺と何が違う？</h2>
+
+  <p>「キャットフィッシング（Catfishing）」という言葉は2010年に公開されたアメリカのドキュメンタリー映画から広まった。マグロの輸送時に一緒に入れられる「ナマズ（catfish）」が周りの魚を油断させないよう泳ぎ続けさせることから、<span class="pink">オンラインで偽の人物像を演じて他人を騙す行為</span>を指すようになった。</p>
+
+  <p>ロマンス詐欺と混同されやすいが、その本質は異なる。ロマンス詐欺は「仮想通貨投資」「緊急送金」といった金銭を最終目的とした詐欺行為であるのに対し、キャットフィッシングは<strong>感情的な支配・依存・嫉妬・復讐・性的好奇心</strong>など動機が多様で、金銭を要求しないケースも多い。元交際相手が別の異性になりすまして接近する「復讐型」、同性が異性になりすます「身元詐称型」、テクノロジー企業がAIアカウントを使う「マーケティング型」まで形態は多岐にわたる。</p>
+
+  <p>2025年以降、<span class="highlight">生成AIによって"本物に見える"偽プロフィールの生成が誰でも可能</span>になり、プロフィール写真のリバースイメージ検索では引っかからないAI顔画像が多用されるなど、手口が急速に巧妙化している。<a href="https://note.com/snow247/n/n610e07686ecd" target="_blank" rel="noopener">「マッチングアプリの相手はAIだった」</a>という事例報告がSNS上で増えているのも、この流れと無関係ではない。</p>
+
+  <h2>🕵️ よくある手口・ケース</h2>
+
+  <ul class="case-list">
+    <li><strong>拾い画プロフィール型</strong>：InstagramやXから無断転用した異性の写真でアカウントを作成。マッチングアプリで「いいね！」を集め、DM会話を深める。相手が恋愛感情を持ったタイミングでビデオ通話を拒否し、「カメラが壊れている」「恥ずかしい」と言い訳。最終的に金銭要求またはセクスト（性的画像）要求に移行するケースも。</li>
+    <li><strong>AI生成顔写真型</strong>：Midjourney・DALL-E等の画像生成AIで「実在しない完璧な顔」を作成し、プロフィールに使用。逆画像検索では引っかからないため発見が難しく、AI判定ツールを使わないと見抜けない。2025年以降急増中のパターン。</li>
+    <li><strong>元カレ・元カノ復讐型</strong>：別れた相手が新しい異性のアカウントとしてDMを送り、関係を操作・嫉妬を煽る・情報収集。精神的ハラスメント・ストーキングの延長として使われる。</li>
+    <li><strong>身元詐称型（性別・年齢偽装）</strong>：実際とは異なる性別・年齢・職業を偽り、出会い目的や性的好奇心のために長期間偽りの関係を維持。相手が「本物の感情」を持ってから暴露することで精神的ダメージを与える。</li>
+    <li><strong>マーケティング型ボットアカウント</strong>：ゲームアプリやSNSサービスが「ユーザーエンゲージメント向上」を目的にAIアカウントを運用。恋愛感情を持ったユーザーが課金・有料プランに誘導される。米国ではロボットによる「感情的な会話」が訴訟問題に発展した例もある。</li>
+  </ul>
+
+  <h2>💔 被害者に残るもの──心の傷がリアルな理由</h2>
+
+  <p>キャットフィッシングの被害者に特有の苦しさは、<strong>「だまされた怒り」と「好きだった感情の否定」が同時に押し寄せる</strong>ことにある。相手が実在しなかったとわかっても、自分が抱いた感情は本物だったため、「自分が馬鹿だった」という自己嫌悪が深くなりやすい。</p>
+
+  <p>心理学的には「グリーフ（悲嘆）」の概念が適用される。存在しなかった相手との別れでも、脳は現実の失恋と同じように反応する。加えて、<span class="pink">オンライン上の恋愛はリアルな接触がない分、理想化が進みやすく</span>、より深い依存形成が起きることも報告されている（<a href="https://www.fortinet.com/resources/cyberglossary/catfishing" target="_blank" rel="noopener">Fortinet Cyberglossary</a>）。</p>
+
+  <p>さらに深刻なのは、キャットフィッシャーが被害者の弱みを握るために会話の中で個人情報・家庭環境・精神的な悩みを引き出すことが多いため、後にそれが<strong>セクストーション（性的脅迫）</strong>や<strong>スクショ恐喝</strong>にエスカレートするリスクが常に存在する点だ。</p>
+
+  <div class="warning-box">
+    <h3>⚠️ こんなサインが出たら要注意！キャットフィッシャーの特徴</h3>
+    <ul class="action-list" style="margin:0;">
+      <li>プロフィール写真が<span class="pink">モデルのように完璧すぎる</span>、または一種類しかない</li>
+      <li><span class="pink">ビデオ通話・対面を一度も行わない</span>（「カメラ壊れてる」「シャイ」等の言い訳）</li>
+      <li>マッチング直後から急速に「運命を感じる」「あなたしかいない」と<span class="pink">感情を加速させてくる</span></li>
+      <li>プロフィールの詳細（勤務先・学歴・出身地）が<span class="pink">あいまいで確認できない</span></li>
+      <li>SNS・他のアカウントが<span class="pink">一切連携されていない、またはフォロワー数が不自然に少ない</span></li>
+      <li>Googleリバースイメージ検索で<span class="pink">同じ写真が別名で複数ヒットする</span></li>
+      <li>会話の内容・文体が<span class="pink">機械翻訳のような不自然な日本語</span>を使う</li>
+      <li>「好きな人ができた」と言った直後に<span class="pink">金銭・性的なものを要求してくる</span></li>
+    </ul>
+  </div>
+
+  <h2>🛡️ 自分を守る実践アクション</h2>
+
+  <ul class="action-list">
+    <li><strong>プロフィール写真を逆画像検索する</strong>：Google画像検索・<a href="https://facecheck.id/" target="_blank" rel="noopener">FaceCheck.ID</a>・<a href="https://lenso.ai/ja" target="_blank" rel="noopener">Lenso.ai</a>で相手の写真が他の名前でヒットしないかチェック。ただし、AI生成画像には「AI判定ツール」（Hive Moderation等）を別途使用する必要がある</li>
+    <li><strong>ビデオ通話を必ず要求する</strong>：最初の本格的な会話の前に「ビデオ通話しよう」と提案。断られたり、映像がひどく不鮮明な場合は要警戒。リアルタイムで特定のポーズをとってもらう「ライブテスト」も有効</li>
+    <li><strong>個人情報は段階的に開示する</strong>：実家の住所・職場名・学校名・スマホ番号は最初から教えない。感情が動いても最低1〜2ヶ月は本人確認前に個人情報を渡さない</li>
+    <li><strong>「完璧すぎる人」を疑う習慣をつける</strong>：超イケメン・超美人で、優しくて、稼いでいて、孤独──こういうプロフィールはキャットフィッシングの典型。現実世界で「完璧な人」がわざわざオンラインで自分に近づく必然性を考えてみよう</li>
+    <li><strong>SNS・リンクトインで存在を確認する</strong>：本名・勤務先・学校名から検索し、同じ人物の一貫した投稿履歴があるかをチェック。長年の投稿がある方が本物である可能性が高い</li>
+    <li><strong>周囲の人に話す</strong>：オンラインの"理想の人"について信頼できる友人や家族に話すと、客観的な視点でリスクを指摘してもらいやすい。孤立した恋愛は詐欺師の温床</li>
+    <li><strong>被害に遭ったら記録を残して相談する</strong>：スクリーンショット・やり取りのログを保存し、すぐに削除・ブロックせず証拠として保全してから警察相談窓口またはサイバー犯罪相談窓口に連絡する</li>
+  </ul>
+
+  <div class="hotline-box">
+    <h3>📞 相談・通報窓口</h3>
+    <div class="hotline-item">
+      <div class="icon">🚔</div>
+      <div>
+        <div class="hotline-num">#9110</div>
+        <div>警察相談専用電話（全国共通）24時間対応。SNSなりすまし・詐欺被害の相談はここから</div>
+      </div>
+    </div>
+    <div class="hotline-item">
+      <div class="icon">🛡️</div>
+      <div>
+        <div class="hotline-num">警察庁「SOS47」</div>
+        <div><a href="https://www.npa.go.jp/bureau/safetylife/sos47/" target="_blank" rel="noopener">npa.go.jp/bureau/safetylife/sos47/</a>　特殊詐欺・SNS型被害の相談・情報提供</div>
+      </div>
+    </div>
+    <div class="hotline-item">
+      <div class="icon">💻</div>
+      <div>
+        <div class="hotline-num">IPA 情報セキュリティ安心相談窓口</div>
+        <div>電話：<strong>03-5978-7509</strong>　偽アカウント・フィッシング・なりすまし被害の技術的相談に対応</div>
+      </div>
+    </div>
+    <div class="hotline-item">
+      <div class="icon">⚖️</div>
+      <div>
+        <div class="hotline-num">法務省「インターネット人権相談」</div>
+        <div><a href="https://www.jinken.go.jp/" target="_blank" rel="noopener">jinken.go.jp</a>　なりすまし・精神的被害などの人権侵害に関する相談</div>
+      </div>
+    </div>
+    <div class="hotline-item">
+      <div class="icon">🧠</div>
+      <div>
+        <div class="hotline-num">よりそいホットライン</div>
+        <div>電話：<strong>0120-279-338</strong>　恋愛・SNSトラブルによる精神的ダメージの相談も可能。無料・匿名</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="summary-box">
+    <h2>💜 まとめ：キャットフィッシングから自分を守るために</h2>
+    <ul>
+      <li>キャットフィッシングは金銭詐欺だけでなく「感情の搾取」が目的のケースも多く、被害者はだまされた後も長期間にわたって精神的ダメージを受ける</li>
+      <li>AI生成プロフィール写真の普及で「逆画像検索だけでは安全確認できない」時代になっており、AI判定ツールとビデオ通話の併用が必須</li>
+      <li>「完璧すぎる相手」「急速な親密化」「ビデオ拒否」は三大警戒サイン。感情が動いても立ち止まる習慣が最大の自衛策</li>
+      <li>被害に遭ったら自分を責めなくていい。詐欺師はプロであり、感情的に操ることを職業としている</li>
+      <li>証拠を保全して#9110・IPA・警察庁SOS47に相談。一人で抱え込まず、まず話すことが回復への第一歩</li>
+    </ul>
+  </div>
+
+  <!-- PR SECTION -->
+  <div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+    <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+    <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+      <div style="flex: 1; min-width: 200px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+          <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+          <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+        </div>
+        <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+        <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+          17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+          <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+        </p>
+        <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+          <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+          <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+          <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+          <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+          <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+          <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+            style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+            くわしくはこちら →
+          </a>
+        </div>
+        <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+          メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+        </p>
+      </div>
+      <div style="flex-shrink: 0; width: 200px;">
+        <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+          alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+  <!-- /PR SECTION -->
+
+  <footer class="article-footer">
+    <h4>📚 参考情報源</h4>
+    <ul>
+      <li><a href="https://www.koukoku.jp/service/suketto/marketer/sns/%E3%80%902025%E5%B9%B4%E6%9C%80%E6%96%B0%E3%80%91sns%E3%81%AA%E3%82%8A%E3%81%99%E3%81%BE%E3%81%97%E3%81%A8%E3%81%AF%EF%BC%9F%E8%A2%AB%E5%AE%B3%E5%AE%9F%E6%85%8B%E3%81%8B%E3%82%89%E6%B3%95%E7%9A%84/" target="_blank" rel="noopener">【2025年最新】SNSなりすましとは？被害実態から法的対処法まで完全解説</a></li>
+      <li><a href="https://www.fortinet.com/resources/cyberglossary/catfishing" target="_blank" rel="noopener">Fortinet Cyberglossary: What is Catfishing Online</a></li>
+      <li><a href="https://note.com/snow247/n/n610e07686ecd" target="_blank" rel="noopener">マッチングアプリの相手はAIだった──AI偽プロフィールを見抜く5つのチェックポイント</a></li>
+      <li><a href="https://note.com/terueshinkawa/n/n350e6ab67e0c" target="_blank" rel="noopener">SNS型詐欺組織の「写真逆検索回避」対策（NPO法人CHARMS）</a></li>
+      <li><a href="https://www.npa.go.jp/bureau/safetylife/sos47/case/sns-romance/romance/" target="_blank" rel="noopener">警察庁・SOS47 SNS型ロマンス詐欺の手口</a></li>
+      <li><a href="https://kidslox.com/ja/guide-to/what-is-catfishing/" target="_blank" rel="noopener">キャットフィッシングとは？子供たちにネットの安全を教える（Kidslox）</a></li>
+      <li><a href="https://facecheck.id/" target="_blank" rel="noopener">FaceCheck.ID – 顔画像逆検索エンジン</a></li>
+      <li><a href="https://lenso.ai/ja" target="_blank" rel="noopener">Lenso.ai – リバースイメージ検索</a></li>
+      <li><a href="https://scan.netsecurity.ne.jp/article/2025/06/12/53031.html" target="_blank" rel="noopener">2024年フィッシング過去最多171万件（ScanNetSecurity）</a></li>
+    </ul>
+    <p style="margin-top: 16px; font-size: 0.75rem; color: #555;">※本記事は一般的な情報提供を目的としています。具体的な被害については各相談窓口にご連絡ください。</p>
+  </footer>
+
+</div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
