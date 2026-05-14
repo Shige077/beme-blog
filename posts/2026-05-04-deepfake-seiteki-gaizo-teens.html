@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年5月4日更新】AIがクラスメートを「偽の性的画像」に変える時代――10代の8割が被害者、加害者の半数は同じ学校の生徒</title>
+  <meta name="description" content="生成AIで友人・同級生の顔を性的画像に加工する「ディープフェイク性的被害」が急増。警察庁データで79件・約8割が中高生と判明。総務省2026年版事例集でも緊急特集。手口・対策・相談窓口を解説。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      font-size: 1rem;
+      line-height: 1.8;
+      padding: 0 16px 60px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: bold;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: #f0e6ff;
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+    .meta {
+      font-size: 0.78rem;
+      color: #888;
+      margin-bottom: 32px;
+      letter-spacing: 0.05em;
+    }
+    .meta span { margin-right: 16px; }
+    .hero-banner {
+      width: 100%;
+      height: 220px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #1a0530 0%, #0d1a3a 50%, #1a0530 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4.5rem;
+      margin-bottom: 32px;
+      border: 1px solid #7c3aed44;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 50%, #db277722 0%, transparent 60%),
+                  radial-gradient(circle at 70% 50%, #7c3aed22 0%, transparent 60%);
+    }
+    .hero-emoji { position: relative; z-index: 1; filter: drop-shadow(0 0 20px #db2777aa); }
+    .lead {
+      font-size: 1.05rem;
+      color: #c8c8f0;
+      background: linear-gradient(135deg, #1a0a2e88, #0a1525aa);
+      border-left: 4px solid #db2777;
+      padding: 20px 24px;
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 40px;
+      line-height: 1.9;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #e9d5ff;
+      margin: 40px 0 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #7c3aed44;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      margin: 24px 0 10px;
+    }
+    p { margin-bottom: 16px; }
+    a { color: #c4b5fd; text-decoration: underline; }
+    a:hover { color: #f9a8d4; }
+
+    /* Stat Grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 20px 0 32px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1a0a2e, #0a1a3a);
+      border: 1px solid #7c3aed55;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #db2777;
+      display: block;
+      line-height: 1.2;
+    }
+    .stat-unit {
+      font-size: 0.85rem;
+      color: #c4b5fd;
+      display: block;
+      margin-top: 4px;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: #aaa;
+      display: block;
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+
+    /* Warning Box */
+    .warning-box {
+      background: linear-gradient(135deg, #2a0a1a, #1a0515);
+      border: 1px solid #db277766;
+      border-radius: 12px;
+      padding: 24px 24px 20px;
+      margin: 24px 0;
+    }
+    .warning-box .warning-title {
+      font-size: 0.88rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .case-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .case-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #ffffff11;
+      font-size: 0.92rem;
+      color: #d0c0e0;
+      padding-left: 20px;
+      position: relative;
+    }
+    .case-list li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #db2777;
+    }
+    .case-list li:last-child { border-bottom: none; }
+
+    /* Action List */
+    .action-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+    .action-list li {
+      padding: 10px 0 10px 28px;
+      border-bottom: 1px solid #ffffff0d;
+      font-size: 0.93rem;
+      color: #d0d0f0;
+      position: relative;
+    }
+    .action-list li::before {
+      content: '✅';
+      position: absolute;
+      left: 0;
+    }
+    .action-list li:last-child { border-bottom: none; }
+
+    /* Hotline Box */
+    .hotline-box {
+      background: linear-gradient(135deg, #0a1a2e, #0f0f2a);
+      border: 1px solid #7c3aed88;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+    .hotline-box .hotline-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #c4b5fd;
+      margin-bottom: 16px;
+    }
+    .hotline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .hotline-item {
+      background: #ffffff0a;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .hotline-item .h-name {
+      font-size: 0.82rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      margin-bottom: 4px;
+    }
+    .hotline-item .h-num {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .hotline-item .h-note {
+      font-size: 0.72rem;
+      color: #999;
+      margin-top: 4px;
+    }
+
+    /* Summary Box */
+    .summary-box {
+      background: linear-gradient(135deg, #1a0a2e, #0a1525);
+      border: 2px solid #7c3aed;
+      border-radius: 14px;
+      padding: 28px 28px 24px;
+      margin: 40px 0;
+    }
+    .summary-box .summary-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #e9d5ff;
+      margin-bottom: 16px;
+      letter-spacing: 0.04em;
+    }
+    .summary-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .summary-box ul li {
+      padding: 6px 0 6px 22px;
+      position: relative;
+      font-size: 0.93rem;
+      color: #d0d0f0;
+    }
+    .summary-box ul li::before {
+      content: '◆';
+      position: absolute;
+      left: 0;
+      color: #7c3aed;
+      font-size: 0.7rem;
+      top: 10px;
+    }
+
+    .article-footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #ffffff11;
+      font-size: 0.78rem;
+      color: #666;
+    }
+    .article-footer ul { list-style: none; padding: 0; }
+    .article-footer ul li { margin-bottom: 6px; }
+    .article-footer a { color: #7c3aed88; }
+    .article-footer a:hover { color: #c4b5fd; }
+
+    .highlight { color: #f9a8d4; font-weight: bold; }
+    .highlight-green { color: #4ade80; font-weight: bold; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.4rem; }
+      .hero-banner { height: 160px; font-size: 3rem; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <span class="tag">🤖 AIディープフェイク</span>
+
+  <h1>【2026年5月4日更新】AIがクラスメートを「偽の性的画像」に変える時代――10代の8割が被害者、加害者の半数は同じ学校の生徒</h1>
+
+  <div class="meta">
+    <span>📅 2026年5月4日</span>
+    <span>🏷 ディープフェイク / AIトラブル / 10代被害</span>
+    <span>⏱ 約6分で読めます</span>
+  </div>
+
+  <div class="hero-banner">
+    <span class="hero-emoji">🎭🤖⚠️</span>
+  </div>
+
+  <div class="lead">
+    スマホで撮った「普通の顔写真」が、生成AIによって性的な画像に加工され、クラスのグループチャットやSNSに拡散される――これは近未来の話ではない。<strong>警察庁のデータでは2025年に79件の被害相談が寄せられ、被害者の約8割が中学生・高校生。そして加害者の53%はなんと「同じ学校の生徒」だった。</strong>総務省も2026年版インターネットトラブル事例集で緊急特集を組むほどの深刻な事態を、徹底解説する。
+  </div>
+
+  <!-- 統計セクション -->
+  <h2>📊 数字で見る「ディープフェイク性的被害」の実態</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <span class="stat-num">79<span style="font-size:1.1rem">件</span></span>
+      <span class="stat-unit">2025年1〜9月</span>
+      <span class="stat-label">18歳未満の被害相談数（警察庁）</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">80<span style="font-size:1.1rem">%</span></span>
+      <span class="stat-unit">被害者の年齢層</span>
+      <span class="stat-label">中学生・高校生が占める割合</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">53<span style="font-size:1.1rem">%</span></span>
+      <span class="stat-unit">加害者の関係性</span>
+      <span class="stat-label">同じ学校の生徒による犯行</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">110<span style="font-size:1.1rem">件</span></span>
+      <span class="stat-unit">2024年全体</span>
+      <span class="stat-label">前年比で増加傾向が続く</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">120<span style="font-size:1.1rem">万人</span></span>
+      <span class="stat-unit">世界11カ国調査</span>
+      <span class="stat-label">性的ディープフェイクにされた子供数（ユニセフ）</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">3<span style="font-size:1.1rem">位</span></span>
+      <span class="stat-unit">世界ランキング</span>
+      <span class="stat-label">ディープフェイク被害数・日本の順位</span>
+    </div>
+  </div>
+
+  <p style="font-size:0.82rem; color:#888; margin-top:-16px; margin-bottom:32px;">
+    ※ 出典：警察庁「性的偽画像被害相談」2025年12月公表 / ユニセフ・ECPAT・インターポール共同調査2025年
+  </p>
+
+  <!-- 本文セクション1 -->
+  <h2>🧠 「ディープフェイク性的被害」とは何か？</h2>
+
+  <p>
+    「ディープフェイク（Deepfake）」とは、AIを使って人の顔や声を別の映像に合成・加工する技術のこと。もともとは映画やエンタメ用途で開発されたが、<strong class="highlight">今やスマホアプリひとつで誰でも簡単に使える</strong>ようになってしまった。
+  </p>
+  <p>
+    問題になっているのは、このAI技術を使って<strong>同級生や知人の「普通の顔写真」を性的な画像・動画に合成する犯罪行為</strong>だ。被害者が知らない間に偽の性的画像が作られ、LINEのグループやX（旧Twitter）、Discordなどで拡散されるケースが急増している。
+  </p>
+  <p>
+    総務省は2026年4月に公開した「インターネットトラブル事例集2026年版」の中で、ディープフェイクによる被害を<strong>緊急特集として新設</strong>。青少年が自身の顔写真を不正加工され性的画像として拡散されるケースが「社会問題化している」として、被害防止・加害防止双方の観点から注意喚起を行っている。
+    <small style="color:#888;">（<a href="https://japansecuritysummit.org/2026/04/14200/" target="_blank" rel="noopener">JAPANSecuritySummit 2026年4月</a> / <a href="https://www.dempa-times.co.jp/administration/48561/" target="_blank" rel="noopener">電波タイムズ</a>）</small>
+  </p>
+
+  <!-- 本文セクション2 -->
+  <h2>👥 「知らない人」より怖い「身近な人」による加害</h2>
+
+  <p>
+    最も衝撃的なデータが、加害者の関係性だ。2025年に警察庁が公表した統計では、18歳未満が被害を受けたケースのうち、<span class="highlight">加害者の53.2%が「被害者と同じ学校に通う生徒」</span>であることが判明した。クラスメート、先輩・後輩といった顔見知りが加害者になっているのだ。
+  </p>
+  <p>
+    被害者の内訳は<strong>中学生が41件（51.9%）</strong>と最多で、<strong>高校生が25件（31.6%）</strong>、小学生も4件（5.1%）含まれている。被害者の<strong class="highlight">約8割が中高生</strong>というデータは、この問題がまさに「今の学校現場で起きていること」を示している。
+    <small style="color:#888;">（<a href="https://www.jiji.com/jc/article?k=2025121800120&g=soc" target="_blank" rel="noopener">時事通信 2025年12月</a> / <a href="https://www.nikkei.com/article/DGXZQOUD17AC70X11C25A2000000/" target="_blank" rel="noopener">日本経済新聞</a>）</small>
+  </p>
+  <p>
+    悪意がなくても「面白半分」「嫌がらせ目的」でやってしまうケースも多い。しかし行為の深刻さに気づかないまま犯罪者になってしまう危険性が高い。
+  </p>
+
+  <!-- 手口 -->
+  <h2>⚠️ こんな手口・状況で被害に遭う</h2>
+
+  <div class="warning-box">
+    <div class="warning-title">🚨 実際に起きているシチュエーション</div>
+    <ul class="case-list">
+      <li><strong>SNSの公開プロフィール写真を悪用：</strong>InstagramやTikTokに投稿した顔写真を勝手に取得し、AIアプリで性的画像に加工してLINEグループに拡散。</li>
+      <li><strong>元交際相手による報復：</strong>交際中に送った普通の写真を、別れた後にディープフェイクで加工して拡散するケース。「リベンジポルノ」のAI版。</li>
+      <li><strong>クラス内いじめの一形態として：</strong>気に入らないクラスメートの顔をAIで合成した性的画像を作り、グループチャットで見せ物にする。</li>
+      <li><strong>「やってみた」感覚の軽率な行為：</strong>アプリの使い方を試すつもりで知人の顔写真を加工し、友人に見せた時点で犯罪行為に。</li>
+      <li><strong>ネット上の見知らぬ人による被害：</strong>X・TikTok等の公開アカウントから顔写真を収集し、性的サイトに大量投稿するケース。</li>
+    </ul>
+  </div>
+
+  <!-- 法律 -->
+  <h2>⚖️ これって犯罪になるの？</h2>
+
+  <p>
+    答えは<strong class="highlight">YES。複数の法律に違反する重大な犯罪行為</strong>だ。
+  </p>
+  <p>
+    2024年に施行された<strong>「性的姿態撮影等処罰法」</strong>では、性的なディープフェイク画像の<strong>作成・提供・所持が明示的に禁止</strong>され、最大3年以下の懲役または300万円以下の罰金が科される。また、インターネット上で不特定多数に見せた場合は「わいせつ電磁的記録頒布罪」も成立しうる。
+  </p>
+  <p>
+    中学生・高校生であっても「知らなかった」では済まない。警察庁のデータで<span class="highlight">2024年には7件が実際に摘発</span>されており、少年事件として処理された場合も家庭裁判所の審判対象になる。被害者にとっても加害者にとっても、人生を狂わせる重大な問題だ。
+  </p>
+
+  <!-- 自分を守るチェックリスト -->
+  <h2>🛡️ 今すぐできる！自分と友人を守る行動リスト</h2>
+
+  <ul class="action-list">
+    <li><strong>SNSのプロフィール写真を「フォロワーのみ」に設定する</strong>――顔が見える写真を不特定多数に公開しない</li>
+    <li><strong>顔写真の投稿は最小限に</strong>――特に高解像度の正面顔写真は悪用されやすい</li>
+    <li><strong>友人の写真を無断でSNS投稿しない</strong>――「タグ付け」「リポスト」でも拡散のリスクあり</li>
+    <li><strong>ディープフェイクアプリを「遊びで使わない」</strong>――他人の顔写真を使った加工は、軽い気持ちでも犯罪になりうる</li>
+    <li><strong>被害を発見したらすぐスクリーンショットで証拠保全</strong>――削除される前に証拠を残すことが重要</li>
+    <li><strong>学校・親・警察に相談することを恥ずかしいと思わない</strong>――被害者に非はない。声を上げることが解決への第一歩</li>
+    <li><strong>友人が「おもしろ」でやろうとしていたら止める勇気を持つ</strong>――傍観者ではなく、止める側に立つことが大切</li>
+    <li><strong>beMEプレミアムなどのAI画像検知サービスを活用する</strong>――悪質サイトへの流出を24時間監視してくれるサービスも存在する</li>
+  </ul>
+
+  <!-- 相談窓口 -->
+  <div class="hotline-box">
+    <div class="hotline-title">📞 ひとりで抱え込まないで――相談窓口一覧</div>
+    <div class="hotline-grid">
+      <div class="hotline-item">
+        <div class="h-name">警察相談専用電話</div>
+        <div class="h-num">#9110</div>
+        <div class="h-note">24時間・無料</div>
+      </div>
+      <div class="hotline-item">
+        <div class="h-name">警察庁SOS47</div>
+        <div class="h-num">Webで相談</div>
+        <div class="h-note">npa.go.jp/bureau/safetylife/sos47/</div>
+      </div>
+      <div class="hotline-item">
+        <div class="h-name">インターネットホットライン</div>
+        <div class="h-num">Webで通報</div>
+        <div class="h-note">違法・有害情報の通報窓口</div>
+      </div>
+      <div class="hotline-item">
+        <div class="h-name">法務省人権相談</div>
+        <div class="h-num">0570-003-110</div>
+        <div class="h-note">平日8:30〜17:15</div>
+      </div>
+      <div class="hotline-item">
+        <div class="h-name">よりそいホットライン</div>
+        <div class="h-num">0120-279-338</div>
+        <div class="h-note">24時間・無料</div>
+      </div>
+      <div class="hotline-item">
+        <div class="h-name">SNS相談（若者向け）</div>
+        <div class="h-num">LINE等で相談</div>
+        <div class="h-note">よりそいホットライン SNS相談</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- まとめ -->
+  <div class="summary-box">
+    <div class="summary-title">📝 この記事のまとめ</div>
+    <ul>
+      <li>AIディープフェイクで知人・同級生の性的偽画像を作る被害が急増。2025年だけで79件（1〜9月）の被害相談が警察庁に寄せられた。</li>
+      <li>被害者の約8割が中学生・高校生。加害者の53%が「同じ学校の生徒」というデータが衝撃を与えた。</li>
+      <li>「面白半分」「遊び」であっても犯罪。性的姿態撮影等処罰法で最大懲役3年が科される可能性がある。</li>
+      <li>総務省は2026年版インターネットトラブル事例集で緊急特集。日本のディープフェイク被害は世界3位の深刻さ。</li>
+      <li>SNS写真の公開範囲設定・顔写真投稿の最小化・被害時の迅速な証拠保全が自衛の基本。ひとりで抱え込まず、#9110や相談窓口に連絡を。</li>
+    </ul>
+  </div>
+
+  <!-- PR SECTION -->
+  <div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+    <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+    <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+      <div style="flex: 1; min-width: 200px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+          <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+          <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+        </div>
+        <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+        <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+          17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+          <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+        </p>
+        <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+          <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+          <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+          <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+          <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+          <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+          <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+            style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+            くわしくはこちら →
+          </a>
+        </div>
+        <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+          メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+        </p>
+      </div>
+      <div style="flex-shrink: 0; width: 200px;">
+        <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+          alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+  <!-- /PR SECTION -->
+
+  <footer class="article-footer">
+    <p style="margin-bottom:10px; color:#aaa;">📚 参考情報源</p>
+    <ul>
+      <li><a href="https://japansecuritysummit.org/2026/04/14200/" target="_blank" rel="noopener">総務省「インターネットトラブル事例集」2026年版公開 — JAPANSecuritySummit</a></li>
+      <li><a href="https://www.dempa-times.co.jp/administration/48561/" target="_blank" rel="noopener">総務省がインターネットトラブル事例集を更新、ディープフェイク注意喚起 — 電波タイムズ</a></li>
+      <li><a href="https://www.jiji.com/jc/article?k=2025121800120&g=soc" target="_blank" rel="noopener">性的偽画像の被害相談、18歳未満79件 ５割超が学校内 — 時事通信</a></li>
+      <li><a href="https://www.nikkei.com/article/DGXZQOUD17AC70X11C25A2000000/" target="_blank" rel="noopener">18歳未満の性的ディープフェイク、加害者の半数は同じ学校 — 日本経済新聞</a></li>
+      <li><a href="https://resemom.jp/article/2025/12/25/84451.html" target="_blank" rel="noopener">性的ディープフェイク被害、約8割が中高生 警察庁 — リセマム</a></li>
+      <li><a href="https://www.unicef.or.jp/news/2026/0021.html" target="_blank" rel="noopener">「ディープフェイクであろうと、虐待は虐待だ」～AI生成される子どもの性的画像問題 — ユニセフ</a></li>
+      <li><a href="https://news.yahoo.co.jp/articles/60aabe335b4c4a77637438325ce38feb02c08b45" target="_blank" rel="noopener">「日本の被害」は世界3位！ 政府が新設した「AI政策推進室」の役割 — Yahoo!ニュース</a></li>
+    </ul>
+    <p style="margin-top:20px;">© 2026 ZenG_Blog | このブログは情報提供を目的としています。</p>
+  </footer>
+
+</div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
