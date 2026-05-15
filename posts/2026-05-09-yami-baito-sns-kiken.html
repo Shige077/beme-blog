@@ -279,11 +279,30 @@
       .stat-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
+<style>
+/* hero-banner-bg-injected */
+.hero-banner {
+  background-image: url("https://beme-blog.pages.dev/images/2026-05-09-yami-baito-sns-kiken.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.hero-banner::before {
+  background: rgba(0, 0, 0, 0.55) !important;
+  background-image: none !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.hero-banner > * {
+  position: relative;
+  z-index: 1;
+}
+</style>
 </head>
 <body>
   <div class="container">
-<!-- hero-image-injected -->
-<img src="https://beme-blog.pages.dev/images/2026-05-09-yami-baito-sns-kiken.jpg" alt="【2026年5月9日更新】「日給5万、即日OK」──その求人、闇バイトかも。高校生の8割が見抜けないSNS犯罪勧誘の実態 | ZenG Blog" loading="eager" style="width:100%;height:auto;max-height:500px;object-fit:cover;border-radius:14px;margin:0 0 32px 0;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
 
     <span class="tag">🚨 SNS犯罪 / 闇バイト</span>
 
