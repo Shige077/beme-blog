@@ -298,11 +298,30 @@
       word-break: break-all;
     }
   </style>
+<style>
+/* hero-banner-bg-injected */
+.hero-banner {
+  background-image: url("https://beme-blog.pages.dev/images/2026-05-03-romance-scam-matching-app.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.hero-banner::before {
+  background: rgba(0, 0, 0, 0.55) !important;
+  background-image: none !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.hero-banner > * {
+  position: relative;
+  z-index: 1;
+}
+</style>
 </head>
 <body>
   <div class="container">
-<!-- hero-image-injected -->
-<img src="https://beme-blog.pages.dev/images/2026-05-03-romance-scam-matching-app.jpg" alt="【2026年5月3日更新】マッチングアプリの「運命の出会い」が罠だった――ロマンス詐欺被害が過去最悪、Z世代も標的に | ZenG Blog" loading="eager" style="width:100%;height:auto;max-height:500px;object-fit:cover;border-radius:14px;margin:0 0 32px 0;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
 
     <!-- 1. Tag chip -->
     <span class="tag">⚠️ SNS恋愛トラブル</span>
