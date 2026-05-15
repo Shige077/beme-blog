@@ -300,11 +300,30 @@
       padding: 4px 0;
     }
   </style>
+<style>
+/* hero-banner-bg-injected */
+.hero-banner {
+  background-image: url("https://beme-blog.pages.dev/images/2026-05-15-ghosting-matching-app-mental-health.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.hero-banner::before {
+  background: rgba(0, 0, 0, 0.55) !important;
+  background-image: none !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.hero-banner > * {
+  position: relative;
+  z-index: 1;
+}
+</style>
 </head>
 <body>
 <div class="container">
-<!-- hero-image-injected -->
-<img src="https://beme-blog.pages.dev/images/2026-05-15-ghosting-matching-app-mental-health.jpg" alt="【2026年5月15日更新】「急に既読無視…」──マッチングアプリ時代のゴースティングがZ世代のメンタルを崩壊させる、経験率6割の衝撃実態" loading="eager" style="width:100%;height:auto;max-height:500px;object-fit:cover;border-radius:14px;margin:0 0 32px 0;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
 
   <span class="tag">💔 恋愛トラブル</span>
 
