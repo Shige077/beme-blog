@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年5月15日更新】「急に既読無視…」──マッチングアプリ時代のゴースティングがZ世代のメンタルを崩壊させる、経験率6割の衝撃実態</title>
+  <meta name="description" content="マッチングアプリやSNSで出会った相手に突然ブロック・無視される「ゴースティング」。2025年研究でうつ・妄想症状との関連が判明。Z世代の6割が被害経験ありの実態と、心を守るための対策を徹底解説。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      line-height: 1.8;
+      padding: 0 16px 48px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: bold;
+      color: #f0e6ff;
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+    .meta {
+      font-size: 0.82rem;
+      color: #8888aa;
+      margin-bottom: 32px;
+    }
+    .meta span { margin-right: 16px; }
+    .hero-banner {
+      width: 100%;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #1a0040 0%, #0a001a 40%, #1a000d 100%);
+      padding: 56px 24px;
+      text-align: center;
+      margin-bottom: 36px;
+      font-size: 4rem;
+      line-height: 1.3;
+    }
+    .hero-banner p {
+      font-size: 1rem;
+      color: #c4b5fd;
+      margin-top: 12px;
+    }
+    .lead {
+      font-size: 1.05rem;
+      color: #d0d0f0;
+      background: linear-gradient(135deg, #1a1035 0%, #0d0d22 100%);
+      border-left: 4px solid #db2777;
+      padding: 20px 22px;
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 40px;
+      line-height: 1.9;
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #e9d5ff;
+      font-weight: bold;
+      margin: 44px 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #7c3aed44;
+    }
+    p {
+      font-size: 0.97rem;
+      color: #d0d0f0;
+      margin-bottom: 18px;
+      line-height: 1.9;
+    }
+    a { color: #c4b5fd; text-decoration: underline; }
+    a:hover { color: #f0e6ff; }
+
+    /* Stat Grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 24px 0 36px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1a0a2e, #0d0d22);
+      border: 1px solid #7c3aed55;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-card .number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      line-height: 1.2;
+    }
+    .stat-card .label {
+      font-size: 0.78rem;
+      color: #a0a0c0;
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    /* Warning box */
+    .warning-box {
+      background: linear-gradient(135deg, #2d0a1a, #1a0a2e);
+      border: 1px solid #db277766;
+      border-radius: 12px;
+      padding: 22px 22px 18px;
+      margin: 24px 0;
+    }
+    .warning-box h3 {
+      font-size: 1rem;
+      color: #f9a8d4;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+    .warning-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .warning-box ul li {
+      font-size: 0.92rem;
+      color: #d0d0f0;
+      padding: 6px 0;
+      border-bottom: 1px solid #ffffff10;
+      padding-left: 20px;
+      position: relative;
+    }
+    .warning-box ul li::before {
+      content: '⚠️';
+      position: absolute;
+      left: 0;
+      font-size: 0.8rem;
+    }
+    .warning-box ul li:last-child { border-bottom: none; }
+
+    /* Case list */
+    .case-list {
+      margin: 24px 0;
+    }
+    .case-item {
+      background: #111128;
+      border: 1px solid #7c3aed33;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+    .case-item .case-label {
+      font-size: 0.72rem;
+      color: #db2777;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .case-item p {
+      font-size: 0.9rem;
+      color: #c0c0e0;
+      margin-bottom: 0;
+    }
+
+    /* Action list */
+    .action-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 32px;
+    }
+    .action-list li {
+      background: #111128;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      font-size: 0.93rem;
+      color: #d0d0f0;
+      padding-left: 44px;
+      position: relative;
+    }
+    .action-list li::before {
+      content: attr(data-icon);
+      position: absolute;
+      left: 14px;
+      font-size: 1.1rem;
+    }
+
+    /* Checklist */
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 32px;
+    }
+    .checklist li {
+      font-size: 0.92rem;
+      color: #d0d0f0;
+      padding: 8px 0 8px 28px;
+      position: relative;
+      border-bottom: 1px solid #ffffff0d;
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before {
+      content: '✅';
+      position: absolute;
+      left: 0;
+    }
+
+    /* Hotline box */
+    .hotline-box {
+      background: linear-gradient(135deg, #0a1a1a, #0a0a1a);
+      border: 1px solid #4ade8066;
+      border-radius: 12px;
+      padding: 22px 22px 18px;
+      margin: 32px 0;
+    }
+    .hotline-box h3 {
+      font-size: 1rem;
+      color: #4ade80;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+    .hotline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 10px 0;
+      border-bottom: 1px solid #ffffff0d;
+    }
+    .hotline-item:last-child { border-bottom: none; }
+    .hotline-name {
+      font-size: 0.88rem;
+      font-weight: bold;
+      color: #a0ffb0;
+      min-width: 160px;
+    }
+    .hotline-desc {
+      font-size: 0.85rem;
+      color: #b0c0b0;
+    }
+
+    /* Summary box */
+    .summary-box {
+      background: linear-gradient(135deg, #1a1035 0%, #0d0d22 100%);
+      border: 2px solid #7c3aed;
+      border-radius: 14px;
+      padding: 28px 24px;
+      margin: 36px 0;
+    }
+    .summary-box h3 {
+      font-size: 1.05rem;
+      color: #e9d5ff;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+    .summary-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .summary-box ul li {
+      font-size: 0.92rem;
+      color: #d0d0f0;
+      padding: 7px 0 7px 24px;
+      position: relative;
+      border-bottom: 1px solid #ffffff0d;
+    }
+    .summary-box ul li:last-child { border-bottom: none; }
+    .summary-box ul li::before {
+      content: '💜';
+      position: absolute;
+      left: 0;
+      font-size: 0.85rem;
+    }
+
+    /* Footer */
+    .article-footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #7c3aed33;
+    }
+    .article-footer h4 {
+      font-size: 0.85rem;
+      color: #8888aa;
+      margin-bottom: 10px;
+    }
+    .article-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-footer ul li {
+      font-size: 0.8rem;
+      padding: 4px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <span class="tag">💔 恋愛トラブル</span>
+
+  <h1>【2026年5月15日更新】「急に既読無視…」──マッチングアプリ時代のゴースティングがZ世代のメンタルを崩壊させる、経験率6割の衝撃実態</h1>
+
+  <div class="meta">
+    <span>📅 2026年5月15日</span>
+    <span>🏷 恋愛トラブル / メンタルヘルス / マッチングアプリ</span>
+    <span>⏱ 読了約5分</span>
+  </div>
+
+  <div class="hero-banner">
+    👻💬📵
+    <p>既読のまま、返信は永遠に来なかった</p>
+  </div>
+
+  <p class="lead">
+    昨日まで毎日LINEしていたのに、突然既読無視。インスタをブロックされ、マッチングアプリのアカウントも消えている――これが「ゴースティング」と呼ばれる現象だ。
+    2025年にブライトン大学とコインブラ大学が合同で行った研究では、ゴースティングを受けた人は<strong style="color:#f9a8d4;">うつ症状・被害妄想的な思考が有意に増加</strong>することが明らかになった。
+    Z世代の恋愛は今、説明も謝罪もない"デジタルな蒸発"によって静かに壊されている。
+  </p>
+
+  <h2>📊 数字で見るゴースティングの衝撃実態</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="number">6割</div>
+      <div class="label">マッチングアプリ利用者のうち「ゴースティングを経験した」割合（国内・複数調査の平均値）</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">544人</div>
+      <div class="label">ブライトン大学2025年研究の対象者数（18〜40歳）。ゴースティング被害とうつ・妄想の相関を確認</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">20代</div>
+      <div class="label">最もダメージを受けやすい年代。低所得・若年層ほど心理的影響が深刻と判明</div>
+    </div>
+    <div class="stat-card">
+      <div class="number">53.9%</div>
+      <div class="label">20代のマッチングアプリ利用経験率（MMD研究所2025年調査）。出会いの主流が"ゴースティングリスク"の場に</div>
+    </div>
+  </div>
+
+  <p>
+    MMD研究所の「2025年マッチングサービス・アプリの利用実態調査」によれば、20代の53.9%、30代の52.1%がマッチングアプリの利用経験を持つ。恋人と出会ったきっかけ1位は「マッチングアプリ」（32.2%）で、もはや職場・学校での出会いを上回っている。
+    これは同時に、"返事が来なくなる"リスクが最も高い場所で恋愛が始まる時代になったことを意味する。（<a href="https://mmdlabo.jp/investigation/detail_2489.html" target="_blank" rel="noopener">MMD研究所2025年調査</a>）
+  </p>
+
+  <h2>🕵️ そもそも「ゴースティング」って何？ Z世代が知るべき定義</h2>
+
+  <p>
+    「ゴースティング（Ghosting）」とは、交際相手・会話中の相手が突然すべての連絡を断ち、まるで幽霊（Ghost）のように消えてしまう行為のことだ。LINEの既読無視、SNSのブロック、マッチングアプリのアカウント削除など、あらゆるデジタル接点から一方的に姿を消す。
+    特徴的なのは<strong style="color:#f9a8d4;">「別れの言葉も、理由の説明もない」</strong>点。相手に何も伝えないまま消えることで、やりとりしていた側は「何が悪かったのか」がわからず、延々と答えのない問いを繰り返すことになる。
+  </p>
+
+  <p>
+    ゴースティングはマッチングアプリやSNSが普及した2015年頃から急速に広まり、現在では英語圏・日本双方でオンライン恋愛の「当たり前」になりつつある。直接会って関係を断つ必要がなく、ブロックひとつで完結できる手軽さが、この行動を加速させている。（<a href="https://wired.jp/article/sz-is-ghosting-inevitable/" target="_blank" rel="noopener">WIRED Japan「ゴースティングの現象学」</a>）
+  </p>
+
+  <h2>🧠 2025年最新研究：ゴースティングがうつ・妄想を引き起こす</h2>
+
+  <p>
+    2025年、ブライトン大学（英国）とコインブラ大学（ポルトガル）の研究チームは18〜40歳の成人544人を対象とした合同研究を発表。その結果が衝撃的だった。
+  </p>
+
+  <div class="warning-box">
+    <h3>⚡ 研究が明らかにした心理的ダメージ</h3>
+    <ul>
+      <li>ゴースティングを受けた人は<strong>被害妄想的な思考（パラノイア）</strong>の水準が有意に高くなる</li>
+      <li>ガスライティング（現実歪曲）を受けた人は<strong>うつ症状</strong>との強い相関が確認された</li>
+      <li>これらの行動は「現代の日常的な関係において非常に一般的」になっており、特に若年層・低所得層への影響が深刻</li>
+      <li>ゴースティングは「拒絶されたかもしれない」という不確実性を生み出し、その曖昧さが最もメンタルに負荷をかける</li>
+    </ul>
+  </div>
+
+  <p>
+    マッチングアプリ利用とメンタルヘルスに関する複数の研究でも、アプリ使用とうつ（4件）・不安（3件）の正の相関、自己肯定感の低下（5件）が確認されている。ゴースティングはこのリスクをさらに増幅させる要因の一つだ。（<a href="https://www.brighton.ac.uk/news/2025/research-reveals-young-adults-most-at-risk-from-mental-health-effects-of-ghosting-and-gaslighting" target="_blank" rel="noopener">ブライトン大学2025年プレスリリース</a> / <a href="https://www.sciencedirect.com/science/article/pii/S0747563224003832" target="_blank" rel="noopener">ScienceDirect：マッチングアプリとメンタルヘルス系統的レビュー</a>）
+  </p>
+
+  <h2>📱 Z世代に多い「ゴースティングされるシチュエーション」</h2>
+
+  <p>
+    ゴースティングはマッチングアプリ内での見知らぬ相手だけが行うものではない。SNSで何ヶ月も繋がっていた相手、数週間会い続けた相手も突然消える。以下は実際によく見られる場面だ。
+  </p>
+
+  <div class="case-list">
+    <div class="case-item">
+      <div class="case-label">ケース 01 ── マッチング直後の消滅</div>
+      <p>マッチしてしばらくメッセージが続いたが、デートの約束をした途端に既読無視。アカウントは存在するが返信はゼロ。</p>
+    </div>
+    <div class="case-item">
+      <div class="case-label">ケース 02 ── 数週間の交際後に突然ブロック</div>
+      <p>「好きだよ」「また会いたい」と言っていた相手から、ある日突然LINEが届かなくなり、インスタでもブロックされていた。</p>
+    </div>
+    <div class="case-item">
+      <div class="case-label">ケース 03 ── 喧嘩の後に無言蒸発</div>
+      <p>些細な言い合いの翌日から返信が来なくなり、そのまま数週間が経過。謝ろうとしても既読にすらならない。</p>
+    </div>
+    <div class="case-item">
+      <div class="case-label">ケース 04 ── SNSには投稿しているのにDMは無視</div>
+      <p>ストーリーには毎日投稿しているのにDMだけ無視。「既読している証拠があるのに」という二重の精神的ダメージ。</p>
+    </div>
+    <div class="case-item">
+      <div class="case-label">ケース 05 ── 「ゾンビーイング」──消えた後の再出現</div>
+      <p>ゴースティングされた数週間後、何事もなかったかのように「最近どう？」と連絡が来る。これを「ゾンビーイング」と呼ぶ。</p>
+    </div>
+  </div>
+
+  <h2>🔍 なぜゴースティングは心に深く刺さるのか？</h2>
+
+  <p>
+    対面での別れ話や「もう会えない」というメッセージは辛くても、<em>終わりがわかる</em>。しかしゴースティングには終わりがない。「もしかしたら返信が来るかも」という希望を持ち続けてしまう。この不確実性こそが、ゴースティングを他の別れよりも精神的に消耗させる理由だ。
+  </p>
+
+  <p>
+    心理学では、予測不可能な報酬を繰り返すことで執着が高まる「変動強化スケジュール」という現象が知られている。「既読がついた」「ストーリーを見てくれた」という断片的なシグナルが、脳を「もう少し待てば返ってくるかも」という状態に追い込む。スロットマシンが止められないのと同じ仕組みだ。（<a href="https://www.evntfuldating.com/the-ghost-of-love" target="_blank" rel="noopener">Dating Apps: Options, Ghosting, and Mental Health Impact</a>）
+  </p>
+
+  <h2>🛡 ゴースティングされた時に自分を守るための実践リスト</h2>
+
+  <ul class="action-list">
+    <li data-icon="⏳">「48時間ルール」を設ける──返信がない場合、48時間以内に1度だけ確認メッセージを送り、それ以上は追わない。自分の行動に上限を作ることが自己保護につながる。</li>
+    <li data-icon="📵">SNSをミュート・フォロー解除する──相手の投稿を見続けると「なぜ私には返信しないのに投稿はしているんだ」という思考ループに入る。視界から外すことが回復の第一歩。</li>
+    <li data-icon="📝">気持ちを書き出す──感情を言語化することで、脳が「この問題は処理済み」と認識しやすくなる。誰かに送らなくていい、スマホのメモでもいい。</li>
+    <li data-icon="🤝">信頼できる友人に話す──一人で抱え込まない。「ゴースティングされた」と声に出すだけでも、自分を客観視するきっかけになる。</li>
+    <li data-icon="🏃">体を動かす──運動はセロトニン・ドーパミンを増やし、SNS反芻行動（何度もプロフィールを見るなど）を物理的に遮断する効果がある。</li>
+    <li data-icon="🔒">次の出会いでは段階的な情報開示を意識する──初対面で深い個人情報（住所・職場）を共有しない。感情移入の速度を意識的に落とすことで、ゴースティングのダメージを軽減できる。</li>
+  </ul>
+
+  <h2>📋 ゴースティングを「やってしまわない」ためのチェックリスト</h2>
+
+  <p>
+    ゴースティングは「被害者」になるだけでなく、自分が「加害者」になるリスクもある。相手を傷つけない断り方を知っておこう。
+  </p>
+
+  <ul class="checklist">
+    <li>「会う気がなくなった」と感じたら、1文でいいのでメッセージで伝える（「ごめんなさい、これ以上は難しいです」）</li>
+    <li>返信が面倒に感じても、無言ブロックは法的・道義的リスクを伴う場合がある（特に交際後の突然連絡断絶は慰謝料請求の対象になったケースもある）</li>
+    <li>マッチングアプリの「いいね」や「メッセージ」を軽い気持ちで続けて相手に期待させない</li>
+    <li>「なんとなく返信が面倒」をゴースティングで解決する前に、素直な言葉で一言伝える習慣を</li>
+  </ul>
+
+  <div class="hotline-box">
+    <h3>📞 相談窓口 ── 一人で抱え込まないで</h3>
+    <div class="hotline-item">
+      <div class="hotline-name">よりそいホットライン<br><strong>0120-279-338</strong></div>
+      <div class="hotline-desc">24時間365日対応。恋愛・人間関係の悩みから、精神的なつらさまで幅広く相談可能。</div>
+    </div>
+    <div class="hotline-item">
+      <div class="hotline-name">こころの健康相談統一ダイヤル<br><strong>0570-064-556</strong></div>
+      <div class="hotline-desc">うつ・不安・精神的不調の相談窓口。都道府県ごとの専門機関につないでもらえる。</div>
+    </div>
+    <div class="hotline-item">
+      <div class="hotline-name">警察相談専用電話<br><strong>#9110</strong></div>
+      <div class="hotline-desc">ゴースティング後につきまとい・嫌がらせが始まった場合など、犯罪性が疑われるトラブルに。</div>
+    </div>
+    <div class="hotline-item">
+      <div class="hotline-name">SNS・ネット相談<br><strong>警察庁SOS47</strong></div>
+      <div class="hotline-desc"><a href="https://www.npa.go.jp/bureau/safetylife/sos47/" target="_blank" rel="noopener">npa.go.jp/safetylife/sos47</a> SNS上での嫌がらせやトラブル全般に対応。</div>
+    </div>
+  </div>
+
+  <div class="summary-box">
+    <h3>📌 この記事のまとめ</h3>
+    <ul>
+      <li>ゴースティングとは「説明・謝罪なし」に突然連絡を断つ行為。Z世代の約6割が経験している</li>
+      <li>2025年の研究でゴースティング被害とうつ・妄想症状の有意な相関が確認された</li>
+      <li>不確実性（「もしかしたら返信が来るかも」）が他の別れより精神的ダメージを長引かせる</li>
+      <li>自衛策は「48時間ルール」「SNSミュート」「感情の言語化」「段階的な情報開示」</li>
+      <li>自分がゴースティングする側にならないよう、1文の断りメッセージを習慣にすることが大切</li>
+      <li>つらくなったらよりそいホットライン（0120-279-338）や警察#9110に相談を</li>
+    </ul>
+  </div>
+
+<!-- PR SECTION -->
+<div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+  <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+  <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+    <div style="flex: 1; min-width: 200px;">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+        <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+        <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+      </div>
+      <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+      <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+        17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+        <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+      </p>
+      <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+        <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+        <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+        <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+        <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+        <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+        <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+          style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+          くわしくはこちら →
+        </a>
+      </div>
+      <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+        メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+      </p>
+    </div>
+    <div style="flex-shrink: 0; width: 200px;">
+      <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+        alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+    </div>
+  </div>
+</div>
+<!-- /PR SECTION -->
+
+  <footer class="article-footer">
+    <h4>📚 参考情報源</h4>
+    <ul>
+      <li>🔗 <a href="https://www.brighton.ac.uk/news/2025/research-reveals-young-adults-most-at-risk-from-mental-health-effects-of-ghosting-and-gaslighting" target="_blank" rel="noopener">University of Brighton (2025) – Research reveals young adults most at risk from ghosting and gaslighting</a></li>
+      <li>🔗 <a href="https://www.sciencedirect.com/science/article/pii/S0747563224003832" target="_blank" rel="noopener">ScienceDirect – Dating apps and their relationship with body image, mental health and wellbeing: A systematic review</a></li>
+      <li>🔗 <a href="https://mmdlabo.jp/investigation/detail_2489.html" target="_blank" rel="noopener">MMD研究所 – 2025年マッチングサービス・アプリの利用実態調査</a></li>
+      <li>🔗 <a href="https://wired.jp/article/sz-is-ghosting-inevitable/" target="_blank" rel="noopener">WIRED Japan – ネットで相手との関係を意図的に断つこと──「ゴースティング」の現象学</a></li>
+      <li>🔗 <a href="https://www.evntfuldating.com/the-ghost-of-love" target="_blank" rel="noopener">Evntful Dating – Dating Apps: Options, Ghosting, and Mental Health Impact</a></li>
+      <li>🔗 <a href="https://app-liv.jp/articles/153495/" target="_blank" rel="noopener">アプリブ – 2025年調査：恋人と出会ったきっかけ1位は「マッチングアプリ」</a></li>
+      <li>🔗 <a href="https://www.psychiatrictimes.com/view/more-connected-than-ever-before-online-dating-and-the-youth-mental-health-crisis" target="_blank" rel="noopener">Psychiatric Times – Online Dating and the Youth Mental Health Crisis</a></li>
+    </ul>
+  </footer>
+
+</div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
