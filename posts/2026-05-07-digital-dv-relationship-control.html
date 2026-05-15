@@ -323,11 +323,30 @@
       .hotline-item { flex-direction: column; gap: 6px; }
     }
   </style>
+<style>
+/* hero-banner-bg-injected */
+.hero-banner {
+  background-image: url("https://beme-blog.pages.dev/images/2026-05-07-digital-dv-relationship-control.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.hero-banner::before {
+  background: rgba(0, 0, 0, 0.55) !important;
+  background-image: none !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.hero-banner > * {
+  position: relative;
+  z-index: 1;
+}
+</style>
 </head>
 <body>
   <div class="container">
-<!-- hero-image-injected -->
-<img src="https://beme-blog.pages.dev/images/2026-05-07-digital-dv-relationship-control.jpg" alt="【2026年5月7日更新】「スマホ見せて」「常に位置情報共有して」──Z世代カップルに広がるデジタルDV、交際経験者の5人に1人が被害 | ZenG Blog" loading="eager" style="width:100%;height:auto;max-height:500px;object-fit:cover;border-radius:14px;margin:0 0 32px 0;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
 
     <span class="tag">💔 デートDV・デジタル暴力</span>
 
