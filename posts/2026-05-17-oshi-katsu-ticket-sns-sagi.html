@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年5月17日更新】「推しのライブ絶対行く！」がSNS詐欺師の狙い目──チケット・グッズ詐欺で失う夏と10万円</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      line-height: 1.8;
+      padding: 24px 16px 60px;
+    }
+    .container { max-width: 780px; margin: 0 auto; }
+
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      line-height: 1.4;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #f9a8d4, #c4b5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .meta {
+      font-size: 0.82rem;
+      color: #888;
+      margin-bottom: 32px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      width: 100%;
+      border-radius: 16px;
+      padding: 60px 24px;
+      background: linear-gradient(135deg, #2d0040 0%, #0a1a2e 50%, #1a0030 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      margin-bottom: 36px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(219,39,119,0.2), transparent 60%),
+                  radial-gradient(circle at 70% 50%, rgba(124,58,237,0.2), transparent 60%);
+    }
+    .hero-banner .hero-emoji { position: relative; z-index: 1; }
+    .hero-banner .hero-text {
+      position: relative;
+      z-index: 1;
+      font-size: 1.1rem;
+      color: #f9a8d4;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+
+    .lead {
+      font-size: 1.05rem;
+      color: #c4b5fd;
+      background: rgba(124,58,237,0.1);
+      border-left: 4px solid #7c3aed;
+      padding: 18px 20px;
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 36px;
+      line-height: 1.9;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #f9a8d4;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid rgba(219,39,119,0.3);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      color: #c4b5fd;
+      margin: 24px 0 10px;
+    }
+
+    p { margin-bottom: 16px; }
+
+    a { color: #c4b5fd; text-decoration: underline; }
+    a:hover { color: #f9a8d4; }
+
+    /* Stat Grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 24px 0 36px;
+    }
+    .stat-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(219,39,119,0.3);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #db2777;
+      display: block;
+      line-height: 1.2;
+    }
+    .stat-card .label {
+      font-size: 0.78rem;
+      color: #aaa;
+      margin-top: 6px;
+      display: block;
+    }
+
+    /* Warning box */
+    .warning-box {
+      background: rgba(219,39,119,0.1);
+      border: 1px solid rgba(219,39,119,0.5);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin: 24px 0;
+    }
+    .warning-box .warning-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .warning-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .warning-box ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(219,39,119,0.15);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      display: flex;
+      gap: 10px;
+    }
+    .warning-box ul li:last-child { border-bottom: none; }
+
+    /* Case list */
+    .case-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 24px;
+    }
+    .case-list li {
+      background: rgba(255,255,255,0.03);
+      border-left: 3px solid #7c3aed;
+      padding: 14px 18px;
+      margin-bottom: 12px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+      line-height: 1.75;
+    }
+    .case-list li strong { color: #f9a8d4; }
+
+    /* Checklist */
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+    .checklist li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      font-size: 0.95rem;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li .check-icon { color: #4ade80; flex-shrink: 0; }
+
+    /* Action list */
+    .action-list {
+      list-style: none;
+      padding: 0;
+      counter-reset: action;
+      margin: 16px 0;
+    }
+    .action-list li {
+      counter-increment: action;
+      padding: 12px 0 12px 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      font-size: 0.95rem;
+      position: relative;
+      line-height: 1.7;
+    }
+    .action-list li:last-child { border-bottom: none; }
+    .action-list li::before {
+      content: counter(action);
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 30px;
+      height: 30px;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.85rem;
+      color: #fff;
+    }
+
+    /* Hotline box */
+    .hotline-box {
+      background: rgba(124,58,237,0.12);
+      border: 1px solid rgba(124,58,237,0.4);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin: 36px 0;
+    }
+    .hotline-box h3 {
+      color: #c4b5fd;
+      margin-bottom: 14px;
+      font-size: 1.05rem;
+    }
+    .hotline-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .hotline-box ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(124,58,237,0.2);
+      font-size: 0.92rem;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .hotline-box ul li:last-child { border-bottom: none; }
+    .hotline-box ul li strong { color: #f9a8d4; white-space: nowrap; }
+
+    /* Summary box */
+    .summary-box {
+      background: linear-gradient(135deg, rgba(219,39,119,0.12), rgba(124,58,237,0.12));
+      border: 1px solid rgba(219,39,119,0.3);
+      border-radius: 14px;
+      padding: 26px 28px;
+      margin: 36px 0;
+    }
+    .summary-box h3 {
+      color: #f9a8d4;
+      font-size: 1.1rem;
+      margin-bottom: 14px;
+    }
+    .summary-box p {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: #d0d0f0;
+    }
+
+    /* Footer */
+    .article-footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.82rem;
+      color: #666;
+    }
+    .article-footer h4 {
+      color: #888;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+    }
+    .article-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-footer ul li { margin-bottom: 6px; }
+    .article-footer a { color: #7c3aed; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <span class="tag">推し活トラブル</span>
+
+  <h1>【2026年5月17日更新】「推しのライブ絶対行く！」がSNS詐欺師の狙い目──チケット・グッズ詐欺で失う夏と10万円</h1>
+
+  <div class="meta">
+    <span>📅 2026年5月17日</span>
+    <span>🏷 推し活トラブル / SNS詐欺</span>
+    <span>⏱ 読了約6分</span>
+  </div>
+
+  <div class="hero-banner">
+    <span class="hero-emoji">🎟️🚨</span>
+    <span class="hero-text">「チケット譲ります」の裏に罠</span>
+  </div>
+
+  <p class="lead">
+    「ライブ当選した！でも行けなくなった、譲ります」──X（旧Twitter）やInstagramで日常的に見かけるこの投稿が、今や詐欺師の最大の釣り針になっている。国民生活センターへのチケット転売トラブル相談は2022年度だけで1,628件。被害は1件あたり平均5〜10万円に及ぶことも珍しくなく、「推し活」という強い動機を持つZ世代は詐欺師にとって最も狙いやすいターゲットだ。
+  </p>
+
+  <h2>📊 数字で見る推し活詐欺の実態</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <span class="num">1,628件</span>
+      <span class="label">年間チケット転売トラブル相談数<br>（国民生活センター2022年度）</span>
+    </div>
+    <div class="stat-card">
+      <span class="num">57%</span>
+      <span class="label">夏イベント詐欺に不安を感じる日本人の割合<br>（McAfee 2025年調査）</span>
+    </div>
+    <div class="stat-card">
+      <span class="num">3倍</span>
+      <span class="label">ライブシーズン前後のSNSチケット詐欺アカウント増加率</span>
+    </div>
+    <div class="stat-card">
+      <span class="num">19%</span>
+      <span class="label">「どう自分を守ればいいか分からない」と答えた被害経験者</span>
+    </div>
+  </div>
+
+  <h2>🎪 「推し活」がなぜ詐欺師に狙われるのか</h2>
+
+  <p>
+    Z世代の「推し活」支出は年間平均10万円超（2025年調査）とも言われ、ライブチケット・限定グッズへの執着は強い。とりわけ人気アーティストのライブは「抽選に落ちたら絶対行けない」という焦りが生まれやすく、この心理的プレッシャーが詐欺師の最大の武器になっている。公式チケットが完売した直後にSNSで「1枚余ってます」という投稿が急増するのも偶然ではなく、詐欺師が意図的にタイミングを合わせているためだ。
+  </p>
+
+  <p>
+    さらに厄介なのが、偽グッズ・偽サイン入り商品の横行だ。フリマアプリやSNS個人間取引でアーティストのサイン入りグッズを高額購入したら偽物だった、という被害も急増している。「公式には売っていない希少品」という設定が、購入者の注意力を低下させる。
+  </p>
+
+  <h2>🕵️ 詐欺師の具体的な手口5パターン</h2>
+
+  <div class="warning-box">
+    <div class="warning-title">⚠️ 代表的な推し活詐欺手口</div>
+    <ul>
+      <li>
+        <span>🎫</span>
+        <span><strong>完売直後チケット詐欺：</strong>抽選結果発表直後にX・InstagramへDM。「急用で行けなくなった」「定価で譲ります」と言いながら、振込後に音信不通。アカウントは詐欺後にすぐ削除される。</span>
+      </li>
+      <li>
+        <span>📦</span>
+        <span><strong>偽グッズ・フリマ詐欺：</strong>メルカリ風の個人取引ではなくSNS経由での送金を誘導。「公式非売品」「本人サイン入り」と称して高額請求し、届いたのは粗悪な偽物か、そもそも何も届かない。</span>
+      </li>
+      <li>
+        <span>🤝</span>
+        <span><strong>身分証偽造・信頼演出詐欺：</strong>他人の身分証写真や「推し歴3年」プロフィールを偽造して信頼させる。フォロワー数も購入可能なため、多いからといって安心できない。</span>
+      </li>
+      <li>
+        <span>⏰</span>
+        <span><strong>タイムプレッシャー詐欺：</strong>「5分以内に入金してくれないと他の人に回します」「今日中しか対応できない」と急かして冷静な判断を奪う。推しへの執着心が焦りに変わる瞬間を狙う。</span>
+      </li>
+      <li>
+        <span>📲</span>
+        <span><strong>PayPay・コンビニ入金誘導詐欺：</strong>クレジットカード・正規決済を避け、PayPayや電子マネー、コンビニ払いを指定する。これらは送金後のキャンセルや返金がほぼ不可能だからだ。</span>
+      </li>
+    </ul>
+  </div>
+
+  <h2>📖 実際に起きた被害ケース</h2>
+
+  <ul class="case-list">
+    <li>
+      <strong>【ケース1・19歳・女性】Xで知り合ったファン仲間に8万円を振込</strong><br>
+      同じアーティストのファン同士でXのファンアカウントで親しくなった後、「2枚当たったけど1枚余った」と連絡が来た。長いやり取りで信頼していたため即振込。翌日アカウントは削除され連絡も途絶えた。後からわかったのは、相手が同じ手口で十数人から金銭を騙し取っていたこと。
+    </li>
+    <li>
+      <strong>【ケース2・22歳・男性】Instagramの限定グッズに15万円</strong><br>
+      海外ツアーのみで販売された公式グッズを「知人から入手した」と称する出品に飛びついた。身分証の写真まで見せてもらい安心したが届いたのは精巧な偽物。出品者は連絡後に即ブロック。フリマサービスを通さない個人取引だったため補償なし。
+    </li>
+    <li>
+      <strong>【ケース3・17歳・女性】「推し活ローン」で借金まで</strong><br>
+      チケット詐欺で1度被害に遭った後も諦めきれず、別のアカウントからの出品に再度送金。複数の被害が重なり合計12万円の損失。バイト代だけでは補えず、消費者金融に手を出す寸前まで追い詰められた。
+    </li>
+  </ul>
+
+  <h2>🔍 詐欺アカウントを見破る7つのチェックポイント</h2>
+
+  <ul class="checklist">
+    <li><span class="check-icon">🚩</span><span><strong>アカウント作成日が1年未満</strong>──プロフィールの「登録日」を確認。詐欺師は使い捨てアカウントを量産する。</span></li>
+    <li><span class="check-icon">🚩</span><span><strong>直近でユーザー名を変更している</strong>──過去の詐欺歴を消すためリネームを繰り返す行動パターンがある。</span></li>
+    <li><span class="check-icon">🚩</span><span><strong>「5分以内」「今日中」など極端な急かし</strong>──冷静に考えさせないための時間的プレッシャーは詐欺の定番テクニック。</span></li>
+    <li><span class="check-icon">🚩</span><span><strong>クレジットカード・公式決済を拒否する</strong>──PayPay・コンビニ払い・電子マネーのみ対応は返金不能狙いのサイン。</span></li>
+    <li><span class="check-icon">🚩</span><span><strong>身分証・住所を見せても「先払い」を要求</strong>──本物の売主なら先払い一択にこだわる理由はない。</span></li>
+    <li><span class="check-icon">🚩</span><span><strong>投稿数が極端に少ない or 急に増えた</strong>──詐欺直前に推し活風の投稿を大量追加してファンに見せかけるパターンがある。</span></li>
+    <li><span class="check-icon">🚩</span><span><strong>「他にも希望者がいる」という競争煽り</strong>──存在しないライバルを作り出して判断を急がせる典型的な誘導。</span></li>
+  </ul>
+
+  <h2>🛡️ 被害に遭わないための実践ガイド</h2>
+
+  <ol class="action-list">
+    <li><strong>チケットは必ず公式ルートのみ。</strong>公式サイト・公式チケット販売サービス（チケットぴあ、ローソンチケット、e+）以外で購入しない。公式に「リセールサービス」がある場合はそれを利用する。</li>
+    <li><strong>SNS個人間取引は原則ゼロにする。</strong>「どうしても行きたい」気持ちが判断力を下げる。完売なら諦めるか次回を狙うのが最終的に最も安全。</li>
+    <li><strong>やむを得ず個人取引する場合はエスクローサービスを使う。</strong>双方確認後に送金される仕組みを使うことで、未着リスクを下げられる。ただし詐欺師はこれを嫌がるためここでも見極められる。</li>
+    <li><strong>金額に関係なく「急かしてくる相手」は即ブロック。</strong>焦らせる戦術は詐欺のサイン。どんなに推しのチケットでも冷静でいることが第一の防御。</li>
+    <li><strong>被害に遭ったら48時間以内に相談・通報。</strong>時間が経つほど証拠が消え返金も難しくなる。振込先口座・取引履歴・メッセージのスクリーンショットを必ず保存する。</li>
+  </ol>
+
+  <div class="hotline-box">
+    <h3>📞 相談窓口・通報先</h3>
+    <ul>
+      <li><strong>#9110（警察相談専用）</strong><span>詐欺・トラブル全般の相談。24時間対応（一部地域を除く）。被害届の前に状況確認・アドバイスが受けられる。</span></li>
+      <li><strong>警察庁SOS47</strong><span>特殊詐欺・SNS型詐欺の情報提供・相談。ウェブフォームあり（<a href="https://www.npa.go.jp/bureau/safetylife/sos47/" target="_blank" rel="noopener">npa.go.jp/sos47</a>）。</span></li>
+      <li><strong>国民生活センター（188）</strong><span>チケット・グッズトラブルの消費者相談。最寄りの消費生活センターにつながる。</span></li>
+      <li><strong>振込口座の凍結申請</strong><span>銀行に被害申告すると振込先口座の凍結が可能な場合がある。証拠が揃っているほど迅速に対応してもらいやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="summary-box">
+    <h3>📝 まとめ</h3>
+    <p>
+      推しへの愛情は本物でも、SNSで「チケット譲ります」と声をかけてくる相手は本物のファンとは限らない。詐欺師はZ世代の「推し活」という強い動機と、完売プレッシャーによる焦りを組み合わせて巧みに罠を張る。身分証を見せてもらっても、フォロワー数が多くても安心できない。チケットは公式のみ・個人取引ゼロが自分を守る最強ルールだ。もし被害に遭ったら48時間以内に#9110か国民生活センター188へ。推し活は楽しく安全に続けよう。
+    </p>
+  </div>
+
+  <!-- PR SECTION -->
+  <div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+    <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+    <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+      <div style="flex: 1; min-width: 200px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+          <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+          <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+        </div>
+        <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+        <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+          17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+          <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+        </p>
+        <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+          <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+          <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+          <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+          <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+          <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+          <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+            style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+            くわしくはこちら →
+          </a>
+        </div>
+        <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+          メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+        </p>
+      </div>
+      <div style="flex-shrink: 0; width: 200px;">
+        <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+          alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+  <!-- /PR SECTION -->
+
+  <footer class="article-footer">
+    <h4>📚 参考情報源</h4>
+    <ul>
+      <li><a href="https://www.kokusen.go.jp/news/data/n-20220804_2.html" target="_blank" rel="noopener">"推し"に会えない！？転売チケットの購入トラブルが急増中！ – 国民生活センター（2022）</a></li>
+      <li><a href="https://www.secom.co.jp/anshinnavi/other/backnumber395.html" target="_blank" rel="noopener">推し活でのトラブルと注意すべきポイント – セコム あんしんライフnavi</a></li>
+      <li><a href="https://www.rakuten-bank.co.jp/security/crime/sns-ticket-fraud.html" target="_blank" rel="noopener">SNSチケット詐欺の手口・事例と対策 – 楽天銀行</a></li>
+      <li><a href="https://www.police.pref.saitama.lg.jp/c0070/kurashi/cyber-ticket.html" target="_blank" rel="noopener">SNS上でのチケット詐欺に注意！ – 埼玉県警察</a></li>
+      <li><a href="https://prtimes.jp/main/html/rd/p/000000061.000033447.html" target="_blank" rel="noopener">夏のイベントシーズンを前に「チケット詐欺」の急増に要注意！ – McAfee（2025）</a></li>
+      <li><a href="https://frauddetection.cacco.co.jp/media/fraud-access/13210/" target="_blank" rel="noopener">マッチングアプリ詐欺の主な5つの手口 – かっこ株式会社</a></li>
+    </ul>
+  </footer>
+
+</div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
