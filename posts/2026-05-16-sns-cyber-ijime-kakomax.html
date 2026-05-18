@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年5月16日更新】「友達のふりして陰で晒してる人へ」──SNSいじめが過去最多76万件突破。Z世代の"消えない傷"の実態</title>
+  <meta name="description" content="文科省2024年度調査でいじめ認知件数が76万9,022件と過去最多を更新。ネットいじめは2万4,678件。SNS上での"見えない暴力"の手口・心理的被害・法的対処・相談先をZ世代向けに徹底解説。">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0f0f1a;
+      color: #e0e0f0;
+      font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+    .tag {
+      display: inline-block;
+      background: linear-gradient(135deg, #db2777, #7c3aed);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.06em;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.45;
+      color: #f0e8ff;
+      margin-bottom: 14px;
+      font-weight: bold;
+    }
+    .meta {
+      font-size: 0.82rem;
+      color: #8888aa;
+      margin-bottom: 32px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .meta span { display: flex; align-items: center; gap: 4px; }
+
+    /* Hero Banner */
+    .hero-banner {
+      width: 100%;
+      border-radius: 16px;
+      padding: 60px 24px;
+      background: linear-gradient(135deg, #2d0040 0%, #0a1a2e 50%, #1a0030 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      margin-bottom: 36px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(219,39,119,0.2), transparent 60%),
+                  radial-gradient(circle at 70% 50%, rgba(124,58,237,0.2), transparent 60%);
+    }
+    .hero-banner .hero-emoji {
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 4px 12px rgba(219,39,119,0.5));
+    }
+    .hero-banner .hero-sub {
+      position: relative;
+      z-index: 1;
+      font-size: 1.05rem;
+      color: #f9a8d4;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: #d0d0f0;
+      border-left: 4px solid #db2777;
+      padding-left: 18px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #f0e8ff;
+      margin: 40px 0 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #7c3aed44;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #c4b5fd;
+      margin: 24px 0 10px;
+    }
+    p { margin-bottom: 16px; color: #d0d0f0; }
+    a { color: #f9a8d4; text-decoration: underline; }
+    a:hover { color: #db2777; }
+
+    /* Stat Grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 20px 0 32px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1a0a2e, #0d1a2a);
+      border: 1px solid #7c3aed44;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-card .num {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      line-height: 1.2;
+    }
+    .stat-card .unit {
+      font-size: 0.85rem;
+      color: #c4b5fd;
+      margin-top: 4px;
+    }
+    .stat-card .label {
+      font-size: 0.78rem;
+      color: #8888aa;
+      margin-top: 6px;
+    }
+
+    /* Warning Box */
+    .warning-box {
+      background: linear-gradient(135deg, #2d0a1a, #1a0028);
+      border: 1px solid #db277766;
+      border-radius: 12px;
+      padding: 22px 22px 18px;
+      margin: 24px 0;
+    }
+    .warning-box .warn-title {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #f9a8d4;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .warning-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .warning-box ul li {
+      padding: 8px 0 8px 20px;
+      position: relative;
+      color: #d0d0f0;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #ffffff10;
+    }
+    .warning-box ul li:last-child { border-bottom: none; }
+    .warning-box ul li::before {
+      content: '⚠️';
+      position: absolute;
+      left: 0;
+      font-size: 0.85rem;
+    }
+
+    /* Case List */
+    .case-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+    .case-list li {
+      background: #12122a;
+      border-left: 3px solid #7c3aed;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      color: #d0d0f0;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .case-list li strong {
+      color: #f9a8d4;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* Action / Checklist */
+    .action-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 24px;
+    }
+    .action-list li {
+      padding: 10px 0 10px 30px;
+      position: relative;
+      color: #d0d0f0;
+      border-bottom: 1px solid #ffffff0d;
+      font-size: 0.95rem;
+    }
+    .action-list li::before {
+      content: '✅';
+      position: absolute;
+      left: 0;
+      font-size: 0.9rem;
+    }
+
+    /* Hotline Box */
+    .hotline-box {
+      background: linear-gradient(135deg, #0a2010, #0a1a2e);
+      border: 1px solid #4ade8044;
+      border-radius: 12px;
+      padding: 22px 22px 18px;
+      margin: 32px 0;
+    }
+    .hotline-box .hotline-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #4ade80;
+      margin-bottom: 14px;
+    }
+    .hotline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .hotline-item {
+      background: #ffffff08;
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .hotline-item .hname {
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: #e0e0f0;
+      margin-bottom: 4px;
+    }
+    .hotline-item .hnum {
+      font-size: 1.1rem;
+      color: #4ade80;
+      font-weight: bold;
+    }
+    .hotline-item .hdesc {
+      font-size: 0.78rem;
+      color: #8888aa;
+      margin-top: 4px;
+    }
+
+    /* Summary Box */
+    .summary-box {
+      background: linear-gradient(135deg, #1a0a2e, #0d1a2a);
+      border: 1px solid #7c3aed66;
+      border-radius: 14px;
+      padding: 28px 24px;
+      margin: 36px 0;
+    }
+    .summary-box h3 {
+      color: #c4b5fd;
+      font-size: 1.1rem;
+      margin-bottom: 14px;
+      margin-top: 0;
+    }
+    .summary-box p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    /* Article Footer */
+    .article-footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #ffffff15;
+    }
+    .article-footer h4 {
+      font-size: 0.85rem;
+      color: #8888aa;
+      margin-bottom: 12px;
+    }
+    .article-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .article-footer ul li {
+      margin-bottom: 8px;
+      font-size: 0.82rem;
+    }
+    .article-footer ul li a {
+      color: #7c7ca0;
+      text-decoration: none;
+    }
+    .article-footer ul li a:hover {
+      color: #c4b5fd;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.4rem; }
+      .hero-banner { font-size: 3.5rem; padding: 48px 20px; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <span class="tag">🆘 SNSいじめ・ネットハラスメント</span>
+
+    <h1>【2026年5月16日更新】「友達のふりして陰で晒してる人へ」──SNSいじめが過去最多76万件突破。Z世代の"消えない傷"の実態</h1>
+
+    <div class="meta">
+      <span>📅 2026年5月16日</span>
+      <span>🏷️ ネットいじめ / SNSトラブル</span>
+      <span>⏱️ 読了：約8分</span>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <span class="hero-emoji">💬😔</span>
+      <span class="hero-sub">既読スルー・晒し・グループ外し…<br>あなたの「ちょっとした行為」が人を追い詰める</span>
+    </div>
+
+    <!-- Lead -->
+    <p class="lead">
+      文部科学省の2024年度調査で、いじめの認知件数が<strong>76万9,022件</strong>と過去最多を更新。そのうちSNSやゲームのチャットを使った「ネットいじめ」は<strong>2万4,678件</strong>で、こちらも過去最多だ。画面の向こうでこっそり行われる誹謗中傷・晒し・グループ外し。「冗談のつもり」「バレないから大丈夫」という意識が、相手の心を静かに、しかし確実に壊している。
+    </p>
+
+    <!-- Stats Section -->
+    <h2>📊 数字で見るSNSいじめの今</h2>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">76.9<span style="font-size:1.2rem">万</span></div>
+        <div class="unit">件</div>
+        <div class="label">いじめ認知件数（2024年度・過去最多）</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">24,678</div>
+        <div class="unit">件</div>
+        <div class="label">ネットいじめ認知件数（2023年度・過去最多）</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">1,300</div>
+        <div class="unit">件</div>
+        <div class="label">いじめ重大事態（前年比4割増）</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">約半数</div>
+        <div class="unit"></div>
+        <div class="label">高校1年生がネットトラブル経験あり（総務省2024）</div>
+      </div>
+    </div>
+    <p style="font-size:0.82rem; color:#666; margin-top:-16px; margin-bottom:32px;">出典：文部科学省「児童生徒の問題行動・不登校等生徒指導上の諸課題に関する調査」2024年度／総務省「青少年のインターネット利用に係る調査」2024年6月</p>
+
+    <!-- Section 1 -->
+    <h2>📱 SNSいじめの「手口」──気づかれないからこそ深刻</h2>
+    <p>
+      かつての「いじめ」はクラス内・校内で完結することが多かった。しかし今は、スマホを通じて<strong>24時間365日、家にいても被害が続く</strong>。文科省の調査でも「パソコンや携帯電話等で、誹謗中傷や嫌なことをされる」いじめの認知件数は年々増加しており、もはや学校側だけでは把握しきれない水準に達している。
+    </p>
+    <p>
+      Z世代のコミュニケーションの場はLINE・X・Instagram・TikTok・ゲームのチャットなど多岐にわたり、それぞれの場でいじめが発生している。<a href="https://www.kyoiku-press.com/post-250549/" target="_blank" rel="noopener">教育業界ニュース「教育PRO」</a>によれば、SNSいじめの特徴として「加害者が被害者の反応を直接見ないため罪悪感が薄れやすい」「拡散速度が速く被害が広がりやすい」「証拠が残るにも関わらず削除が難しい」の3点が指摘されている。
+    </p>
+
+    <div class="warning-box">
+      <div class="warn-title">⚠️ Z世代に多発「SNSいじめの主な手口」</div>
+      <ul>
+        <li>グループLINEから突然退出させられる（グループ外し）</li>
+        <li>本人抜きの「裏グループ」で悪口・晒し画像を共有する</li>
+        <li>Xやインスタのストーリーに特定できる形で嘲笑投稿する</li>
+        <li>既読にしても無視し続ける集団による「既読スルー攻撃」</li>
+        <li>本人の写真・動画を無断でスクショしてネタにする</li>
+        <li>TikTokライブ中にコメント欄を荒らす・アンチコメ爆撃</li>
+        <li>ゲームのフレンド一斉ブロックやパーティー除外</li>
+        <li>偽アカウントを作って本人を装い悪評を拡散する</li>
+      </ul>
+    </div>
+
+    <!-- Section 2 -->
+    <h2>😔 「冗談だから」では済まない──被害者の心理的ダメージ</h2>
+    <p>
+      ネットいじめは「画面の向こうだから大したことない」と思われがちだが、実際の被害は深刻だ。日本財団の調査では、ネットいじめの被害経験者の多くが<strong>不眠・食欲不振・登校拒否・自傷行為</strong>といった深刻な症状を訴えており、自殺念慮に至るケースも報告されている。
+    </p>
+
+    <ul class="case-list">
+      <li>
+        <strong>【ケース①】Instagram「裏垢」での中傷（女子高校生・16歳）</strong>
+        同じクラスの子が匿名アカウントで「あいつ臭い」「ブス」と毎日投稿。始めはスルーしていたが3ヶ月後に自分のことだと判明。登校できなくなり、スクールカウンセラーに相談して学校が介入した。
+      </li>
+      <li>
+        <strong>【ケース②】LINEグループからの突然の退出（男子中学生・14歳）</strong>
+        仲良しグループのLINEから理由も告げられず全員退出。翌日登校したら無視された。その後、別グループで自分の悪口が広まっていたことを知り、不登校に。
+      </li>
+      <li>
+        <strong>【ケース③】TikTokでのなりすまし投稿（女子大生・19歳）</strong>
+        元カレが別れた後に本人の顔写真を使った偽アカウントを作成し、「ヤリモク」などの虚偽プロフィールで投稿。複数の知人から「見たけど大丈夫？」と連絡が来て発覚。弁護士を通じて削除・損害賠償請求を行った。
+      </li>
+    </ul>
+
+    <!-- Section 3 -->
+    <h2>⚖️ 実は「犯罪」になる可能性──知らないと損する法律知識</h2>
+    <p>
+      「ちょっといじっただけ」「みんなもやってた」は法律上通用しない。ネットいじめは状況によって複数の法律に抵触する。
+    </p>
+    <p>
+      まず<strong>名誉毀損罪（刑法230条）</strong>は3年以下の懲役または50万円以下の罰金。「〇〇ちゃん、実は不潔らしいよ」といった特定個人についての虚偽・事実の摘示がこれにあたる。<strong>侮辱罪（刑法231条）</strong>は2022年の厳罰化で最大1年以下の懲役または30万円以下の罰金となり、「キモい」「クソ」といった抽象的な罵倒でも適用され得る。さらに<a href="https://www.npa.go.jp/bureau/cyber/countermeasures/defamation.html" target="_blank" rel="noopener">警察庁のサイバー犯罪対策</a>では、ネットでの中傷について積極的に捜査を行う方針が示されており、未成年者の保護者が損害賠償を請求されたケースも増加している。
+    </p>
+    <p>
+      特に<strong>写真の無断転載・晒し行為</strong>は肖像権侵害・プライバシー権侵害にも該当する。「学校の廊下で撮ったから公の場所だし問題ない」は誤りで、本人の同意なしにSNS投稿すれば民事上の損害賠償責任が生じうる。
+    </p>
+
+    <!-- Action List: How to protect yourself -->
+    <h2>🛡️ 自分を守るために今すぐできること</h2>
+    <ul class="action-list">
+      <li>被害を受けたらスクリーンショットで記録→すぐに証拠保全する（削除されても記録があれば対処可能）</li>
+      <li>相手アカウントをブロック・報告する（Instagram・X・LINE・TikTokいずれも通報機能あり）</li>
+      <li>一人で抱え込まない──信頼できる大人・先生・スクールカウンセラーに話す</li>
+      <li>誹謗中傷投稿は「プロバイダ責任制限法」に基づき発信者情報開示請求が可能→弁護士に相談</li>
+      <li>自分もやっていないか確認──「冗談のつもり」の投稿が相手を傷つけていることがある</li>
+      <li>SNSプライバシー設定を見直す──フォロワー限定・タグ付け承認制に変更する</li>
+      <li>グループLINEなどで「空気を読んで」いじめに加担しない勇気を持つ</li>
+      <li>精神的にしんどくなったら24時間対応の相談窓口に連絡する</li>
+    </ul>
+
+    <!-- Hotline Box -->
+    <div class="hotline-box">
+      <div class="hotline-title">📞 今すぐ相談できる窓口</div>
+      <div class="hotline-grid">
+        <div class="hotline-item">
+          <div class="hname">よりそいホットライン</div>
+          <div class="hnum">0120-279-338</div>
+          <div class="hdesc">24時間・無料、何でも相談OK</div>
+        </div>
+        <div class="hotline-item">
+          <div class="hname">子どもの人権110番</div>
+          <div class="hnum">0120-007-110</div>
+          <div class="hdesc">平日8:30〜17:15、無料</div>
+        </div>
+        <div class="hotline-item">
+          <div class="hname">警察相談専用電話</div>
+          <div class="hnum">#9110</div>
+          <div class="hdesc">ネット犯罪・ストーカー等</div>
+        </div>
+        <div class="hotline-item">
+          <div class="hname">いじめ相談ナビ</div>
+          <div class="hnum">#0120</div>
+          <div class="hdesc">文科省・都道府県教育委員会</div>
+        </div>
+        <div class="hotline-item">
+          <div class="hname">ネット上の人権侵害</div>
+          <div class="hnum">0570-003-110</div>
+          <div class="hdesc">法務省・みんなの人権110番</div>
+        </div>
+        <div class="hotline-item">
+          <div class="hname">SNS相談（警察庁）</div>
+          <div class="hnum">SOS47</div>
+          <div class="hdesc">npa.go.jp/safetylife/sos47</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary Box -->
+    <div class="summary-box">
+      <h3>📌 まとめ</h3>
+      <p>SNSいじめは「画面の向こうのこと」ではなく、被害者の日常生活・精神・将来に深刻な影響を与えるリアルな暴力だ。2024年度のいじめ認知件数は76万件超と過去最多を更新し、ネットいじめは日本全国で毎日起きている。</p>
+      <p>加害者側は「ノリでやった」「みんなもやってた」と思いがちだが、名誉毀損罪・侮辱罪・プライバシー権侵害として法的責任を問われるケースは着実に増えている。未成年でも保護者が損害賠償を請求される時代だ。</p>
+      <p>被害を受けたときは「一人で解決しようとしない」こと。証拠を残し、信頼できる大人に相談し、必要であれば弁護士や警察に頼る。SNSの「いいね」や「バズ」より大切なのは、あなた自身の安全と心の健康だ。</p>
+    </div>
+
+    <!-- PR SECTION -->
+    <div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+      <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+      <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+        <div style="flex: 1; min-width: 200px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+            <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+          </div>
+          <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+          <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+            17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+            <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+            <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+            <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+            <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+            <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+            <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+            <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+              style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+              くわしくはこちら →
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+            メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+          </p>
+        </div>
+        <div style="flex-shrink: 0; width: 200px;">
+          <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+            alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+    <!-- /PR SECTION -->
+
+    <footer class="article-footer">
+      <h4>📚 参考情報源</h4>
+      <ul>
+        <li><a href="https://www.mext.go.jp/content/20250110-mxt_syoto01-000039337_7.pdf" target="_blank" rel="noopener">文部科学省「児童生徒の問題行動・不登校等生徒指導上の諸課題に関する調査」2024年度</a></li>
+        <li><a href="https://www.nikkei.com/article/DGXZQOUE2524H0V21C22A0000000/" target="_blank" rel="noopener">日本経済新聞「ネットいじめ、過去最多2万件超 文科省の全国調査」</a></li>
+        <li><a href="https://www.nikkei.com/article/DGXZQOUE25A1X0V21C24A0000000/" target="_blank" rel="noopener">日本経済新聞「いじめ重大事態、4割増の1300件で最多 23年度」</a></li>
+        <li><a href="https://www.soumu.go.jp/main_content/000955177.pdf" target="_blank" rel="noopener">総務省「我が国における青少年のインターネット利用に係る調査」2024年6月</a></li>
+        <li><a href="https://www.kyoiku-press.com/post-250549/" target="_blank" rel="noopener">教育業界ニュース「SNSいじめ（ネットいじめ）の問題点と学校に求められる対応」</a></li>
+        <li><a href="https://www.npa.go.jp/bureau/cyber/countermeasures/defamation.html" target="_blank" rel="noopener">警察庁「サイバー犯罪対策：誹謗中傷」</a></li>
+        <li><a href="https://weknowledge.jp/blog/general/post_26101" target="_blank" rel="noopener">ウイナレッジ「Z世代が巻き込まれやすいSNSトラブルと周囲の大人ができる対策」</a></li>
+      </ul>
+    </footer>
+
+  </div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
