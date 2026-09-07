@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【2026年9月8日更新】「好き嫌い.comに晒された」はもう泣き寝入りしなくていい──あの晒し掲示板が国の規制対象になった話</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background-color: #0f0f1a;
+  color: #e0e0f0;
+  font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+  line-height: 1.85;
+  padding: 24px 16px 60px;
+  font-size: 1rem;
+}
+.container { max-width: 780px; margin: 0 auto; }
+.tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #db2777, #7c3aed);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  margin-bottom: 18px;
+}
+h1 {
+  font-size: clamp(1.35rem, 4vw, 1.9rem);
+  color: #f0e6ff;
+  font-weight: bold;
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+.meta { font-size: 0.82rem; color: #9090b0; margin-bottom: 32px; }
+.hero-banner {
+  width: 100%;
+  border-radius: 16px;
+  padding: 60px 24px;
+  background: #0f0f1a;
+      background-image: url('data:image/jpeg;base64,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');
+      background-size: cover;
+      background-position: center top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  margin-bottom: 36px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+.hero-banner .hero-emoji { position: relative; z-index: 1; }
+.hero-banner .hero-sub {
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  color: #f9a8d4;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+}
+.lead {
+  font-size: 1.05rem;
+  color: #d0d0f0;
+  background: rgba(124,58,237,0.1);
+  border-left: 4px solid #7c3aed;
+  padding: 18px 20px;
+  border-radius: 0 10px 10px 0;
+  margin-bottom: 36px;
+  line-height: 2;
+}
+h2 {
+  font-size: 1.2rem;
+  color: #f0a0d0;
+  font-weight: bold;
+  margin: 44px 0 14px;
+  border-bottom: 2px solid rgba(219,39,119,0.3);
+  padding-bottom: 8px;
+}
+h3 { font-size: 1rem; color: #c4b5fd; margin: 28px 0 10px; font-weight: bold; }
+p { margin-bottom: 18px; color: #d0d0f0; line-height: 1.9; }
+a { color: #c084fc; text-decoration: underline; }
+.dm-bubble {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px 16px 16px 4px;
+  padding: 14px 18px;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #e0e0f0;
+}
+.dm-bubble.right {
+  border-radius: 16px 16px 4px 16px;
+  background: rgba(219,39,119,0.12);
+  border-color: rgba(219,39,119,0.2);
+  margin-left: 40px;
+}
+.dm-sender { font-size: 0.72rem; color: #8080a0; margin-bottom: 4px; }
+.dm-wrap {
+  margin: 20px 0 28px;
+  padding: 16px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.dm-wrap-label { font-size: 0.75rem; color: #7c3aed; font-weight: bold; letter-spacing: 0.08em; margin-bottom: 12px; }
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin: 20px 0 32px;
+}
+.stat-card {
+  background: linear-gradient(135deg, rgba(219,39,119,0.15), rgba(124,58,237,0.15));
+  border: 1px solid rgba(219,39,119,0.3);
+  border-radius: 12px;
+  padding: 18px 14px;
+  text-align: center;
+}
+.stat-card .num { font-size: 2rem; font-weight: bold; color: #f9a8d4; display: block; line-height: 1.2; }
+.stat-card .label { font-size: 0.76rem; color: #b0b0d0; margin-top: 6px; display: block; line-height: 1.5; }
+.warning-box {
+  background: rgba(220,38,38,0.1);
+  border: 1px solid rgba(220,38,38,0.35);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 28px 0;
+}
+.warning-title { font-size: 1rem; font-weight: bold; color: #fca5a5; margin-bottom: 14px; }
+.step-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px;
+  counter-reset: step-counter;
+}
+.step-list li {
+  counter-increment: step-counter;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  font-size: 0.95rem;
+  color: #d0d0f0;
+}
+.step-list li::before {
+  content: "0" counter(step-counter);
+  background: linear-gradient(135deg, #db2777, #7c3aed);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.step-list li strong { color: #f9a8d4; }
+.case-list { list-style: none; padding: 0; margin: 16px 0 24px; }
+.case-list li {
+  background: rgba(124,58,237,0.1);
+  border-left: 3px solid #7c3aed;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  color: #d0d0f0;
+  font-size: 0.95rem;
+}
+.case-list li strong { color: #f9a8d4; }
+.check-list { list-style: none; padding: 0; margin: 16px 0 24px; }
+.check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  background: rgba(124,58,237,0.08);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #d0d0f0;
+  line-height: 1.65;
+}
+.check-list li .ck { flex-shrink: 0; font-size: 1.1rem; }
+.hotline-box {
+  background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(219,39,119,0.12));
+  border: 1px solid rgba(124,58,237,0.4);
+  border-radius: 14px;
+  padding: 24px 22px;
+  margin: 36px 0;
+}
+.hotline-box h3 { color: #e9d5ff; margin-bottom: 14px; }
+.hotline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.hotline-item:last-child { border-bottom: none; }
+.hotline-name { font-weight: bold; color: #c4b5fd; font-size: 0.88rem; min-width: 140px; }
+.hotline-desc { font-size: 0.88rem; color: #b0b0d0; line-height: 1.6; }
+.summary-box {
+  background: rgba(219,39,119,0.08);
+  border: 1px solid rgba(219,39,119,0.3);
+  border-radius: 14px;
+  padding: 24px 22px;
+  margin: 32px 0;
+}
+.summary-box h3 { color: #f9a8d4; font-size: 1.05rem; margin-bottom: 14px; }
+.summary-box ul { list-style: none; padding: 0; }
+.summary-box ul li {
+  padding: 6px 0;
+  color: #d0d0f0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.summary-box ul li:last-child { border-bottom: none; }
+.summary-box ul li::before { content: '✓ '; color: #db2777; font-weight: bold; }
+.hl { color: #f9a8d4; font-weight: bold; }
+.hl-y { color: #fbbf24; font-weight: bold; }
+.hl-g { color: #4ade80; font-weight: bold; }
+.article-footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; color: #888; }
+.article-footer h4 { color: #9090b0; margin-bottom: 10px; font-size: 0.84rem; }
+.article-footer ul { list-style: none; padding: 0; }
+.article-footer ul li { margin-bottom: 6px; }
+.article-footer a { color: #7c7ca0; word-break: break-all; }
+</style>
+<style>
+/* hero-banner-bg-injected */
+.hero-banner {
+  background-image: url("https://beme-blog.pages.dev/images/2026-09-08-johopura-hou-sarashi-site-shitei-2026.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.hero-banner::before {
+  background: rgba(0, 0, 0, 0.45) !important;
+  background-image: none !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.hero-banner > * {
+  position: relative;
+  z-index: 1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<span class="tag">ネット中傷・晒し対策</span>
+
+<h1>【2026年9月8日更新】「好き嫌い.comに晒された」はもう泣き寝入りしなくていい──あの晒し掲示板が国の規制対象に、削除申請は"7日以内に返事"が義務になった</h1>
+
+<div class="meta">2026年9月8日 更新 ／ カテゴリ：ネット中傷・晒し対策／SNSトラブル</div>
+
+<div class="hero-banner">
+  <span class="hero-emoji">⚖️</span>
+  <span class="hero-sub">晒しサイトに"締め切り"ができた日</span>
+</div>
+
+<div class="lead">
+自分の本名とか、元カレに送った写真とか、匿名掲示板に書き込まれてるのを見つけたことある？<br>
+「どうせ運営に言っても無視されるし」って、諦めてスマホ閉じた人。<br>
+その前提、<span class="hl">2026年8月31日から変わったんだよ</span>。あの「好き嫌い.com」も「ガールズちゃんねる」も、国が名指しで規制対象にしたから。
+</div>
+
+<h2>📊 数字で見る「晒しサイト規制」のいま</h2>
+
+<p>まず、なにが起きたのか。総務省が8月31日、<strong>情報流通プラットフォーム対処法（情プラ法）</strong>っていう法律に基づいて、新たに4つの運営者を「大規模プラットフォーム事業者」に指定したんだよね。</p>
+
+<p>そのラインナップがちょっとした事件で。<span class="hl">ガールズちゃんねる、pixiv、note、そして好き嫌い.com</span>。とくに好き嫌い.comは<strong>運営が「個人」</strong>。個人が運営してるサイトが、YouTubeやInstagramと同じ規制の枠に入ったってこと。</p>
+
+<div class="stat-grid">
+  <div class="stat-card"><span class="num">13</span><span class="label">情プラ法の「大規模PF事業者」<br>（今回4者を追加指定）</span></div>
+  <div class="stat-card"><span class="num">7日</span><span class="label">削除の申し出に<br>判断・通知する期限（原則）</span></div>
+  <div class="stat-card"><span class="num">42</span><span class="label">年1回の公表が<br>義務づけられた項目数</span></div>
+  <div class="stat-card"><span class="num">29人</span><span class="label">Xの日本語投稿を<br>削除する監視員（Metaは190人）</span></div>
+  <div class="stat-card"><span class="num">1万件超</span><span class="label">発信者情報開示請求<br>（2年で約2.5倍）</span></div>
+</div>
+
+<p>ちなみに指定の条件は「平均月間発信者数1,000万人以上」。あの掲示板、それだけの人が書き込んでるってことなんだよね……こわ。</p>
+
+<h2>💬 「晒された」って、こういう始まり方をする</h2>
+
+<p>晒し被害って、いきなり炎上から始まると思ってない？　実際は<strong>ものすごく地味に、静かに始まる</strong>んだよ。</p>
+
+<div class="dm-wrap">
+  <div class="dm-wrap-label">📱 よくある晒しのはじまり（再現）</div>
+  <div class="dm-bubble">
+    <div class="dm-sender">友達からのLINE</div>
+    ねえ……あの掲示板に、あんたの名前っぽいスレ立ってるんだけど。見た？
+  </div>
+  <div class="dm-bubble right">
+    <div class="dm-sender">あなた（心の声）</div>
+    え、うそでしょ。名前も学校も、あの写真まで載ってるじゃん……
+  </div>
+  <div class="dm-bubble">
+    <div class="dm-sender">数日後の現実</div>
+    「検索したら1ページ目に出てくる」「バイト先の人にも見られた」「削除依頼したけど返事すら来ない」
+  </div>
+</div>
+
+<p>この「<span class="hl">返事すら来ない</span>」が、いちばんキツいところだったんだよね。書いた人は匿名で、運営は無反応で、被害者だけが名前を晒されたまま。</p>
+
+<p>そこに手を入れたのが情プラ法。<strong>削除の申し出には、原則7日以内に判断して申立人に通知しなきゃいけない</strong>っていうルールを事業者に課した。返事しない、が許されなくなったってこと。</p>
+
+<h2>😨 晒しは4段階でエスカレートする</h2>
+
+<p>とくにZ世代の場合、晒しのきっかけが「恋愛」であることがすごく多い。別れ話、フラれた腹いせ、元カレ・元カノへの当てつけ。その流れがこれ。</p>
+
+<ol class="step-list">
+  <li><strong>種まきフェーズ</strong>：匿名掲示板に「〇〇高校の△△って子どう思う？」みたいな、あえてボカした問いかけスレが立つ</li>
+  <li><strong>特定フェーズ</strong>：知ってる誰かが「それ〇〇でしょ」とフルネームや学校名を書き込み、他人が勝手に情報を足していく</li>
+  <li><strong>画像流入フェーズ</strong>：交際中に送った写真、鍵アカの投稿、卒アルの写真がスクショで貼られる。ここで一気に検索に引っかかるようになる</li>
+  <li><strong>生活破壊フェーズ</strong>：バイト先・進学先・家族にまで届き、就活や進学の場面で"検索されて終わる"状態に。書いた本人はとっくに飽きて消えている</li>
+</ol>
+
+<p>ポイントは、<strong>最初のスレを立てた人が最後まで加害し続けるわけじゃない</strong>ってこと。1人が種をまいて、あとは通りすがりの何十人かが面白がって育てる。だから「誰を訴えればいいの？」ってなりやすいんだよね。</p>
+
+<div class="warning-box">
+  <div class="warning-title">⚠️ 一見セーフに見えて、実はアウトな行為</div>
+  <ul class="case-list">
+    <li><strong>「これ〇〇さんじゃない？」と書き込むだけ</strong>：自分では中傷してないつもりでも、特定を助けた時点で共同不法行為になり得る</li>
+    <li><strong>晒しスレのURLをストーリーに貼る</strong>：拡散に加担した扱い。「見つけただけ」の言い訳は通らない</li>
+    <li><strong>スクショしてグループLINEに流す</strong>：新しい流通経路を作ってる。名誉毀損の成立範囲は「不特定または多数」なので、グループでもアウトになり得る</li>
+    <li><strong>「事実だから問題ない」</strong>：名誉毀損は<span class="hl">事実であっても成立する</span>。真実性が認められて免責されるのは公益目的など厳しい条件を満たしたときだけ</li>
+    <li><strong>「匿名だからバレない」</strong>：発信者情報開示請求は2年で約2.5倍に増えて年1万件超。開示までのハードルは年々下がってる</li>
+  </ul>
+</div>
+
+<h2>⚖️ 知っておきたい法律の話（意外と重い）</h2>
+
+<p>晒し・中傷って「ネットの遊び」で済まないんだよね。ざっくり整理するとこう。</p>
+
+<h3>書いた側にかかる可能性がある罪</h3>
+
+<ul class="case-list">
+  <li><strong>名誉毀損罪</strong>：公然と事実を摘示して社会的評価を下げると成立。3年以下の拘禁刑または50万円以下の罰金</li>
+  <li><strong>侮辱罪</strong>：「ブス」「消えろ」など事実の摘示がない悪口。2022年の厳罰化で1年以下の拘禁刑または30万円以下の罰金まで引き上げ、公訴時効も3年に</li>
+  <li><strong>脅迫罪・強要罪</strong>：「晒すぞ」「言うこと聞かないとバラす」は、それ自体が犯罪</li>
+  <li><strong>民事の損害賠償</strong>：刑事とは別枠。開示費用や弁護士費用を含めて請求されるケースが増えてる</li>
+</ul>
+
+<h3>プラットフォーム側にかかった義務</h3>
+
+<p>で、ここが今回のニュースの本体。情プラ法で指定されたサイトは、<strong>①削除の申し出に原則7日以内で判断・通知</strong>、<strong>②削除対応の実績を年1回・42項目で公表</strong>、この2つを義務づけられてる。</p>
+
+<p>しかもこの制度、ちゃんと歯が生えてる。<span class="hl-y">2026年7月24日、総務省は公表義務違反でGoogle・X・Meta・爆サイ.com運営・ドワンゴの5社に施行後初の是正勧告を出した</span>。報道によればGoogleは42項目中22項目、Xは18項目が不十分だったとされてる。</p>
+
+<p>そして9月に明らかになったのが、その公表資料の中身。<strong>日本語の投稿を削除する監視員の人数が、Xは29人、Metaは190人</strong>。……あれだけの投稿量に対して、この人数。「通報しても消えない」の理由、なんとなく察しがつくよね。</p>
+
+<h2>🛡️ 晒されたとき、実際にやること</h2>
+
+<p>制度が変わったからこそ、動けば結果が出やすくなった。パニックになる前に、この順番でいこう。</p>
+
+<ul class="check-list">
+  <li><span class="ck">📸</span><div>まず<strong>証拠を固定</strong>する。スクショだけじゃなく<strong>URL・投稿日時・スレタイ・レス番号</strong>まで含めて画面全体を保存。消される前が勝負</div></li>
+  <li><span class="ck">🙅</span><div><strong>絶対に反論を書き込まない</strong>。本人が現れると盛り上がって伸びるし、感情的な返信がこっちの不利な証拠になることもある</div></li>
+  <li><span class="ck">📮</span><div>サイトの<strong>削除申請フォームから正式に申し出る</strong>。指定事業者なら原則7日以内に判断と通知が返ってくる義務がある。「どの投稿の、どの部分が、どんな権利を侵害しているか」を具体的に書くのがコツ</div></li>
+  <li><span class="ck">🔍</span><div>検索結果に出るのがつらいときは、<strong>検索エンジン側への削除申請</strong>も別途できる。掲示板本体とは窓口が違うので両方やる</div></li>
+  <li><span class="ck">👮</span><div>脅迫・性的画像が絡むなら<strong>迷わず警察（#9110）へ</strong>。リベンジポルノ防止法の対象なら削除も刑事対応も一気に動く</div></li>
+  <li><span class="ck">⚖️</span><div>加害者を特定したいなら<strong>発信者情報開示請求</strong>。ログの保存期間があるので<span class="hl">とにかく早く弁護士に相談</span>。数か月後だと間に合わないことがある</div></li>
+  <li><span class="ck">🚫</span><div>SNS広告に出てくる「<strong>削除代行</strong>」には要注意。弁護士以外が交渉を代行するのは非弁行為の可能性があって、高額請求＋未解決の二次被害が報告されてる</div></li>
+  <li><span class="ck">🔒</span><div>今のうちに<strong>鍵アカ整理・卒アル画像の削除・本名と紐づく投稿の棚卸し</strong>。晒しの燃料は、たいてい自分の過去投稿から拾われてる</div></li>
+</ul>
+
+<div class="hotline-box">
+  <h3>📞 ひとりで抱えないで──相談窓口</h3>
+  <div class="hotline-item">
+    <div class="hotline-name">違法・有害情報相談センター</div>
+    <div class="hotline-desc">総務省の委託窓口。削除依頼の書き方や手続きを無料でアドバイスしてくれる。まずここでOK</div>
+  </div>
+  <div class="hotline-item">
+    <div class="hotline-name">警察相談専用電話 #9110</div>
+    <div class="hotline-desc">脅迫・ストーカー・性的画像が絡むとき。緊急なら110番</div>
+  </div>
+  <div class="hotline-item">
+    <div class="hotline-name">みんなの人権110番 0570-003-110</div>
+    <div class="hotline-desc">法務局の人権相談。プロバイダへの削除要請を法務局から行ってもらえる場合がある</div>
+  </div>
+  <div class="hotline-item">
+    <div class="hotline-name">セーフライン（Safeline）</div>
+    <div class="hotline-desc">性的画像・私事性的画像の削除要請を専門に扱う通報窓口</div>
+  </div>
+  <div class="hotline-item">
+    <div class="hotline-name">法テラス 0570-078374</div>
+    <div class="hotline-desc">弁護士費用が不安なとき。収入要件を満たせば無料相談・費用立替の制度がある</div>
+  </div>
+</div>
+
+<div class="summary-box">
+  <h3>📌 この記事、3行でまとめると</h3>
+  <ul>
+    <li>2026年8月31日、総務省が好き嫌い.com・ガールズちゃんねる・pixiv・noteを情プラ法の大規模プラットフォーム事業者に追加指定した</li>
+    <li>指定されたサイトは削除の申し出に原則7日以内で判断・通知する義務を負う。「返事が来ない」は制度上おかしい状態になった</li>
+    <li>ただし現場のモデレーターはXで29人・Metaで190人。制度に頼りきらず、証拠固定→正式申請→早めの専門家相談を自分で動かすのが最短ルート</li>
+  </ul>
+</div>
+
+<!-- PR SECTION -->
+<div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+  <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+  <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+    <div style="flex: 1; min-width: 200px;">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+        <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+        <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+      </div>
+      <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+      <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+        17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+        <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+      </p>
+      <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+        <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+        <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+        <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+        <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+        <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+        <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+          style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+          くわしくはこちら →
+        </a>
+      </div>
+      <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+        メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+      </p>
+    </div>
+    <div style="flex-shrink: 0; width: 200px;">
+      <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+        alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+    </div>
+  </div>
+</div>
+<!-- /PR SECTION -->
+
+<footer class="article-footer">
+  <h4>参考情報源</h4>
+  <ul>
+    <li><a href="https://internet.watch.impress.co.jp/docs/news/2137041.html">総務省、「pixiv」「note」など情プラ法の「大規模プラットフォーム事業者」に追加（INTERNET Watch, 2026年9月1日）</a></li>
+    <li><a href="https://internet.watch.impress.co.jp/docs/index/2137616.html">pixiv・note・ガールズちゃんねる・好き嫌いcomが指定されて注目、「情プラ法」って何だ？（INTERNET Watch, 2026年9月2日）</a></li>
+    <li><a href="https://www.soumu.go.jp/menu_news/s-news/01ryutsu02_02000488.html">総務省 報道発表資料（大規模特定電気通信役務提供者の指定）</a></li>
+    <li><a href="https://rocket-boys.co.jp/security-measures-lab/soumu-johopura-law-violation-rectification-recommendation/">総務省、Google・X・Metaなど5社に情プラ法違反で初の是正勧告（セキュリティ対策Lab, 2026年7月27日）</a></li>
+    <li><a href="https://news.infoseek.co.jp/article/yomiuri_20260902_gyt1t00319/">投稿削除するSNS監視員、X29人・メタ190人…総務省の是正勧告受け公表（読売新聞, 2026年9月2日）</a></li>
+    <li><a href="https://www.yomiuri.co.jp/national/20260724-GYT1T00010/">ネット匿名投稿の開示請求1万件超、2年間で2.5倍に増加（読売新聞, 2026年7月24日）</a></li>
+    <li><a href="https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/ihoyugai.html">インターネット上の違法・有害情報に対する対応（情報流通プラットフォーム対処法）／総務省</a></li>
+    <li><a href="https://kai-you.net/article/96412">総務省が「好き嫌いドットコム」「pixiv」「note」を情プラ法対象に指定（KAI-YOU）</a></li>
+  </ul>
+</footer>
+
+</div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
