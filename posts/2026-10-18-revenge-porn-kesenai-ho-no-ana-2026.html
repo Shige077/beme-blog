@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【2026年10月18日更新】「別れたら消すって言ったじゃん」リベンジポルノが“消せない”理由と、AI時代の法の穴</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background-color: #0f0f1a;
+  color: #e0e0f0;
+  font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+  line-height: 1.85;
+  padding: 24px 16px 60px;
+  font-size: 1rem;
+}
+.container { max-width: 780px; margin: 0 auto; }
+.tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #db2777, #7c3aed);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  margin-bottom: 18px;
+}
+h1 {
+  font-size: clamp(1.35rem, 4vw, 1.9rem);
+  color: #f0e6ff;
+  font-weight: bold;
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+.meta { font-size: 0.82rem; color: #9090b0; margin-bottom: 32px; }
+.hero-banner {
+  width: 100%;
+  border-radius: 16px;
+  padding: 60px 24px;
+  background: linear-gradient(135deg, #2d0040 0%, #0a1a2e 50%, #1a0030 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  margin-bottom: 36px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(219,39,119,0.2), transparent 60%),
+              radial-gradient(circle at 70% 50%, rgba(124,58,237,0.2), transparent 60%);
+}
+.hero-banner .hero-emoji { position: relative; z-index: 1; }
+.hero-banner .hero-sub {
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  color: #f9a8d4;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+}
+.lead {
+  font-size: 1.05rem;
+  color: #d0d0f0;
+  background: rgba(124,58,237,0.1);
+  border-left: 4px solid #7c3aed;
+  padding: 18px 20px;
+  border-radius: 0 10px 10px 0;
+  margin-bottom: 36px;
+  line-height: 2;
+}
+h2 {
+  font-size: 1.2rem;
+  color: #f0a0d0;
+  font-weight: bold;
+  margin: 44px 0 14px;
+  border-bottom: 2px solid rgba(219,39,119,0.3);
+  padding-bottom: 8px;
+}
+h3 { font-size: 1rem; color: #c4b5fd; margin: 28px 0 10px; font-weight: bold; }
+p { margin-bottom: 18px; color: #d0d0f0; line-height: 1.9; }
+a { color: #c084fc; text-decoration: underline; }
+.dm-bubble {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px 16px 16px 4px;
+  padding: 14px 18px;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #e0e0f0;
+}
+.dm-bubble.right {
+  border-radius: 16px 16px 4px 16px;
+  background: rgba(219,39,119,0.12);
+  border-color: rgba(219,39,119,0.2);
+  margin-left: 40px;
+}
+.dm-sender { font-size: 0.72rem; color: #8080a0; margin-bottom: 4px; }
+.dm-wrap {
+  margin: 20px 0 28px;
+  padding: 16px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.dm-wrap-label { font-size: 0.75rem; color: #7c3aed; font-weight: bold; letter-spacing: 0.08em; margin-bottom: 12px; }
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin: 20px 0 32px;
+}
+.stat-card {
+  background: linear-gradient(135deg, rgba(219,39,119,0.15), rgba(124,58,237,0.15));
+  border: 1px solid rgba(219,39,119,0.3);
+  border-radius: 12px;
+  padding: 18px 14px;
+  text-align: center;
+}
+.stat-card .num { font-size: 2rem; font-weight: bold; color: #f9a8d4; display: block; line-height: 1.2; }
+.stat-card .label { font-size: 0.76rem; color: #b0b0d0; margin-top: 6px; display: block; line-height: 1.5; }
+.warning-box {
+  background: rgba(220,38,38,0.1);
+  border: 1px solid rgba(220,38,38,0.35);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 28px 0;
+}
+.warning-title { font-size: 1rem; font-weight: bold; color: #fca5a5; margin-bottom: 14px; }
+.step-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px;
+  counter-reset: step-counter;
+}
+.step-list li {
+  counter-increment: step-counter;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  font-size: 0.95rem;
+  color: #d0d0f0;
+}
+.step-list li::before {
+  content: "0" counter(step-counter);
+  background: linear-gradient(135deg, #db2777, #7c3aed);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.step-list li strong { color: #f9a8d4; }
+.case-list { list-style: none; padding: 0; margin: 16px 0 24px; }
+.case-list li {
+  background: rgba(124,58,237,0.1);
+  border-left: 3px solid #7c3aed;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  color: #d0d0f0;
+  font-size: 0.95rem;
+}
+.case-list li strong { color: #f9a8d4; }
+.check-list { list-style: none; padding: 0; margin: 16px 0 24px; }
+.check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  background: rgba(124,58,237,0.08);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #d0d0f0;
+  line-height: 1.65;
+}
+.check-list li .ck { flex-shrink: 0; font-size: 1.1rem; }
+.hotline-box {
+  background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(219,39,119,0.12));
+  border: 1px solid rgba(124,58,237,0.4);
+  border-radius: 14px;
+  padding: 24px 22px;
+  margin: 36px 0;
+}
+.hotline-box h3 { color: #e9d5ff; margin-bottom: 14px; }
+.hotline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.hotline-item:last-child { border-bottom: none; }
+.hotline-name { font-weight: bold; color: #c4b5fd; font-size: 0.88rem; min-width: 140px; }
+.hotline-desc { font-size: 0.88rem; color: #b0b0d0; line-height: 1.6; }
+.summary-box {
+  background: rgba(219,39,119,0.08);
+  border: 1px solid rgba(219,39,119,0.3);
+  border-radius: 14px;
+  padding: 24px 22px;
+  margin: 32px 0;
+}
+.summary-box h3 { color: #f9a8d4; font-size: 1.05rem; margin-bottom: 14px; }
+.summary-box ul { list-style: none; padding: 0; }
+.summary-box ul li {
+  padding: 6px 0;
+  color: #d0d0f0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.summary-box ul li:last-child { border-bottom: none; }
+.summary-box ul li::before { content: '✓ '; color: #db2777; font-weight: bold; }
+.hl { color: #f9a8d4; font-weight: bold; }
+.hl-y { color: #fbbf24; font-weight: bold; }
+.hl-g { color: #4ade80; font-weight: bold; }
+.article-footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; color: #888; }
+.article-footer h4 { color: #9090b0; margin-bottom: 10px; font-size: 0.84rem; }
+.article-footer ul { list-style: none; padding: 0; }
+.article-footer ul li { margin-bottom: 6px; }
+.article-footer a { color: #7c7ca0; word-break: break-all; }
+</style>
+<style>
+/* hero-banner-bg-injected */
+.hero-banner {
+  background-image: url("https://beme-blog.pages.dev/images/2026-10-18-revenge-porn-kesenai-ho-no-ana-2026.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.hero-banner::before {
+  background: rgba(0, 0, 0, 0.45) !important;
+  background-image: none !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.hero-banner > * {
+  position: relative;
+  z-index: 1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<span class="tag">💔 恋愛 × 画像流出</span>
+
+<h1>【2026年10月18日更新】「別れたら消すって言ったじゃん」リベンジポルノが“消せない”理由と、AI時代の法の穴</h1>
+
+<p class="meta">2026年10月18日 ｜ カテゴリ：リベンジポルノ・性的画像被害・ディープフェイク</p>
+
+<div class="hero-banner">
+  <span class="hero-emoji">📸🔒</span>
+  <span class="hero-sub">「撮影OK」は「公開OK」じゃない。</span>
+</div>
+
+<div class="lead">
+  付き合ってるときに撮った写真、<strong>「別れたら消す」って約束したから大丈夫</strong>だと思ってない？<br>
+  2026年9月〜10月、元交際相手やストーカー相手の性的画像をSNSで拡散したとして、<span class="hl">逮捕が相次いでるんだよね</span>。しかも専門家いわく、一度ネットに出た画像は<strong>「1つ消せば終わり」じゃない</strong>。さらにAIで<span class="hl">“撮ってもいない裸”</span>まで作られる時代に、今の法律は追いついてないって話なんだ。
+</div>
+
+<h2>📊 数字で見る「消せない画像」のリアル</h2>
+
+<p>「自分には関係ない」って思った？ でもこの数字、けっこうエグいよ。</p>
+
+<div class="stat-grid">
+  <div class="stat-card"><span class="num">2,514件</span><span class="label">2025年のリベンジポルノ相談件数（警察庁）</span></div>
+  <div class="stat-card"><span class="num">65件</span><span class="label">そのうち検挙できたのはたった65件</span></div>
+  <div class="stat-card"><span class="num">16倍</span><span class="label">AI生成の同意なき性的画像・動画　約50万件(2023)→800万件(2025)</span></div>
+  <div class="stat-card"><span class="num">93%</span><span class="label">ディープフェイクポルノ88サイトのうち、普通のGoogle検索で辿り着けた割合</span></div>
+</div>
+
+<p>相談は2,500件超なのに、検挙は<span class="hl">わずか約2.6%</span>。泣き寝入りや、時間切れになってるケースがかなりあるってことなんだよね。</p>
+<p>しかも英ランカスター大学などの研究では、AI生成の性的コンテンツは<strong>ほぼすべてが女性や少女を標的</strong>にしてたって結果も出てるよ。</p>
+
+<h2>💬 「消すから大丈夫」から始まる、よくある流れ</h2>
+
+<p>こういう会話、身に覚えない？ 最初はめちゃくちゃ“愛”っぽいのがポイントなんだよね。</p>
+
+<div class="dm-wrap">
+  <div class="dm-wrap-label">📱 よくある交際中のやり取り（再現）</div>
+  <div class="dm-bubble">
+    <div class="dm-sender">付き合ってる彼から</div>
+    会えない日さみしいからさ、ちょっとだけ写真ほしいな🥺 オレしか見ないし、絶対誰にも見せないって約束する
+  </div>
+  <div class="dm-bubble right">
+    <div class="dm-sender">あなた（心の声）</div>
+    ……ちょっと恥ずかしいけど、信じてるし。顔は写さなきゃいっか
+  </div>
+  <div class="dm-bubble">
+    <div class="dm-sender">別れ話のあと</div>
+    は？ 別れるとか無理なんだけど。あの写真まだ持ってるの忘れてない？ 友達に回してもいいんだよ
+  </div>
+  <div class="dm-bubble right">
+    <div class="dm-sender">数週間後の現実</div>
+    知らないアカウントから「これキミだよね？」ってDMが届く。消してもらっても、また別の場所に出てくる……
+  </div>
+</div>
+
+<p>実際、2026年9月に岡山県警が逮捕した男は、ストーカー相手の女性の動画<span class="hl">44点</span>を、SNSのDM機能で<span class="hl">27回にわたって10人</span>に送った疑いが持たれてるんだ。DMだから「表に出てない」なんてことはないんだよね。</p>
+
+<h2>😨 拡散から「消せない」までのエスカレーション</h2>
+
+<p>なんで一度出た画像は消えないの？って思うよね。流れを分解するとこうなるよ。</p>
+
+<ol class="step-list">
+  <li><div><strong>撮影・送信フェーズ</strong>：交際中の「信頼」を理由に撮影や送信を求められる。この時点では脅しゼロ、むしろ優しい</div></li>
+  <li><div><strong>関係悪化＆脅し</strong>：別れ話や拒否をきっかけに「バラすよ」に変わる。画像が<strong>コントロールの道具</strong>になる</div></li>
+  <li><div><strong>拡散</strong>：SNS投稿・DMの一斉送信・掲示板など。受け取った第三者が保存して、<strong>転載が勝手に広がる</strong></div></li>
+  <li><div><strong>いたちごっこ</strong>：元投稿を消しても再アップや転載で再出現。投稿者の特定にも時間がかかって、その間に証拠が消えることも</div></li>
+</ol>
+
+<div class="warning-box">
+  <div class="warning-title">⚠️ 安全に見えるのに実はヤバいサイン</div>
+  <ul class="check-list">
+    <li><span class="ck">🫶</span><div>「オレだけしか見ない」「愛してるなら送れるよね」──<strong>愛情を条件にした撮影のお願い</strong></div></li>
+    <li><span class="ck">☁️</span><div>端末から消したのに、<strong>共有アルバムや自動バックアップ（クラウド）に残ってる</strong></div></li>
+    <li><span class="ck">🙈</span><div>「顔は写ってないから平気」──でも<strong>タトゥー・部屋の背景・持ち物</strong>で本人が特定されることがある</div></li>
+    <li><span class="ck">🔄</span><div>別れたあとも元恋人が<strong>連絡を切らせてくれない／写真の話を持ち出す</strong></div></li>
+    <li><span class="ck">🤖</span><div>普通の自撮りしか送ってないのに「お前の画像ある」と言われる──<strong>AI合成（ディープフェイク）</strong>の可能性</div></li>
+  </ul>
+</div>
+
+<h2>⚖️ 法律ではどうなってる？（知識として）</h2>
+
+<p>「訴えればなんとかなるでしょ」って思ってない？ 実はけっこう<strong>“時間制限”</strong>と<strong>“穴”</strong>があるんだよね。</p>
+
+<h3>リベンジポルノ防止法（私事性的画像記録の提供等による被害の防止に関する法律）</h3>
+<p>同意なく性的な画像を不特定多数に提供・公開すると、<span class="hl">3年以下の拘禁刑または50万円以下の罰金</span>の可能性があるよ。</p>
+<p>ただし<strong>親告罪</strong>なので、告訴できるのは<span class="hl-y">犯人を知った日から6カ月以内</span>。公訴時効も<span class="hl-y">3年</span>。だから「落ち着いてから…」と先延ばしにすると間に合わなくなるかも。</p>
+
+<h3>民事（慰謝料）</h3>
+<p>プライバシー権や肖像権の侵害で慰謝料を請求できて、相場は<span class="hl">おおむね50万〜300万円程度</span>って言われてるよ。投稿者が匿名なら<strong>発信者情報開示請求</strong>で特定できることもあるんだ。</p>
+
+<h3>ここが“法の穴”</h3>
+<p>今の法律は<strong>「撮影された」画像</strong>が前提。だから<span class="hl">AIで一から作った性的画像や、顔と裸体を合成した画像は対象外</span>になっちゃうんだよね。名誉毀損など別の罪で戦える場合もあるけど、AIによる性的画像の作成・提供そのものを直接取り締まる仕組みはまだないよ。</p>
+<p>ちなみに海外では、米国の「TAKE IT DOWN法」が被害者の通知から<strong>48時間以内の削除</strong>をサイトに義務づけてる。でも申し立ては画像ごとに被害者がやらなきゃいけなくて、負担が重いって指摘されてるんだ。</p>
+<p>※この記事は法的アドバイスじゃないよ。具体的なケースは弁護士や警察に相談してね。</p>
+
+<h2>🛡️ 自分を守るためにできること</h2>
+
+<p>じゃあどうすればいい？ ポイントは<strong>「予防」</strong>と<strong>「起きたときの順番」</strong>の2つだよ。</p>
+
+<ul class="check-list">
+  <li><span class="ck">🙅</span><div>基本は<strong>「撮らない・撮らせない・送らない」</strong>。断って離れていく相手は、最初からあなたを大事にしてないよ</div></li>
+  <li><span class="ck">📝</span><div>撮影に同意しても、<strong>公開や第三者への共有まで同意したことにはならない</strong>。それはハッキリ覚えておいて</div></li>
+  <li><span class="ck">☁️</span><div>消すときは端末だけじゃなく<strong>クラウド・共有アルバム・自動バックアップ</strong>も確認</div></li>
+  <li><span class="ck">📸</span><div>流出したら<strong>まず削除…じゃなくて先に証拠保全</strong>。画像・URL・日時・サイト名・相手とのやり取りをスクショ</div></li>
+  <li><span class="ck">🗑️</span><div>そのうえでSNS運営に削除申請。リベンジポルノ防止法の<strong>「送信防止措置の申出」</strong>なら、照会から2日で削除できる場合があるよ</div></li>
+  <li><span class="ck">⏰</span><div>告訴は<strong>6カ月の期限</strong>あり。<strong>一人で抱え込まず、早めに警察・弁護士・支援団体へ</strong></div></li>
+  <li><span class="ck">🚫</span><div>回ってきた誰かの画像は<strong>保存も転送もしない</strong>。“見る側”が止めることで拡散は止まる</div></li>
+</ul>
+
+<div class="hotline-box">
+  <h3>📞 困ったときの相談窓口</h3>
+  <div class="hotline-item"><span class="hotline-name">警察相談専用電話</span><span class="hotline-desc">#9110（緊急時は110番）。脅迫・拡散されたらまずここ</span></div>
+  <div class="hotline-item"><span class="hotline-name">性犯罪被害相談電話</span><span class="hotline-desc">#8103（ハートさん）。最寄りの警察の性犯罪相談窓口につながるよ</span></div>
+  <div class="hotline-item"><span class="hotline-name">性犯罪・性暴力被害者のためのワンストップ支援センター</span><span class="hotline-desc">#8891（はやくワンストップ）。相談・医療・法的支援をまとめてサポート</span></div>
+  <div class="hotline-item"><span class="hotline-name">セーフライン</span><span class="hotline-desc">リベンジポルノなどの違法・有害画像の削除依頼をネットで受け付け（無料）</span></div>
+  <div class="hotline-item"><span class="hotline-name">違法・有害情報相談センター</span><span class="hotline-desc">総務省支援。削除依頼の方法などをアドバイスしてくれる</span></div>
+  <div class="hotline-item"><span class="hotline-name">法テラス</span><span class="hotline-desc">0570-078374。弁護士費用の立替えや無料法律相談の案内</span></div>
+</div>
+
+<div class="summary-box">
+  <h3>📌 この記事、3行でまとめると</h3>
+  <ul>
+    <li>2025年のリベンジポルノ相談は2,514件なのに検挙は65件。一度出た画像は再アップ・転載で「消せない」ことが多い</li>
+    <li>AI生成の性的画像は2年で16倍の800万件に。でも日本の法律は「撮影された画像」前提で、AI画像は対象外という穴がある</li>
+    <li>守りは「撮らない・送らない」、起きたら「証拠保全→削除申請→6カ月以内に早めの相談」の順番で</li>
+  </ul>
+</div>
+
+<!-- PR SECTION -->
+<div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+  <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+  <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+    <div style="flex: 1; min-width: 200px;">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+        <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+        <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+      </div>
+      <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+      <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+        17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+        <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+      </p>
+      <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+        <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+        <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+        <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+        <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+        <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+        <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+          style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+          くわしくはこちら →
+        </a>
+      </div>
+      <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+        メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+      </p>
+    </div>
+    <div style="flex-shrink: 0; width: 200px;">
+      <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+        alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+    </div>
+  </div>
+</div>
+<!-- /PR SECTION -->
+
+<footer class="article-footer">
+  <h4>参考情報源</h4>
+  <ul>
+    <li><a href="https://www.bengo4.com/c_1009/c_22/n_21010/" target="_blank" rel="noopener">弁護士ドットコムニュース「元恋人の『性的画像』をネットに拡散…『リベンジポルノ』被害はなぜ消せない？AI時代に残る法の“穴”」（2026年10月5日）</a></li>
+    <li><a href="https://news.ksb.co.jp/article/16920047" target="_blank" rel="noopener">KSB瀬戸内海放送「リベンジポルノ法違反の容疑で男(42)を逮捕 ストーカー相手のわいせつな動画をSNSで10人に送信した疑い 岡山県警」（2026年9月28日）</a></li>
+    <li><a href="https://forbesjapan.com/articles/detail/105763" target="_blank" rel="noopener">Forbes JAPAN「ディープフェイク・ポルノ、2年間で50万件から800万件に急増」（2026年10月1日）</a></li>
+  </ul>
+</footer>
+
+</div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
