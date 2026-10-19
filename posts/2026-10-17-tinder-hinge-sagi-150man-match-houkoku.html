@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【2026年10月17日更新】そのマッチ、詐欺師かも──Tinder・Hingeで「詐欺アカ150万件」がマッチしてた米議会報告書の衝撃</title>
+<meta name="description" content="米上院の調査報告書で、TinderとHingeで詐欺師などの悪質アカウント約150万件がユーザーとマッチし、約50万件が連絡先交換まで進んでいたことが判明。若者のロマンス詐欺報告も急増中。見抜き方と対策をZ世代向けに解説。">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background-color: #0f0f1a;
+  color: #e0e0f0;
+  font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+  line-height: 1.85;
+  padding: 24px 16px 60px;
+  font-size: 1rem;
+}
+.container { max-width: 780px; margin: 0 auto; }
+.tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #db2777, #7c3aed);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  margin-bottom: 18px;
+}
+h1 {
+  font-size: clamp(1.35rem, 4vw, 1.9rem);
+  color: #f0e6ff;
+  font-weight: bold;
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+.meta { font-size: 0.82rem; color: #9090b0; margin-bottom: 32px; }
+.hero-banner {
+  width: 100%;
+  border-radius: 16px;
+  padding: 60px 24px;
+  background: linear-gradient(135deg, #2d0040 0%, #0a1a2e 50%, #1a0030 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  margin-bottom: 36px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(219,39,119,0.2), transparent 60%),
+              radial-gradient(circle at 70% 50%, rgba(124,58,237,0.2), transparent 60%);
+}
+.hero-banner .hero-emoji { position: relative; z-index: 1; }
+.hero-banner .hero-sub {
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  color: #f9a8d4;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+}
+.lead {
+  font-size: 1.05rem;
+  color: #d0d0f0;
+  background: rgba(124,58,237,0.1);
+  border-left: 4px solid #7c3aed;
+  padding: 18px 20px;
+  border-radius: 0 10px 10px 0;
+  margin-bottom: 36px;
+  line-height: 2;
+}
+h2 {
+  font-size: 1.2rem;
+  color: #f0a0d0;
+  font-weight: bold;
+  margin: 44px 0 14px;
+  border-bottom: 2px solid rgba(219,39,119,0.3);
+  padding-bottom: 8px;
+}
+h3 { font-size: 1rem; color: #c4b5fd; margin: 28px 0 10px; font-weight: bold; }
+p { margin-bottom: 18px; color: #d0d0f0; line-height: 1.9; }
+a { color: #c084fc; text-decoration: underline; }
+.dm-bubble {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px 16px 16px 4px;
+  padding: 14px 18px;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #e0e0f0;
+}
+.dm-bubble.right {
+  border-radius: 16px 16px 4px 16px;
+  background: rgba(219,39,119,0.12);
+  border-color: rgba(219,39,119,0.2);
+  margin-left: 40px;
+}
+.dm-sender { font-size: 0.72rem; color: #8080a0; margin-bottom: 4px; }
+.dm-wrap {
+  margin: 20px 0 28px;
+  padding: 16px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.dm-wrap-label { font-size: 0.75rem; color: #7c3aed; font-weight: bold; letter-spacing: 0.08em; margin-bottom: 12px; }
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin: 20px 0 32px;
+}
+.stat-card {
+  background: linear-gradient(135deg, rgba(219,39,119,0.15), rgba(124,58,237,0.15));
+  border: 1px solid rgba(219,39,119,0.3);
+  border-radius: 12px;
+  padding: 18px 14px;
+  text-align: center;
+}
+.stat-card .num { font-size: 2rem; font-weight: bold; color: #f9a8d4; display: block; line-height: 1.2; }
+.stat-card .label { font-size: 0.76rem; color: #b0b0d0; margin-top: 6px; display: block; line-height: 1.5; }
+.warning-box {
+  background: rgba(220,38,38,0.1);
+  border: 1px solid rgba(220,38,38,0.35);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 28px 0;
+}
+.warning-title { font-size: 1rem; font-weight: bold; color: #fca5a5; margin-bottom: 14px; }
+.step-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px;
+  counter-reset: step-counter;
+}
+.step-list li {
+  counter-increment: step-counter;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  font-size: 0.95rem;
+  color: #d0d0f0;
+}
+.step-list li::before {
+  content: "0" counter(step-counter);
+  background: linear-gradient(135deg, #db2777, #7c3aed);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.step-list li strong { color: #f9a8d4; }
+.case-list { list-style: none; padding: 0; margin: 16px 0 24px; }
+.case-list li {
+  background: rgba(124,58,237,0.1);
+  border-left: 3px solid #7c3aed;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  color: #d0d0f0;
+  font-size: 0.95rem;
+}
+.case-list li strong { color: #f9a8d4; }
+.check-list { list-style: none; padding: 0; margin: 16px 0 24px; }
+.check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  background: rgba(124,58,237,0.08);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #d0d0f0;
+  line-height: 1.65;
+}
+.check-list li .ck { flex-shrink: 0; font-size: 1.1rem; }
+.hotline-box {
+  background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(219,39,119,0.12));
+  border: 1px solid rgba(124,58,237,0.4);
+  border-radius: 14px;
+  padding: 24px 22px;
+  margin: 36px 0;
+}
+.hotline-box h3 { color: #e9d5ff; margin-bottom: 14px; }
+.hotline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.hotline-item:last-child { border-bottom: none; }
+.hotline-name { font-weight: bold; color: #c4b5fd; font-size: 0.88rem; min-width: 140px; }
+.hotline-desc { font-size: 0.88rem; color: #b0b0d0; line-height: 1.6; }
+.summary-box {
+  background: rgba(219,39,119,0.08);
+  border: 1px solid rgba(219,39,119,0.3);
+  border-radius: 14px;
+  padding: 24px 22px;
+  margin: 32px 0;
+}
+.summary-box h3 { color: #f9a8d4; font-size: 1.05rem; margin-bottom: 14px; }
+.summary-box ul { list-style: none; padding: 0; }
+.summary-box ul li {
+  padding: 6px 0;
+  color: #d0d0f0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.summary-box ul li:last-child { border-bottom: none; }
+.summary-box ul li::before { content: '✓ '; color: #db2777; font-weight: bold; }
+.hl { color: #f9a8d4; font-weight: bold; }
+.hl-y { color: #fbbf24; font-weight: bold; }
+.hl-g { color: #4ade80; font-weight: bold; }
+.article-footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; color: #888; }
+.article-footer h4 { color: #9090b0; margin-bottom: 10px; font-size: 0.84rem; }
+.article-footer ul { list-style: none; padding: 0; }
+.article-footer ul li { margin-bottom: 6px; }
+.article-footer a { color: #7c7ca0; word-break: break-all; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<span class="tag">マッチングアプリ・ロマンス詐欺</span>
+
+<h1>【2026年10月17日更新】そのマッチ、詐欺師かも──Tinder・Hingeで「詐欺アカ150万件」がマッチしてた米議会報告書の衝撃</h1>
+
+<div class="meta">2026年10月17日 ｜ カテゴリ：マッチングアプリ・ロマンス詐欺・海外ニュース</div>
+
+<div class="hero-banner">
+  <span class="hero-emoji">💘🤖</span>
+  <span class="hero-sub">「アプリが守ってくれる」は、もう通用しない</span>
+</div>
+
+<div class="lead">
+  「有名なアプリだし、ヤバい人はちゃんと弾いてくれてるでしょ？」──そう思ってない？<br>
+  10月13日にアメリカ上院が出した調査報告書によると、TinderとHingeでは<span class="hl">約150万件</span>の詐欺師・悪質アカウントが実際にユーザーとマッチしてて、そのうち<span class="hl">約50万件</span>は<strong>連絡先の交換まで進んでた</strong>んだよね。<br>
+  しかもTinderは詐欺を見抜くAIの多くを<strong>何年もアップデートしてなかった</strong>とされてる。「アプリの審査」だけを信じるのは、ちょっと危ないってこと。自分を守るコツ、一緒に整理しよ。
+</div>
+
+<h2>📊 数字で見る「マッチングアプリ詐欺」のいま</h2>
+<p>ねえ、ロマンス詐欺って「おじさん・おばさんが引っかかるやつ」だと思ってた？<br>
+実はいま、<strong>18〜24歳の被害報告がいちばん伸びてる</strong>んだよね。</p>
+
+<div class="stat-grid">
+  <div class="stat-card"><span class="num">約150万</span><span class="label">Tinder・Hingeで他ユーザーと<br>マッチした悪質アカウント（米国）</span></div>
+  <div class="stat-card"><span class="num">約50万</span><span class="label">そのうち連絡先交換まで<br>進んだアカウント</span></div>
+  <div class="stat-card"><span class="num">+59%</span><span class="label">18〜24歳のロマンス詐欺報告の<br>増加率（英ロイズ銀行）</span></div>
+  <div class="stat-card"><span class="num">13億ドル</span><span class="label">米国のロマンス詐欺被害<br>（年間・少なくとも）</span></div>
+</div>
+
+<p>報告書は、民主党のハッサン議員と共和党のブラックバーン議員が<strong>党派をこえて</strong>約1年調べた結果なんだ。<br>
+Match Group（Tinder・Hinge・Plenty of Fishなどの運営会社）の内部資料から、<span class="hl">「2025年後半の時点で、TinderのAIモデルの大半は何年も更新されていなかった」</span>ことがわかったんだよね。</p>
+<p>その結果、詐欺アカを見抜く精度が落ちて、新しい手口についていけてなかったってわけ。<br>
+Match Group側は「顔認証の導入や新しいAI検知など、過去最大の安全対策を進めてきた。報告書は投資の規模を正しく伝えていない」と反論してるよ。</p>
+
+<h3>イギリスでも「若者の被害」が急増中</h3>
+<p>英ロイズ銀行のデータだと、2025年9月〜2026年8月の1年間で18〜24歳の報告は<span class="hl">59%増</span>、25〜34歳も<span class="hl">39%増</span>。<br>
+若い人は<strong>マッチングアプリやSNS（Tinder・Hinge・TikTok・Snapchat）</strong>で詐欺師と出会うケースが多いんだって。</p>
+<p>担当者いわく「ネットに慣れてる＝詐欺に強い、ではない」。これ、まさにうちらに向けた言葉だよね。</p>
+
+<h2>💬 「いい人そう」から始まる最初のやり取り</h2>
+<p>詐欺師って、いきなり「お金ちょうだい」なんて言わないんだよね。<br>
+最初はびっくりするくらい<strong>感じがよくて、話が合う</strong>んだよ。</p>
+
+<div class="dm-wrap">
+  <div class="dm-wrap-label">📱 よくあるマッチ直後のメッセージ（再現）</div>
+  <div class="dm-bubble">
+    <div class="dm-sender">マッチした相手（プロフ写真めっちゃ盛れてる）</div>
+    マッチありがとう😊 写真の雰囲気すごい好き！あんまりアプリ開かないから、よかったらLINEかインスタで話さない？
+  </div>
+  <div class="dm-bubble right">
+    <div class="dm-sender">あなた（心の声）</div>
+    え、優しそう…アプリ開かないなら仕方ないか。LINE教えちゃおう
+  </div>
+  <div class="dm-bubble">
+    <div class="dm-sender">数日後（毎朝おはよう、毎晩おやすみ）</div>
+    こんなに話してて落ち着く人はじめて🥺 実は友達に教わった投資で毎月増えてるんだ。二人の将来のために、一緒にやってみない？
+  </div>
+  <div class="dm-bubble">
+    <div class="dm-sender">数週間後の現実</div>
+    「出金するには手数料が必要」「今だけ追加入金すれば倍になる」──気づいたら貯金がゼロ
+  </div>
+</div>
+
+<p>ポイントは<span class="hl">「アプリの外に連れ出す」</span>ところ。<br>
+報告書でも約50万件が連絡先交換まで進んでたけど、アプリの外に出た瞬間、<strong>運営の監視も通報も届かなくなる</strong>んだよね。</p>
+
+<h2>😨 気づいたら抜け出せない…被害のエスカレーション</h2>
+<p>「自分は途中で気づけるし」って思った？<br>
+被害者の女性は米メディアに<strong>「渦に巻き込まれてるみたいだった」</strong>って話してて、気づいたら約10万ドル（約1,500万円）を失ってたんだって。</p>
+
+<ol class="step-list">
+  <li><strong>マッチ＆褒めまくり</strong>：盛れた写真・共通の趣味・やたら丁寧なメッセージで「理想の相手」を演出してくる</li>
+  <li><strong>アプリ外へ誘導</strong>：「アプリあんまり開かない」と言ってLINE・インスタ・テレグラムなどに移動させる</li>
+  <li><strong>毎日の連絡で依存させる</strong>：朝晩のメッセージ・将来の話・「あなただけ」攻撃で、感情的に離れられなくする</li>
+  <li><strong>お金の話にスライド</strong>：投資・トラブル・家族の病気・会うための旅費…と理由を変えて何度も送金させる。払うたびに「これで最後」と思わされる</li>
+</ol>
+
+<div class="warning-box">
+  <div class="warning-title">⚠️ 安全に見えるのに実はヤバいサイン</div>
+  <ul class="case-list">
+    <li><strong>「認証済みバッジ」がある</strong>──顔認証は本人っぽさの確認でしかなくて、中身が詐欺師じゃない保証にはならないよ</li>
+    <li><strong>有名・大手のアプリで出会った</strong>──今回わかったとおり、大手でも詐欺アカは何年も見逃されてた</li>
+    <li><strong>すぐにお金の話はしない</strong>──むしろ数週間〜数か月かけて信頼を積むのが手口。「急かさない＝安全」じゃない</li>
+    <li><strong>ビデオ通話もしてくれた</strong>──今はAIの顔・声変換があるから、映像だけで本人確認したことにはならない</li>
+    <li><strong>相手から少額をくれた・おごってくれた</strong>──先に「得」をさせて信用させるのも典型パターン</li>
+  </ul>
+</div>
+
+<h2>⚖️ 知っておきたい法律と罰則</h2>
+<p>「だまされた自分が悪いのかな…」って思っちゃう人、多いんだよね。<br>
+でも悪いのは100％だます側。日本ではちゃんと<strong>犯罪</strong>として扱われるよ。</p>
+
+<ul class="case-list">
+  <li><strong>詐欺罪（刑法246条）</strong>：恋愛感情を利用してお金をだまし取る行為。<span class="hl">10年以下の拘禁刑</span></li>
+  <li><strong>組織的詐欺（組織犯罪処罰法）</strong>：グループで役割分担してる場合は<span class="hl">1年以上の有期拘禁刑</span>とさらに重くなる</li>
+  <li><strong>口座・スマホの貸し借り</strong>：「受け取るだけでいい」と頼まれて自分の口座を貸すと、<strong>犯罪収益移転防止法違反</strong>などであなた自身が加害者側になることも</li>
+  <li><strong>出会い系サイト規制法</strong>：18歳未満の利用は禁止。年齢をごまかして使ってると、被害にあっても相談しづらくなっちゃう</li>
+</ul>
+
+<p>アメリカでは、詐欺の通報を一か所にまとめる窓口をつくる法案も出てるんだ。<br>
+「アプリ任せ」じゃなく、<strong>社会全体で対策しよう</strong>って流れになってきてるんだよね。</p>
+
+<h2>🛡️ 今日からできる自分の守り方</h2>
+<p>じゃあ、どうすればいいの？<br>
+「怪しい人を見抜く力」より、<span class="hl">「お金と個人情報を出さないルール」</span>を決めておく方がずっと強いよ。</p>
+
+<ul class="check-list">
+  <li><span class="ck">📲</span><div>会ってない相手とは<strong>アプリ内でやり取り</strong>する。早い段階で「LINEに移ろう」と言われたら、一回立ち止まろう</div></li>
+  <li><span class="ck">💸</span><div>ネットで知り合った人に<strong>お金を送らない・投資の話に乗らない</strong>。理由がどんなに切実でも、これだけは絶対ルール</div></li>
+  <li><span class="ck">🔍</span><div>プロフ写真は<strong>画像検索（Googleレンズなど）</strong>で確認。他人の写真やAI生成っぽい画像なら即ブロック</div></li>
+  <li><span class="ck">🙅</span><div>銀行情報・パスワード・身分証・<strong>性的な画像</strong>は、まだ会ってない相手には絶対に送らない</div></li>
+  <li><span class="ck">🗣️</span><div>お金の話が出たら<strong>友達や家族に一回相談</strong>。第三者の目が入るだけで、冷静になれることが多いよ</div></li>
+  <li><span class="ck">🚨</span><div>怪しいと思ったら<strong>アプリ内で通報＋スクショ保存</strong>。次の被害者を減らせるし、あとで警察に相談するときの証拠にもなる</div></li>
+</ul>
+
+<div class="hotline-box">
+  <h3>📞 困ったときの相談窓口</h3>
+  <div class="hotline-item">
+    <div class="hotline-name">警察相談専用電話</div>
+    <div class="hotline-desc">#9110（全国共通）。「詐欺かも？」の段階でも相談OK。緊急時は110番</div>
+  </div>
+  <div class="hotline-item">
+    <div class="hotline-name">消費者ホットライン</div>
+    <div class="hotline-desc">188（いやや！）。投資・副業・アプリ課金のトラブルを近くの消費生活センターにつないでくれる</div>
+  </div>
+  <div class="hotline-item">
+    <div class="hotline-name">都道府県警察 サイバー犯罪相談窓口</div>
+    <div class="hotline-desc">ネット経由の詐欺・脅迫の相談先。各県警サイトのフォームからも連絡できるよ</div>
+  </div>
+  <div class="hotline-item">
+    <div class="hotline-name">法テラス</div>
+    <div class="hotline-desc">0570-078374。お金を取り戻したいときなど、法律の相談先を案内してくれる</div>
+  </div>
+</div>
+
+<div class="summary-box">
+  <h3>📌 この記事、3行でまとめると</h3>
+  <ul>
+    <li>米議会の報告書で、Tinder・Hingeでは詐欺師など約150万アカウントがマッチ、約50万が連絡先交換まで進んでいたと判明</li>
+    <li>ロマンス詐欺は若者で急増中（英国で18〜24歳の報告が59%増）。「ネット慣れ」は防御にならない</li>
+    <li>アプリの審査を過信せず、「アプリ外に出ない・お金を送らない・一人で決めない」を自分ルールに</li>
+  </ul>
+</div>
+
+<!-- PR SECTION -->
+<div style="margin-top: 48px; border-top: 2px solid #db2777; padding-top: 32px;">
+  <p style="font-size: 0.72rem; color: #888; letter-spacing: 0.08em; margin-bottom: 16px; text-transform: uppercase;">Sponsored</p>
+  <div style="background: linear-gradient(135deg, #1a0a2e 0%, #0a1a0a 100%); border: 1px solid #7c3aed55; border-radius: 14px; padding: 28px 28px 24px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+    <div style="flex: 1; min-width: 200px;">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+        <span style="background: #7c3aed; color: #fff; font-size: 0.72rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.05em;">PR</span>
+        <span style="font-size: 0.78rem; color: #c4b5fd;">AI画像検知サービス</span>
+      </div>
+      <h3 style="font-size: 1.4rem; color: #e9d5ff; margin: 0 0 10px; font-weight: bold;">beME プレミアム</h3>
+      <p style="font-size: 0.95rem; color: #d0d0f0; margin-bottom: 14px; line-height: 1.7;">
+        17,000名以上の被害者の声を分析して開発されたAI（国内特許取得済み）搭載。<br>
+        <strong style="color: #f9a8d4;">顔画像を登録するだけで、AIが悪質サイトを24時間監視。</strong>
+      </p>
+      <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; color: #c0c0e0; line-height: 1.8;">
+        <li>✅ 検知した画像・動画の<strong style="color: #4ade80;">削除実績 100%</strong>（うち80%は2週間以内）</li>
+        <li>✅ ネットトラブル相談窓口（元警察官が対応）</li>
+        <li>✅ アカウントなりすまし・SNSトラブル・ネットショッピングまで対応</li>
+        <li>✅ <strong style="color: #fbbf24;">弁護士費用補償</strong>が特典付帯</li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+        <span style="font-size: 1.5rem; font-weight: bold; color: #f9a8d4;">月々980円〜</span>
+        <a href="https://www.beme-online.com/beme" target="_blank" rel="noopener sponsored"
+          style="display: inline-block; background: linear-gradient(135deg, #db2777, #7c3aed); color: #fff; font-weight: bold; font-size: 0.95rem; padding: 10px 24px; border-radius: 25px; text-decoration: none; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(219,39,119,0.4);">
+          くわしくはこちら →
+        </a>
+      </div>
+      <p style="font-size: 0.75rem; color: #666; margin-top: 14px;">
+        メディア掲載：東海テレビ ／ フジテレビ「ノンストップ」／ Z世代メディア Steenz ／ We Health 2025 ／ nrc（オランダ最大メディア）
+      </p>
+    </div>
+    <div style="flex-shrink: 0; width: 200px;">
+      <img src="https://storage.googleapis.com/studio-cms-assets/projects/rROnAw9kWA/s-1886x1300_v-frms_webp_cf7c448b-5cd2-4f75-b5e5-9700f9a351e4.jpg"
+        alt="beME プレミアム" style="width: 100%; border-radius: 10px; object-fit: cover;">
+    </div>
+  </div>
+</div>
+<!-- /PR SECTION -->
+
+<footer class="article-footer">
+  <h4>参考情報源</h4>
+  <ul>
+    <li><a href="https://britbrief.co.uk/crime/fraud/us-report-details-dating-app-romance-scams-match-group-pressed.html" target="_blank" rel="noopener">US report details dating-app romance scams; Match Group pressed to act（Brit Brief, 2026年10月14日）</a></li>
+    <li><a href="https://www.ibtimes.co.uk/lloyds-romance-scam-reports-younger-adults-rise-1821958" target="_blank" rel="noopener">Romance Scammers Are Increasingly Targeting Young Adults but Over-65s Are Losing the Most Money（IBTimes UK, 2026年9月26日）</a></li>
+    <li><a href="https://news.yahoo.co.jp/articles/ae965ca55eabc48d78e3f8a358456b12fe08c706" target="_blank" rel="noopener">マッチングアプリで5600人分のID収集か 詐欺容疑で逮捕の男ら（朝日新聞／Yahoo!ニュース）</a></li>
+  </ul>
+  <p style="margin-top:12px; font-size:0.75rem; color:#777;">※報告書の数値は米国内のデータです。為替換算は概算。記事内の事件は報道時点の情報にもとづきます。</p>
+</footer>
+
+</div>
+<script>
+/* iframe auto-resize for STUDIO embed (V2) */
+(function() {
+  function postSize() {
+    try {
+      parent.postMessage({type: 'iframeSize', height: document.body.scrollHeight}, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('load', postSize);
+  window.addEventListener('resize', postSize);
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(postSize).observe(document.body);
+  }
+})();
+</script>
+</body>
+</html>
